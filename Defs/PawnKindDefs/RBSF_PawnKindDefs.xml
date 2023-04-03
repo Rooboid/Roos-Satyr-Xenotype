@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Satyr Bard - Weak, but sometimes carries music sheets. Appears in tribes and outlander unions -->
+		
+	<PawnKindDef>
+		<defName>RBSF_SatyrBard</defName>
+		<race>Human</race>
+		<isFighter>False</isFighter>
+		<label>satyr bard</label>
+		<defaultFactionType MayRequire="Rooboid.SatyrFaun.Expanded">RBSFE_TribeFae</defaultFactionType>
+		<maxGenerationAge>90</maxGenerationAge>
+		<combatPower>30</combatPower>
+		<invNutrition>2.00</invNutrition>
+		<chemicalAddictionChance>0.03</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.02</backstoryCryptosleepCommonality>
+		<initialWillRange>4~5</initialWillRange>
+		<initialResistanceRange>6~12</initialResistanceRange>
+		<acceptArrestChanceFactor>1.5</acceptArrestChanceFactor>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>SatyrOnly</li>
+					<li>SatyrandFaun</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Bard</li>
+					<li>SatyrOnly</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<weaponMoney>100~500</weaponMoney>
+		<weaponTags>
+			<li>Instrument</li>
+		</weaponTags>
+		<apparelMoney>40~600</apparelMoney>
+		<apparelTags>
+			<li>Neolithic</li>
+			<li>Medieval</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+		<apparelRequired>
+			<li>Apparel_Bandolier</li>
+			<li>Apparel_Pants</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(150,100,60)</color>
+			</li>
+		</specificApparelRequirements>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.10</techHediffsChance>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">1</RBSF_Satyr>
+			</xenotypeChances>
+		</xenotypeSet>
+		<requiredWorkTags>
+			<li>Artistic</li>
+		</requiredWorkTags>
+		<gearHealthRange>0.5~1</gearHealthRange>
+		<disallowedTraits>
+			<li>BodyPurist</li>
+		</disallowedTraits>
+		<inventoryOptions>
+			<skipChance>0.98</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>RBSF_MelodicLullabySheet</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+				<li>
+					<thingDef>RBSF_MelodicWarcallSheet</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+				<li>
+					<thingDef>RBSF_MelodicHealingSongSheet</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+				<li>
+					<thingDef>RBSF_MelodicSonataSheet</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+				<li>
+					<thingDef>RBSFE_MelodicHymnSheet</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<modExtensions>
+			<li MayRequire="Owlchemist.GiddyUp" Class="GiddyUp.CustomMounts">
+				<mountChance>15</mountChance>
+				<possibleMounts>
+					<li>
+						<key>Horse</key>
+						<value>80</value>
+					</li>
+				</possibleMounts>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<!-- Feral Satyr - Appears in tribes -->
+	
+	<PawnKindDef ParentName="TribalPenitentBase">
+		<defName>RBSF_SatyrFeral</defName>
+		<label>feral satyr</label>
+		<!-- -->
+		<race>Human</race>
+		<isFighter>True</isFighter>
+		<maxGenerationAge>60</maxGenerationAge>
+		<combatPower>50</combatPower>
+		<invNutrition>0</invNutrition>
+		<chemicalAddictionChance>0.08</chemicalAddictionChance>
+		<initialWillRange>2~3</initialWillRange>
+		<initialResistanceRange>5~18</initialResistanceRange>
+		<itemQuality>Normal</itemQuality>
+		<apparelColor>(35,35,35)</apparelColor>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<gearHealthRange>1</gearHealthRange>
+		<!-- -->
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>SatyrWild</li>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<weaponMoney>200~800</weaponMoney>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+			<li>NeolithicMeleeDecent</li>
+			<li>NeolithicMeleeAdvanced</li>
+		</weaponTags>
+		<xenotypeSet>
+			<xenotypeChances>
+				<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">1</RBSF_Satyr>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+</Defs>

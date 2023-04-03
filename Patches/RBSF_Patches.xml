@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!--============================== Roo's Satyr and Faun Xenotype Patches ============================-->
+	
+	<!--============================== Unguligrade patches ============================-->
+	<!-- Only adds the Unguiligrade Legs gene if it isn't already present i.e. within Roo's Minotaur Xenotypes or Roo's Faun Xenotype -->
+	
+	<!-- Unguiligrade Legs body part (For VE) -->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/GeneDef[defName="RBM_UnguligradeLegs"]</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs</xpath>
+			<value>
+				<HediffDef ParentName="AddedBodyPartBase">
+					<defName>UnguligradeLegPart</defName>
+					<label>unguligrade leg</label>
+					<labelNoun>an unguligrade leg</labelNoun>
+					<description>An unguligrade leg with a cloven hoof, perfect for hotfooting it out of trouble, not-so-perfect for keeping the floor clean.</description>
+					<addedPartProps>
+						<solid>true</solid>
+						<partEfficiency>1</partEfficiency>
+					</addedPartProps>
+					<comps>
+						<li Class="HediffCompProperties_VerbGiver">
+							<tools>
+								<li>
+									<label>hoof</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>8</power>
+									<cooldownTime>2</cooldownTime>
+									<soundMeleeHit>Pawn_Melee_Punch_HitPawn</soundMeleeHit>
+									<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+								</li>
+							</tools>
+						</li>
+					</comps>
+					<stages>
+						<li>
+							<minSeverity>0</minSeverity>
+							<statOffsets>
+								<StaggerDurationFactor>-0.13</StaggerDurationFactor>
+								<MoveSpeed>0.1</MoveSpeed>
+								<FilthRate>0.75</FilthRate>
+								<MeleeDodgeChance>2.5</MeleeDodgeChance>
+							</statOffsets>
+						</li>
+					</stages>
+				</HediffDef>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- Unguiligrade Legs gene -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/GeneDef[defName="RBM_UnguligradeLegs"]</xpath>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<GeneDef>
+							<defName>RBM_UnguligradeLegs</defName>
+							<label>unguligrade legs</label>
+							<description>Carriers of this gene are born with sturdy legs and cloven hooves. The fur on their legs extends up to their stomachs and covers their groin.</description>
+							<biostatCpx>1</biostatCpx>
+							<biostatMet>-1</biostatMet>
+							<displayCategory>Miscellaneous</displayCategory>
+							<displayOrderInCategory>330</displayOrderInCategory>
+							<iconPath>UI/GeneIcons/RBM_BovineLegs</iconPath>
+							<iconColor>(0.75, 0.75, 0.75)</iconColor>
+							<symbolPack>
+								<prefixSymbols>
+									<li><symbol>faun</symbol></li>
+									<li><symbol>jog</symbol></li>
+									<li><symbol>bov</symbol></li>
+									<li><symbol>bolt</symbol></li>
+								</prefixSymbols>
+								<suffixSymbols>
+									<li><symbol>yr</symbol></li>
+									<li><symbol>ine</symbol></li>
+									<li><symbol>trotter</symbol></li>
+									<li><symbol>hoof</symbol></li>
+									<li><symbol>ped</symbol></li>
+								</suffixSymbols>
+							</symbolPack>
+							<!-- Thee following will occur if you ARE running vanilla framework expanded. If not, a patch is added to tie the gene buffs to the pawn, as opposed to the body part -->
+							<modExtensions>
+								<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+									<hediffsToBodyParts>
+										<li>
+											<hediff>UnguligradeLegPart</hediff>
+											<bodyparts>
+												<li>Leg</li>
+												<li>Leg</li>
+											</bodyparts>
+										</li>
+									</hediffsToBodyParts>
+								</li>
+							</modExtensions>
+						</GeneDef>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
+						<value>
+							<li MayRequire="Ludeon.RimWorld.Biotech">RBM_UnguligradeLegs</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+						<value>
+							<li MayRequire="Ludeon.RimWorld.Biotech">RBM_UnguligradeLegs</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
+						<value>
+							<li MayRequire="Ludeon.RimWorld.Biotech">RBM_UnguligradeLegs</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+						<value>
+							<li MayRequire="Ludeon.RimWorld.Biotech">RBM_UnguligradeLegs</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Expanded Framework</li>
+					</mods>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/GeneDef[defName="RBM_UnguligradeLegs"]</xpath>
+						<value>
+							<statOffsets>
+								<StaggerDurationFactor>-0.25</StaggerDurationFactor>
+								<MoveSpeed>0.2</MoveSpeed>
+								<FilthRate>1.5</FilthRate>
+								<MeleeDodgeChance>5</MeleeDodgeChance>
+							</statOffsets>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Expanded Framework</li>
+					</mods>
+					<match Class="PatchOperationFindMod">
+						<mods>
+							<li>Medical System Expansion 2</li>
+						</mods>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/GeneDef[defName="RBM_UnguligradeLegs"]</xpath>
+							<value>
+			
+								<GeneDef>
+									<defName>RBM_UnguligradeLegs</defName>
+									<label>unguligrade legs</label>
+									<description>Carriers of this gene are born with sturdy legs and cloven hooves. The fur on their legs extends up to their stomachs and covers their groin.</description>
+									<biostatCpx>1</biostatCpx>
+									<biostatMet>-1</biostatMet>
+									<displayCategory>Miscellaneous</displayCategory>
+									<displayOrderInCategory>330</displayOrderInCategory>
+									<iconPath>UI/GeneIcons/RBM_BovineLegs</iconPath>
+									<iconColor>(0.75, 0.75, 0.75)</iconColor>
+									<statOffsets>
+										<StaggerDurationFactor>-0.25</StaggerDurationFactor>
+										<MoveSpeed>0.2</MoveSpeed>
+										<FilthRate>1.5</FilthRate>
+										<MeleeDodgeChance>5</MeleeDodgeChance>
+									</statOffsets>
+									<symbolPack>
+										<prefixSymbols>
+											<li><symbol>faun</symbol></li>
+											<li><symbol>jog</symbol></li>
+											<li><symbol>bov</symbol></li>
+											<li><symbol>bolt</symbol></li>
+										</prefixSymbols>
+										<suffixSymbols>
+											<li><symbol>yr</symbol></li>
+											<li><symbol>ine</symbol></li>
+											<li><symbol>trotter</symbol></li>
+											<li><symbol>hoof</symbol></li>
+											<li><symbol>ped</symbol></li>
+										</suffixSymbols>
+									</symbolPack>
+								</GeneDef>
+							</value>
+						</match>
+					</match>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>
+	
+	<!--============================== Horizontal Pupil patches ============================-->
+	<!-- Only adds the Horizontal Pupils gene if it isn't already present i.e. within Roo's Faun Xenotype -->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/GeneDef[defName="RBSF_HorizontalPupils"]</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs</xpath>
+			<value>
+				<GeneDef ParentName="GeneEyeColor">
+					<defName>RBSF_HorizontalPupils</defName>
+					<label>horizontal pupils</label>
+					<description>Carriers of this gene have horizontal, slit-shaped pupils. These widen the carrier's field of view, though it's harder to see what's near, above and below them.</description>
+					<biostatCpx>1</biostatCpx>
+					<biostatMet>0</biostatMet>
+					<displayOrderInCategory>4</displayOrderInCategory>
+					<iconPath>UI/GeneIcons/RBSF_HorizontalPupils</iconPath>
+					<graphicData>
+						<drawScale>0.28</drawScale>
+						<graphicPath>Things/Pawn/Humanlike/Eyes/RBSF_HorizontalPupils/RBSF_HorizontalPupils</graphicPath>
+					</graphicData>
+					<statFactors>
+						<ShootingAccuracyFactor_Long>1.15</ShootingAccuracyFactor_Long>
+						<ShootingAccuracyFactor_Medium>1.08</ShootingAccuracyFactor_Medium>
+						<ShootingAccuracyFactor_Short>0.83</ShootingAccuracyFactor_Short>
+						<MortarMissRadiusFactor>1.5</MortarMissRadiusFactor>
+					</statFactors>
+					<symbolPack>
+						<prefixSymbols>
+							<li><symbol>hori</symbol></li>
+							<li><symbol>pano</symbol></li>
+							<li><symbol>prey</symbol></li>
+							<li><symbol>elon</symbol></li>
+						</prefixSymbols>
+						<suffixSymbols>
+							<li><symbol>gate</symbol></li>
+							<li><symbol>zontal</symbol></li>
+							<li><symbol>rama</symbol></li>
+							<li><symbol>plane</symbol></li>
+						</suffixSymbols>
+					</symbolPack>
+				</GeneDef>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!--============================== Horn Ram patches ============================-->
+	<!-- Only adds the Horn Ram ability if it isn't already present i.e. within Roo's Faun Xenotype -->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/GeneDef[defName="RBSF_Ability_Ram"]</xpath>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- Add Sound -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<SoundDef>
+							<defName>RBSF_HornRam</defName>
+							<context>MapOnly</context>
+							<priorityMode>PrioritizeNearest</priorityMode>
+							<subSounds>
+								<li>
+									<grains>
+										<li Class="AudioGrain_Folder">
+											<clipPath>RBSF_HornRam</clipPath>
+										</li>
+									</grains>
+									<volumeRange>35</volumeRange>
+									<distRange>5~25</distRange>
+								</li>
+							</subSounds>
+						</SoundDef>
+					</value>
+				</li>
+			
+			
+			
+				<!-- Add Effect -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<EffecterDef>
+							<defName>RBSF_HornRamEffect</defName>
+							<children>
+								<li>
+									<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+									<fleckDef>DustPuffThick</fleckDef>
+									<positionLerpFactor>0.6</positionLerpFactor>
+									<chancePerTick>0.2</chancePerTick>
+									<scale>2.5~4.5</scale>
+									<spawnLocType>OnSource</spawnLocType>
+								</li>
+								<li>
+									<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+									<positionRadius>0.0</positionRadius>
+									<fleckDef>BodyImpact</fleckDef>
+									<burstCount>1</burstCount>
+									<scale>0.4</scale>
+									<color>(255, 120, 30, 60)</color>
+									<spawnLocType>OnSource</spawnLocType>
+								</li>
+								<li>
+									<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+									<positionRadius>0.2</positionRadius>
+									<fleckDef>AirPuff</fleckDef>
+									<burstCount>4~5</burstCount>
+									<speed>0.4~0.8</speed>
+									<scale>0.5~0.8</scale>
+									<spawnLocType>OnSource</spawnLocType>
+								</li>
+								<li>
+									<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+									<positionRadius>0.02</positionRadius>
+									<moteDef>Mote_SparkThrownFast</moteDef>
+									<burstCount>4~5</burstCount>
+									<speed>3.3~5</speed>
+									<scale>0.1~0.2</scale>
+									<spawnLocType>OnSource</spawnLocType>
+								</li>
+								<li>
+									<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+									<positionRadius>0.02</positionRadius>
+									<fleckDef>DustSlow</fleckDef>
+									<burstCount>1~1</burstCount>
+									<speed>0.3~0.4</speed>
+									<rotationRate>5~10</rotationRate>
+									<scale>0.3~0.5</scale>
+									<spawnLocType>OnSource</spawnLocType>
+								</li>
+								<li>
+									<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+									<positionRadius>0.1</positionRadius>
+									<fleckDef>SparkFlash</fleckDef>
+									<burstCount>1~1</burstCount>
+									<scale>0.9~1.3</scale>
+									<spawnLocType>OnSource</spawnLocType>
+								</li>
+							</children>
+							<offsetTowardsTarget>0.25~0.25</offsetTowardsTarget>
+							<positionRadius>0.1</positionRadius>
+						</EffecterDef>
+					</value>
+				</li>
+			
+				<!-- Add Projectile -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ThingDef ParentName="BaseBullet">
+							<defName>Proj_Ram</defName>
+							<label>ram</label>
+							<category>Projectile</category>
+							<tickerType>Normal</tickerType>
+							<altitudeLayer>Projectile</altitudeLayer>
+							<useHitPoints>False</useHitPoints>
+							<neverMultiSelect>True</neverMultiSelect>
+							<graphicData>
+								<texPath>Things/Mote/RamRush</texPath>
+								<graphicClass>Graphic_Random</graphicClass>
+								<shaderType>MoteGlow</shaderType>
+								<drawSize>0.85</drawSize>
+							</graphicData>
+							<projectile>
+								<damageDef>Blunt</damageDef>
+								<speed>2000</speed>
+								<damageAmountBase>9</damageAmountBase>
+								<armorPenetrationBase>0.1</armorPenetrationBase>
+								<stoppingPower>5</stoppingPower>
+								<shadowSize>0</shadowSize>
+							</projectile>
+						</ThingDef>
+					</value>
+				</li>
+			
+				<!-- Add HeDiff -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<HediffDef>
+							<defName>RBSF_Floored</defName>
+							<label>floored by impact</label>
+							<labelNoun>floored</labelNoun>
+							<defaultLabelColor>(100, 105, 115)</defaultLabelColor>
+							<hediffClass>HediffWithComps</hediffClass>
+							<everCurableByItem>false</everCurableByItem>
+							<tendable>false</tendable>
+							<displayWound>false</displayWound>
+							<initialSeverity>1</initialSeverity>
+							<description>This pawn has been knocked to the floor by a forceful impact.</description>
+							<comps>
+								<li Class="HediffCompProperties_Disappears">
+									<showRemainingTime>true</showRemainingTime>
+									<disappearsAfterTicks>500</disappearsAfterTicks>
+								</li>
+								<li Class="HediffCompProperties_DisappearsOnDeath"/>
+							</comps>
+							<stages>
+								<li>
+									<capMods>
+										<li>
+											<capacity>Moving</capacity>
+											<offset>-0.95</offset>
+										</li>
+									</capMods>
+								</li>
+							</stages>
+						</HediffDef>
+					</value>
+				</li>
+			
+				<!-- Add Ability -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<AbilityDef>
+							<defName>RBSF_Ability_Ram</defName>
+							<label>horn ram</label>
+							<description>A last-resort attack wherein the user rams forwards wildly with their horns, causing those in their path to stumble onto the floor.</description>
+							<iconPath>UI/GeneIcons/RBSF_Ability_Ram</iconPath>
+							<cooldownTicksRange>20000</cooldownTicksRange>
+							<aiCanUse>true</aiCanUse>
+							<displayOrder>300</displayOrder>
+							<category>Satyr</category><!-- Altered from "Faun" -->
+							<warmupStartSound>Longjump_Land</warmupStartSound>
+							<charges>2</charges>
+							<statBases>
+								<Ability_Duration>8</Ability_Duration>
+							</statBases>
+							<verbProperties>
+								<verbClass>Verb_CastAbilityTouch</verbClass>
+								<warmupEffecter>RBSF_HornRamEffect</warmupEffecter>
+								<range>1</range>
+								<warmupTime>0.1</warmupTime>
+								<soundCast>RBSF_HornRam</soundCast>
+								<targetParams>
+									<canTargetLocations>false</canTargetLocations>
+									<canTargetSelf>false</canTargetSelf>
+									<canTargetAnimals>True</canTargetAnimals>
+									<canTargetPawns>True</canTargetPawns>
+								</targetParams>
+							</verbProperties>
+							<comps>
+								<li Class="CompProperties_AbilityLaunchProjectile">
+									<projectileDef>Proj_Ram</projectileDef>
+								</li>
+								<li Class="CompProperties_AbilityFleckOnTarget">
+									<fleckDef>BloodSplash</fleckDef>
+								</li>
+								<li Class="CompProperties_AbilityGiveHediff">
+									<compClass>CompAbilityEffect_GiveHediff</compClass>
+									<hediffDef>RBSF_Floored</hediffDef>
+								</li>
+							</comps>
+						</AbilityDef>
+					</value>
+				</li>
+				
+			</operations>
+		</nomatch>
+	</Operation>
+	
+	<!--============================== Uncouth Trait Patches ============================-->
+	<!-- Makes the trait "Uncouth" work -->
+
+	<!-- Uncouth cancels out RebuffedMyRomanceAttemptMood thought -->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThoughtDef[defName="RebuffedMyRomanceAttemptMood"]/nullifyingTraits</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="RebuffedMyRomanceAttemptMood"]/nullifyingTraits</xpath>
+			<value>
+				<li>RBSF_Uncouth</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="RebuffedMyRomanceAttemptMood"]</xpath>
+			<value>
+				<nullifyingTraits>
+					<li>RBSF_Uncouth</li>
+				</nullifyingTraits>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- Uncouth cancels out RebuffedMyRomanceAttempt thought -->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThoughtDef[defName="RebuffedMyRomanceAttempt"]/nullifyingTraits</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="RebuffedMyRomanceAttempt"]/nullifyingTraits</xpath>
+			<value>
+				<li>RBSF_Uncouth</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="RebuffedMyRomanceAttempt"]</xpath>
+			<value>
+				<nullifyingTraits>
+					<li>RBSF_Uncouth</li>
+				</nullifyingTraits>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- Uncouth cancels out RebuffedMyRomanceAttempt thought -->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMe"]/nullifyingTraits</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMe"]/nullifyingTraits</xpath>
+			<value>
+				<li>RBSF_Uncouth</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMe"]</xpath>
+			<value>
+				<nullifyingTraits>
+					<li>RBSF_Uncouth</li>
+				</nullifyingTraits>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- Uncouth cancels out FailedRomanceAttemptOnMeLowOpinionMood thought -->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMeLowOpinionMood"]/nullifyingTraits</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMeLowOpinionMood"]/nullifyingTraits</xpath>
+			<value>
+				<li>RBSF_Uncouth</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMeLowOpinionMood"]</xpath>
+			<value>
+				<nullifyingTraits>
+					<li>RBSF_Uncouth</li>
+				</nullifyingTraits>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- Uncouth cancels out RejectedMyProposal thought -->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThoughtDef[defName="RejectedMyProposal"]/nullifyingTraits</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="RejectedMyProposal"]/nullifyingTraits</xpath>
+			<value>
+				<li>RBSF_Uncouth</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="RejectedMyProposal"]</xpath>
+			<value>
+				<nullifyingTraits>
+					<li>RBSF_Uncouth</li>
+				</nullifyingTraits>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- Uncouth cancels out RejectedMyProposalMood thought -->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThoughtDef[defName="RejectedMyProposalMood"]/nullifyingTraits</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="RejectedMyProposalMood"]/nullifyingTraits</xpath>
+			<value>
+				<li>RBSF_Uncouth</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="RejectedMyProposalMood"]</xpath>
+			<value>
+				<nullifyingTraits>
+					<li>RBSF_Uncouth</li>
+				</nullifyingTraits>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- Uncouth cancels out IRejectedTheirProposal thought -->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThoughtDef[defName="IRejectedTheirProposal"]/nullifyingTraits</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="IRejectedTheirProposal"]/nullifyingTraits</xpath>
+			<value>
+				<li>RBSF_Uncouth</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="IRejectedTheirProposal"]</xpath>
+			<value>
+				<nullifyingTraits>
+					<li>RBSF_Uncouth</li>
+				</nullifyingTraits>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!--============================== PawnKind Patches ============================-->
+	<!-- Gives DLC / mod-appropriate apparel / mounts to PawnKinds -->
+	
+	<!--Add Ideology apparel to SatyrFeral-->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/PawnKindDef[defName="RBSF_SatyrFeral"]</xpath>
+			<value>
+				<apparelRequired>
+					<li>Apparel_Collar</li>
+					<li>Apparel_BodyStrap</li>
+				</apparelRequired>
+			</value>
+		</match>
+	</Operation>
+	
+	<!--Add Alpha Mythology mounts to PawnKindDefs -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Mythology</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Giddy-Up 2</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="RBSF_SatyrBard"]/modExtensions/li[1]/possibleMounts</xpath>
+				<value>
+					<li MayRequire="sarg.magicalmenagerie">
+						<key>MM_CeryneianHind</key>
+						<value>5</value>
+					</li>
+				</value>
+			</match>
+		</match>
+	</Operation>
+	
+	<!--Add Alpha Animals mounts to PawnKindDefs -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Giddy-Up 2</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="RBSF_SatyrBard"]/modExtensions/li[1]/possibleMounts</xpath>
+				<value>
+					<li MayRequire="sarg.alphaanimals">
+						<key>AA_GreyCoatedMouflon</key>
+						<value>5</value>
+					</li>
+				</value>
+			</match>
+		</match>
+	</Operation>
+	
+	<!--============================== Modded Trait Patches ============================-->
+	<!-- Add compatibility with mods that add new traits. Replaces some vanilla traits with these in the BackstoryDefs -->
+
+	<!-- Vanilla Traits Expanded Traits -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Traits Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- Child Bard -->
+	
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_ChildBard"]</xpath>
+					<value>
+						<forcedTraits>
+							<VTE_FunLoving>0</VTE_FunLoving>
+						</forcedTraits>
+					</value>
+				</li>
+				
+				<!-- Composer -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Composer"]</xpath>
+					<value>
+						<forcedTraits>
+							<VTE_Stoner>0</VTE_Stoner>
+						</forcedTraits>
+					</value>
+				</li>
+	
+				<!-- Travelling Bard -->
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/BackstoryDef[defName="RBSF_TravellingBard"]/forcedTraits/GreatMemory</xpath>
+					<value>
+						<VTE_Wanderlust>0</VTE_Wanderlust>
+					</value>
+				</li>
+	
+				<!-- Game Archer -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_GameArcher"]/forcedTraits</xpath>
+					<value>
+						<VTE_Brave>0</VTE_Brave>
+					</value>
+				</li>
+	
+				<!-- Jester -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Jester"]/forcedTraits</xpath>
+					<value>
+						<VTE_FunLoving>0</VTE_FunLoving>
+					</value>
+				</li>
+				
+				<!-- Dubious Apothecarist -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_DubiousApothecarist"]/forcedTraits</xpath>
+					<value>
+						<VTE_Tycoon>0</VTE_Tycoon>
+					</value>
+				</li>
+				
+				<!-- Roaming Minstrel -->
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/BackstoryDef[defName="RBSF_RoamingMinstrel"]/forcedTraits/DislikesMen</xpath>
+					<value>
+						<VTE_Wanderlust>0</VTE_Wanderlust>
+					</value>
+				</li>
+				
+				<!-- Minstrel -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Minstrel"]/forcedTraits</xpath>
+					<value>
+						<VTE_Coward>0</VTE_Coward>
+					</value>
+				</li>
+	
+				<!-- Gambler -->
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Gambler"]/forcedTraits/Nerves</xpath>
+					<value>
+						<VTE_Tycoon>0</VTE_Tycoon>
+						<VTE_FunLoving>0</VTE_FunLoving>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Consolidated Traits -->
+		
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[LC] Consolidated Traits</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!--Leader -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Leader"]</xpath>
+					<value>
+						<forcedTraits>
+							<RCT_Aptitude>1</RCT_Aptitude>
+						</forcedTraits>
+					</value>
+				</li>
+				
+				<!--Diplomat -->
+	
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Diplomat"]/forcedTraits</xpath>
+					<value>
+						<RCT_Trader>1</RCT_Trader>
+					</value>
+				</li>
+			
+				<!--Croupier -->
+	
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Croupier"]/forcedTraits</xpath>
+					<value>
+						<RCT_Trader>2</RCT_Trader>
+					</value>
+				</li>
+				
+				<!--Sheltered Child -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_ShelteredChild"]/forcedTraits</xpath>
+					<value>
+						<RCT_Savant>0</RCT_Savant>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!--============================== Misc Patches ============================-->
+	<!-- Add compatibility with other mods that hasn't been done via MayRequire -->
+	
+	<!-- RJW - Make uncouth pawns have an increased "holding-hands" frequency -->
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimJobWorld</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/TraitDef[defName="RBSF_Uncouth"]</xpath>
+			<value>
+				<statOffsets>
+					<SexFrequency>1.5</SexFrequency>
+				</statOffsets>
+			</value>
+		</match>
+	</Operation>
+	
+	<!-- Add FaunImplant sound if Roo's Faun Xenotype isn't present -->
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Roo's Faun Xenotype</li>
+		</mods>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs</xpath>
+			<value>
+				<SoundDef>
+					<defName>RBSF_FaunImplant</defName>
+					<context>MapOnly</context>
+					<maxSimultaneous>1</maxSimultaneous>
+					<subSounds>
+						<li>
+							<grains>
+								<li Class="AudioGrain_Clip">
+									<clipPath>RBSF_XenotypeSounds/RBSF_FaunImplant</clipPath>
+								</li>
+							</grains>
+							<volumeRange>50</volumeRange>
+							<pitchRange>1</pitchRange>
+						</li>
+					</subSounds>
+				</SoundDef>
+			</value>
+		</nomatch>
+	</Operation>
+	
+</Patch>
