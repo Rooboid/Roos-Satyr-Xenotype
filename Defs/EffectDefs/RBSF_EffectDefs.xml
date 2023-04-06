@@ -604,13 +604,13 @@
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
-				<scale>1.7~2.5</scale>
+				<scale>0.5~1.2</scale>
 				<spawnLocType>OnSource</spawnLocType>
 				<ticksBetweenMotes>280</ticksBetweenMotes>
 				<positionLerpFactor>0</positionLerpFactor>
 				<positionRadius>0</positionRadius>
 				<moteDef>Mote_MusicRing</moteDef>
-				<color>(130, 200, 79)</color>
+				<color>(10, 10, 10)</color>
 				<attachToSpawnThing>true</attachToSpawnThing>
 			</li>
 			<li>
@@ -634,7 +634,6 @@
 				<positionRadius>0</positionRadius>
 				<moteDef>Mote_MusicFiddle</moteDef>
 				<rotation>0</rotation>
-				<attachToSpawnThing>true</attachToSpawnThing>
 			</li>
 		</children>
 	</EffecterDef>
