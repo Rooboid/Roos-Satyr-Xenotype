@@ -372,7 +372,7 @@
     <iconPath>UI/Abilities/Resurrect</iconPath>
     <cooldownTicksRange>6840000~7560000</cooldownTicksRange> <!-- 1.9~2.1 years -->
     <warmupMote>Mote_ResurrectAbility</warmupMote>
-    <warmupStartSound>Resurrect_Cast</warmupStartSound>
+    <warmupStartSound>RBSF_MelodicElegyStartup</warmupStartSound>
    <category>Satyr</category>
     <displayOrder>600</displayOrder>
     <hostile>false</hostile>
@@ -380,8 +380,8 @@
       <verbClass>Verb_CastAbilityTouch</verbClass>
       <drawAimPie>false</drawAimPie>
       <range>-1</range>
-      <warmupTime>2</warmupTime>
-      <soundCast>Resurrect_Resolve</soundCast>
+      <warmupTime>9</warmupTime>
+      <soundCast>RBSF_MelodicElegyFail</soundCast>
       <targetParams>
         <canTargetPawns>false</canTargetPawns>
         <canTargetBuildings>false</canTargetBuildings>
@@ -390,7 +390,7 @@
       </targetParams>
     </verbProperties>
     <comps>
-      <li Class="CompProperties_Resurrect" />
+      <li Class="Roos_Satyr_Xenotype.RBSF_CompProperties_Deal_With_the_Devil" />
     </comps>
   </AbilityDef>
 
