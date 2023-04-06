@@ -19,7 +19,7 @@ namespace Roos_Satyr_Xenotype
             Log.Message("Target was " + target.ToString());
             var random = Rand.Value;
             Log.Message("Random value was " + random.ToString());
-            if (Rand.Value >= Props.chance)
+            if (random >= Props.chance)
             {
                 base.Apply(target, dest);
                 Log.Message("Success!");
