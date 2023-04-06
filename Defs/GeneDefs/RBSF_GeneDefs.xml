@@ -10,6 +10,7 @@
 		<description>Carriers of this gene possess goat-like ears.</description>
 		<iconPath>UI/GeneIcons/RBSF_GoatEars</iconPath>
 		<graphicData>
+		<graphicPath Inherit="False"/>
 			<graphicPaths>
 				<li>Things/Pawn/Humanlike/Ears/RBSF_GoatEarsA/RBSF_GoatEarsA</li>
 				<li>Things/Pawn/Humanlike/Ears/RBSF_GoatEarsB/RBSF_GoatEarsB</li>
@@ -43,7 +44,11 @@
 		<graphicData>
 			<graphicPaths>
 				<li>Things/Pawn/Humanlike/Horns/RBSF_GoatHornsA/RBSF_GoatHornsA</li>
+				<!-- Duplicated for higher chance-->
 				<li>Things/Pawn/Humanlike/Horns/RBSF_GoatHornsB/RBSF_GoatHornsB</li>
+				<li>Things/Pawn/Humanlike/Horns/RBSF_GoatHornsB/RBSF_GoatHornsB</li>
+				<li>Things/Pawn/Humanlike/Horns/RBSF_GoatHornsB/RBSF_GoatHornsB</li> 
+				<!-- Duplicated for higher chance-->
 				<li>Things/Pawn/Humanlike/Horns/RBSF_GoatHornsC/RBSF_GoatHornsC</li>
 				<li>Things/Pawn/Humanlike/Horns/RBSF_GoatHornsD/RBSF_GoatHornsD</li>
 				<li>Things/Pawn/Humanlike/Horns/RBSF_GoatHornsE/RBSF_GoatHornsE</li>
@@ -54,6 +59,9 @@
 			<layer>PostHeadgear</layer>
 			<drawNorthAfterHair>false</drawNorthAfterHair>
 		</graphicData>
+		<exclusionTags>
+			<li>SerenSensors</li>
+		</exclusionTags>
 		<abilities MayRequire ="Rooboid.Faun">
 			<li>RBSF_Ability_Ram</li>
 		</abilities>
@@ -132,9 +140,8 @@
 			</li>
 		</forcedTraits>
 		<suppressedTraits>
-			<li>
-				<def>Asexual</def>
-			</li>
+			<li><def>Asexual</def></li>
+			<li><def>Kind</def></li>
 		</suppressedTraits>
 		<missingGeneRomanceChanceFactor>0.9</missingGeneRomanceChanceFactor>
 		<!-- Symbol -->

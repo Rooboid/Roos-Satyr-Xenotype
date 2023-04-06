@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!--====================== Uncouth Interraction ======================-->
+	<!-- Vulgarity -->
+
 	<InteractionDef>
 		<defName>RBSF_Vulgarity</defName>
 		<label>vulgarity</label>
 		<workerClass>InteractionWorker_Chitchat</workerClass>
 		<symbol>Things/Mote/SpeechSymbols/RBSF_VulgarityIcon</symbol>
-		<socialFightBaseChance>0.001</socialFightBaseChance>
+		<socialFightBaseChance>0.005</socialFightBaseChance>
 	
 		<initiatorThought>Chitchat</initiatorThought>
 		<initiatorXpGainSkill>Social</initiatorXpGainSkill>
 		<initiatorXpGainAmount>2</initiatorXpGainAmount>
 		<recipientThought>RBSF_WasUncouth</recipientThought>
-	
 	
 		<logRulesInitiator>
 			<rulesStrings>
@@ -65,7 +67,6 @@
 				<li>uncouthfixed->[INITIATOR_nameDef] playfully mocked [RECIPIENT_nameDef]'s accent.</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] boasted about a certain one of [INITIATOR_possessive] body parts.</li>
 				
-		
 			</rulesStrings>
 		</logRulesInitiator>
 	</InteractionDef>
@@ -104,6 +105,46 @@
 			<li>
 				<label>uncouth</label>
 				<baseOpinionOffset>25</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Uncouth pawn is in a colony with beautiful pawns -->
+	
+	<ThoughtDef>
+		<defName>RBSF_BeautyInColony</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>no beautiful pawns in the colony</label>
+				<description>Bah, it's hard work being the most attractive one here...</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>a beautiful pawn in the colony</label>
+				<description>A beautiful pawn keeps catching my eye, and my-oh-my, are they a sight for sore eyes.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>some beautiful pawns in the colony</label>
+				<description>We've got some hotties in the colony, and I like it! I wonder if they could recruit any of their friends to join us too...?</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>surrounded by eye-candy</label>
+				<description>Everyone around here has such beautiful and smooth skin...w-wait. I've not got cataracts or something, have I?</description>
+				<baseMoodEffect>9</baseMoodEffect>
+			</li>
+			<li>
+				<label>awooga!</label>
+				<description>Every hour's dreamboat-o'clock around here! Just look at all the beauties in our colony, it's like a dream come true...</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+			<li>
+				<label>my own harem!</label>
+				<description>Awooga! There's just so many beautiful pawns around here, it's like my very own harem!\n\nWell...it would be, if any of them liked me.</description>
+				<baseMoodEffect>15</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

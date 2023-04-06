@@ -286,8 +286,6 @@
 					</value>
 				</li>
 			
-			
-			
 				<!-- Add Effect -->
 
 				<li Class="PatchOperationAdd">
@@ -650,7 +648,7 @@
 				<li>Giddy-Up 2</li>
 			</mods>
 			<match Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[defName="RBSF_SatyrBard"]/modExtensions/li[1]/possibleMounts</xpath>
+				<xpath>Defs/PawnKindDef[defName="SatyrBardParent"]/modExtensions/li[1]/possibleMounts</xpath>
 				<value>
 					<li MayRequire="sarg.magicalmenagerie">
 						<key>MM_CeryneianHind</key>
@@ -672,7 +670,7 @@
 				<li>Giddy-Up 2</li>
 			</mods>
 			<match Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[defName="RBSF_SatyrBard"]/modExtensions/li[1]/possibleMounts</xpath>
+				<xpath>Defs/PawnKindDef[defName="SatyrBardParent"]/modExtensions/li[1]/possibleMounts</xpath>
 				<value>
 					<li MayRequire="sarg.alphaanimals">
 						<key>AA_GreyCoatedMouflon</key>
@@ -835,7 +833,93 @@
 	</Operation>
 	
 	<!--============================== Misc Patches ============================-->
-	<!-- Add compatibility with other mods that hasn't been done via MayRequire -->
+	<!-- Add compatibility with other mods and misc functions that haven't been done via MayRequire -->
+	
+	<!-- Vanilla - Add music sheets to orbital trader and outlander trader inventory -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Orbital_BulkGoods"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>MusicSheet</tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>-3~2</countRange>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Orbital_Exotic"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>MusicSheet</tradeTag>
+				<thingDefCountRange>1~1</thingDefCountRange>
+				<countRange>-1~2</countRange>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Base_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>MusicSheet</tradeTag>
+				<thingDefCountRange>1~1</thingDefCountRange>
+				<countRange>-3~1</countRange>
+			</li>
+		</value>
+	</Operation>
+	
+	<!-- Vanilla - Add musical trader to tribal trader pool -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[@Name="TribeBase"]/caravanTraderKinds</xpath>
+		<value>
+			<li>RBSF_Visitor_Bards</li>
+		</value>
+	</Operation>
+	
+	<!-- Vanilla Factions Expanded - Medieval - Add musical trader to medieval faction trader pool -->
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[@Name="VFEM_MedievalFactionBase"]/caravanTraderKinds</xpath>
+			<value>
+				<li>RBSF_Visitor_Bards</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<!-- Vanilla Factions Expanded - Vikings - Add musical trader to viking faction trader pool -->
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Vikings</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[@Name="VFEV_VikingBase"]/caravanTraderKinds</xpath>
+			<value>
+				<li>RBSF_Visitor_Bards</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<!-- Elders Faction - Add musical trader to viking faction trader pool -->
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Elders Faction</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="FactionBase_Elders"]/caravanTraderKinds</xpath>
+			<value>
+				<li>RBSF_Visitor_Bards</li>
+			</value>
+		</match>
+	</Operation>
 	
 	<!-- RJW - Make uncouth pawns have an increased "holding-hands" frequency -->
 	
@@ -849,6 +933,41 @@
 				<statOffsets>
 					<SexFrequency>1.5</SexFrequency>
 				</statOffsets>
+			</value>
+		</match>
+	</Operation>
+	
+	<!-- [Alien/Race] Seren, from Stardust - Add RBSF_SerenGoatHorns gene, a hybrid of seren and satyr horns -->
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[Alien/Race] Seren, from Stardust</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs</xpath>
+			<value>
+				<GeneDef ParentName="GeneHeadboneBase">
+					<defName>RBSF_SerenGoatHorns</defName>
+					<label>seren goat horns</label>
+					<description>Seren sensors that have formed into the shape of a satyr's horns.</description>
+					<iconPath>ModCompats/UI/GeneIcons/RBSF_SerenGoatHorns</iconPath>
+					<displayOrderInCategory>115</displayOrderInCategory>
+					<graphicData>
+						<drawLoc>HeadTop</drawLoc>
+						<graphicPath>ModCompats/Things/Pawn/Humanlike/Horns/RBSF_SerenGoatHorns/RBSF_SerenGoatHorns</graphicPath>
+						<color>(255, 255, 255)</color>
+						<layer>PostHeadgear</layer>
+						<drawNorthAfterHair>false</drawNorthAfterHair>
+					</graphicData>
+					<exclusionTags>
+						<li>SerenSensors</li>
+					</exclusionTags>
+					<biostatCpx>0</biostatCpx>
+					<endogeneCategory>Headbone</endogeneCategory>
+					<displayCategory>Cosmetic</displayCategory>
+					<iconColor>(0.75, 0.75, 0.75)</iconColor>
+					<randomChosen>true</randomChosen>
+				</GeneDef>
 			</value>
 		</match>
 	</Operation>
