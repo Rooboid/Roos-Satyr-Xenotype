@@ -75,6 +75,9 @@
 				<canTargetSelf>true</canTargetSelf>
 			</targetParams>
 		</verbProperties>
+		<comps>
+			<li Class="Roos_Satyr_Xenotype.RBSF_CompProperties_AbilityMelodicHealing"/>
+		</comps>
 	</AbilityDef>
 	
 		
