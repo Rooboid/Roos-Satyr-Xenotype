@@ -42,7 +42,7 @@
 		</workDisables>
 	</BackstoryDef>
 	
-		<!--============================== Bard ============================-->
+	<!--============================== Bard ============================-->
 	<!-- Great gains in art and int -->
 
 	<BackstoryDef>
@@ -73,7 +73,7 @@
 		</requiredWorkTags>
 	</BackstoryDef>
 	
-		<!--============================== Captured ============================-->
+	<!--============================== Captured ============================-->
 	<!-- Great construction -->
 
 	<BackstoryDef>
@@ -106,9 +106,68 @@
 		</disallowedTraits>
 	</BackstoryDef>
 	
-	<!--============================== Satyr and Faun Backstories - Adulthood ============================-->
+	<!--============================== Scamp ============================-->
+	<!-- Cute all-rounder -->
+
+	<BackstoryDef>
+		<defName>RBSF_Scamp</defName>
+		<title>scamp</title>
+		<titleShort>scamp</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] was orphaned at a young age, and so was the responsibility of [PAWN_possessive] entire community. Elders doted on this adorable little scamp, and taught [PAWN_objective] a myriad of skills.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SatyrandFaun</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<disallowedTraits>
+			<Beauty>-2</Beauty>
+			<Beauty>-1</Beauty>
+		</disallowedTraits>
+	</BackstoryDef>
 	
-		<!--============================== Butler ============================-->
+	<!--============================== Chattel ============================-->
+	<!-- Sad and pretty rubbish -->
+
+	<BackstoryDef>
+		<defName>RBSF_Chattel</defName>
+		<title>chattel</title>
+		<titleShort>possession</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] was bought by a wealthy lord and lady, who exhibited [PAWN_objective] like an exotic good at social soirees. High-status attendees would poke and prod at this exotic xenotype, having never seen one so small and ugly in the flesh before. When an open window presented itself as an opportunity to [PAWN_nameDef], [PAWN_pronoun] fled, never to return to the husk of a life they once lived.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<spawnCategories>
+			<li>SatyrandFaun</li>
+		</spawnCategories>
+		<forcedTraits>
+			<Beauty>-1</Beauty>
+		</forcedTraits>
+		<workDisables>
+			<li>Social</li>
+		</workDisables>
+	</BackstoryDef>
+	
+	<!--============================== Satyr and Faun Backstories - Adulthood ============================-->
+	<!--============================== Butler ============================-->
 	<!-- A beautiful satyr to compensate for all the ugly ones -->
 
 	<BackstoryDef>
@@ -157,8 +216,7 @@
 		</requiredWorkTags>
 	</BackstoryDef>
 	
-	
-		<!--============================== Composer ============================-->
+	<!--============================== Composer ============================-->
 	<!-- Could blend in with tribal and outlander pawns -->
 
 	<BackstoryDef>
@@ -188,7 +246,7 @@
 		</workDisables>
 	</BackstoryDef>
 	
-			<!--============================== Travelling Bard ============================-->
+	<!--============================== Travelling Bard ============================-->
 	<!-- Great gains and traits, but balanced by being locked out of some good ones -->
 
 	<BackstoryDef>
@@ -234,7 +292,7 @@
 		</disallowedTraits>
 	</BackstoryDef>
 	
-			<!--============================== Gemcutter ============================-->
+	<!--============================== Gemcutter ============================-->
 	<!-- Good all-rounder, but held back from some desirable traits -->
 	
 	<BackstoryDef>
@@ -284,7 +342,7 @@
 		</possessions>
 	</BackstoryDef>
 	
-		<!--============================== Jester ============================-->
+	<!--============================== Jester ============================-->
 	<!-- Fantastic social gain, but lazy -->
 
 	<BackstoryDef>
@@ -322,7 +380,7 @@
 		</requiredWorkTags>
 	</BackstoryDef>
 	
-		<!--============================== Statue ============================-->
+	<!--============================== Statue ============================-->
 	<!-- Poor at all work types, but amazing traits to compensate! -->
 
 	<BackstoryDef>
@@ -432,8 +490,8 @@
 		</forcedTraits>
 	</BackstoryDef>
 	
-		<!--============================== Rhapsode ============================-->
-	<!-- Ancient Greek profession; fantastic social but incapable of almost anything else  -->
+	<!--============================== Rhapsode ============================-->
+	<!-- Ancient Greek profession; fantastic social but incapable of almost anything else -->
 	
 	<BackstoryDef>
 		<defName>RBSF_Rhapsode</defName>
@@ -503,4 +561,4 @@
 		</workDisables>
 	</BackstoryDef>
 	
-	</Defs>
+</Defs>

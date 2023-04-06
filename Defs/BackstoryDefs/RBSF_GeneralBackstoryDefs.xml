@@ -190,4 +190,62 @@
 		</forcedTraits>
 	</BackstoryDef>
 	
+	<!--============================== Entertainer ============================-->
+	<!-- A blank-ish slate that doesn't enforce any restrictions -->
+
+	<BackstoryDef>
+		<defName>RBSF_Entertainer</defName>
+		<title>entertainer</title>
+		<titleShort>bard</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef], with [PAWN_possessive] band of fellow performers, serenaded marketplace patrons with [PAWN_possessive] whimsical and comedic tunes. [PAWN_nameDef]’s lyrics told stories of legendary warriors, dramatic fantasies and witty anecdotes of [PAWN_possessive] own adventures.</baseDesc>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Bard</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>6</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>6</value>
+			</li>
+		</skillGains>
+	</BackstoryDef>
+	
+	<!--============================== Luthier ============================-->
+	<!-- Another blank-ish slate -->
+
+	<BackstoryDef>
+		<defName>RBSF_Luthier</defName>
+		<title>luthier</title>
+		<titleShort>luthier</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] manufactured guitars for a living, overseeing the entire process. From felling the tree that the instrument was carved from, to teaching buyers how to play a tune or two before they took their new purchase home, [PAWN_nameDef] was a dab hand at it all.</baseDesc>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Bard</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>7</value>
+			</li>
+		</skillGains>
+	</BackstoryDef>
+	
 </Defs>

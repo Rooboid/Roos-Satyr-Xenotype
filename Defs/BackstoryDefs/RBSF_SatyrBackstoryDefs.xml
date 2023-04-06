@@ -27,6 +27,95 @@
 			<SlowLearner>0</SlowLearner>
 		</forcedTraits>
 	</BackstoryDef>
+	
+	<!--============================== Trumpeter ============================-->
+	<!-- Very sad -->
+
+	<BackstoryDef>
+		<defName>RBSF_Trumpeter</defName>
+		<title>trumpeter</title>
+		<titleShort>trumpeter</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] tooted [PAWN_possessive] own horn, literally, at [PAWN_possessive] community’s ritual parades. \n\nThe meaning of these celebrations became all-too clear when the shaman of the community burned none-believers in a roaring, ritualistic fire before the parade attendees. [PAWN_nameDef] could never approach fire or toot the trumpet ever again, in fear of awakening that bygone trauma once more.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SatyrOnly</li>
+			<li>Bard</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<workDisables>
+		<li>Firefighting</li>
+		</workDisables>
+	</BackstoryDef>
+	
+	<!--============================== Rapscallion ============================-->
+	<!-- All-rounder but forced to be too smart -->
+
+	<BackstoryDef>
+		<defName>RBSF_Rapscallion</defName>
+		<title>rapscallion</title>
+		<titleShort>rapscallion</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] pilfered glasses from inns, reselling them at the market the very next day. Each and every coin that [PAWN_nameDef] earned went towards affording [PAWN_possessive] sickly father a cure for his illness. Growing up a breadwinner gave [PAWN_nameDef] a streak of independence that never seemed to fade, even into adulthood.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SatyrOnly</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<key>Social</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<forcedTraits>
+			<TooSmart>0</TooSmart>
+		</forcedTraits>
+	</BackstoryDef>
+	
+	<!--============================== Roustabout ============================-->
+	<!-- All-rounder with no forced traits -->
+
+	<BackstoryDef>
+		<defName>RBSF_Roustabout</defName>
+		<title>roustabout</title>
+		<titleShort>roustabout</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef], unlike many satyrs, was always willing to lend a hand to [PAWN_possessive] neighbours, and took up odd-jobs in farming and carpentry to make [PAWN_possessive] parents ends meet.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SatyrOnly</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>5</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<disallowedTraits>
+			<Industriousness>-1</Industriousness>
+			<Industriousness>-2</Industriousness>
+		</disallowedTraits>
+	</BackstoryDef>
 
 	<!--============================== Incognito ============================-->
 	<!-- Can't really think what skills this would buff, but its story-rich -->
@@ -524,6 +613,46 @@
 			<Nerves>-2</Nerves>
 			<Nerves>-1</Nerves>
 		</disallowedTraits>
+	</BackstoryDef>
+	
+		<!--============================== Loungelizard ============================-->
+	<!-- Increases melee, but adds bloodlust (Maybe that's a good thing?) -->
+	
+	<BackstoryDef>
+		<defName>RBSF_Loungelizard</defName>
+		<title>loungelizard</title>
+		<titleShort>gangster</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] typically lurked inside the town’s brothels; and whether or not [PAWN_pronoun] was looking for trouble, it usually found [PAWN_objective]. Fortunately, [PAWN_nameDef] not only had a way with words, but knives too, and used [PAWN_possessive] notoriety as a deterrent against unwelcome company who entered [PAWN_possessive] usual hangout spots. \n\nThe madams of the brothels always ensured that [PAWN_nameDef] had [PAWN_possessive] fill, in exchange for [PAWN_possessive] assured protection.</baseDesc>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<spawnCategories>
+			<li>SatyrOnly</li>
+			<li>Bard</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<key>Social</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<forcedTraits>
+			<Bloodlust>0</Bloodlust>
+		</forcedTraits>
+		<disallowedTraits>
+			<Asexual>0</Asexual>
+			<Kind>0</Kind>
+			<Industriousness>2</Industriousness>
+			<Industriousness>1</Industriousness>
+		</disallowedTraits>
+		<workDisables>
+			<li>Caring</li>
+			<li>ManualDumb</li>
+		</workDisables>
 	</BackstoryDef>
 	
 </Defs>
