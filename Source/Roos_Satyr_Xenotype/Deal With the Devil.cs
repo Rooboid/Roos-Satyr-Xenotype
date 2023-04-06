@@ -16,14 +16,12 @@ namespace Roos_Satyr_Xenotype
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
-            if(Rand.Chance(Props.chance) == true)
+            if(Rand.Value >= Props.chance)
             {
                 base.Apply(target, dest);
                 return;
             }
 
-            FireUtility.TryAttachFire(target.Thing, 5);
-            FireUtility.TryAttachFire(dest.Thing, 5);
             target.Pawn.Destroy();
         }
     }
