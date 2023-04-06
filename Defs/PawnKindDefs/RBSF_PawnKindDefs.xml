@@ -3,23 +3,21 @@
 
 	<!-- Satyr Bard - Weak, but sometimes carries music sheets. Appears in tribes and outlander unions -->
 		
-	<PawnKindDef>
-		<defName>RBSF_SatyrBard</defName>
+		<PawnKindDef Name ="SatyrBardParent" Abstract ="True">
 		<race>Human</race>
-		<isFighter>False</isFighter>
-		<label>satyr bard</label>
+		<isFighter>true</isFighter>
 		<defaultFactionType MayRequire="Rooboid.SatyrFaun.Expanded">RBSFE_TribeFae</defaultFactionType>
 		<maxGenerationAge>90</maxGenerationAge>
 		<combatPower>30</combatPower>
-		<invNutrition>2.00</invNutrition>
-		<chemicalAddictionChance>0.03</chemicalAddictionChance>
+		<chemicalAddictionChance>0.07</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0.02</backstoryCryptosleepCommonality>
 		<initialWillRange>4~5</initialWillRange>
 		<initialResistanceRange>6~12</initialResistanceRange>
-		<acceptArrestChanceFactor>1.5</acceptArrestChanceFactor>
+		<acceptArrestChanceFactor>1.2</acceptArrestChanceFactor>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
+					<li>Bard</li>
 					<li>Tribal</li>
 					<li>SatyrOnly</li>
 					<li>SatyrandFaun</li>
@@ -33,6 +31,8 @@
 		<weaponMoney>100~500</weaponMoney>
 		<weaponTags>
 			<li>Instrument</li>
+			<li>Instrument</li>
+			<li>MedievalMeleeBasic</li>
 		</weaponTags>
 		<apparelMoney>40~600</apparelMoney>
 		<apparelTags>
@@ -51,11 +51,11 @@
 				<color>(150,100,60)</color>
 			</li>
 		</specificApparelRequirements>
-		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsMoney>50~170</techHediffsMoney>
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>
-		<techHediffsChance>0.10</techHediffsChance>
+		<techHediffsChance>0.04</techHediffsChance>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet>
 			<xenotypeChances>
@@ -89,7 +89,7 @@
 					<countRange>1~1</countRange>
 				</li>
 				<li>
-					<thingDef>RBSFE_MelodicHymnSheet</thingDef>
+					<thingDef>RBSF_MelodicHymnSheet</thingDef>
 					<countRange>1~1</countRange>
 				</li>
 			</subOptionsChooseOne>
@@ -97,6 +97,229 @@
 		<modExtensions>
 			<li MayRequire="Owlchemist.GiddyUp" Class="GiddyUp.CustomMounts">
 				<mountChance>15</mountChance>
+				<possibleMounts>
+					<li>
+						<key>Horse</key>
+						<value>80</value>
+					</li>
+				</possibleMounts>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	<!-- Common -->
+	
+	<PawnKindDef ParentName ="SatyrBardParent">
+		<defName>RBSF_SatyrBardTalentless</defName>
+		<label>satyr bard</label>
+	</PawnKindDef>
+		
+	<PawnKindDef ParentName ="SatyrBardParent">
+		<defName>RBSF_SatyrBardSonata</defName>
+		<label>satyr bard</label>
+		<abilities>
+		<li>RBSF_MelodicSonata</li>
+		</abilities>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName ="SatyrBardParent">
+		<defName>RBSF_SatyrBardHealing</defName>
+		<label>satyr bard</label>
+		<abilities>
+		<li>RBSF_MelodicHealing</li>
+		</abilities>
+	</PawnKindDef>
+	
+	<!-- Uncommon -->
+	
+	<PawnKindDef ParentName ="SatyrBardParent">
+		<defName>RBSF_SatyrBardWarcall</defName>
+		<label>satyr bard</label>
+		<abilities>
+		<li>RBSF_MelodicWarcall</li>
+		</abilities>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName ="SatyrBardParent">
+		<defName>RBSF_SatyrBardHymn</defName>
+		<label>satyr bard</label>
+		<abilities>
+		<li>RBSF_MelodicHymn</li>
+		</abilities>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName ="SatyrBardParent">
+		<defName>RBSF_SatyrBardTwoAbility</defName>
+		<label>satyr bard</label>
+		<abilities>
+		<li>RBSF_MelodicSonata</li>
+		<li>RBSF_MelodicWarcall</li>
+		</abilities>
+	</PawnKindDef>
+	
+	<!-- Rare -->
+	
+	<PawnKindDef ParentName ="SatyrBardParent">
+		<defName>RBSF_SatyrBardLullaby</defName>
+		<label>satyr bard</label>
+		<abilities>
+		<li>RBSF_MelodicLullaby</li>
+		</abilities>
+		<skills>
+			<li>
+				<skill>Artistic</skill>
+				<range>4~13</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName ="SatyrBardParent">
+		<defName>RBSF_SatyrBardThreeAbility</defName>
+		<label>satyr bard</label>
+		<abilities>
+		<li>RBSF_MelodicHymn</li>
+		<li>RBSF_MelodicHealing</li>
+		<li>RBSF_MelodicLullaby</li>
+		</abilities>
+		<skills>
+			<li>
+				<skill>Artistic</skill>
+				<range>10~12</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+	
+	<!-- Satyr Bandit - Cut down version of Satyr Thief from Roo's Faun and Satyr Xenotypes Expanded -->
+		
+	<PawnKindDef>
+		<defName>RBSF_SatyrBandit</defName>
+		<race>Human</race>
+		<isFighter>False</isFighter>
+		<label>satyr bandit</label>
+		<defaultFactionType MayRequire="Rooboid.SatyrFaun.Expanded">RBSFE_TribeFae</defaultFactionType>
+		<maxGenerationAge>90</maxGenerationAge>
+		<combatPower>45</combatPower>
+		<chemicalAddictionChance>0.11</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.02</backstoryCryptosleepCommonality>
+		<initialWillRange>5~8</initialWillRange>
+		<initialResistanceRange>6~12</initialResistanceRange>
+		<acceptArrestChanceFactor>0.7</acceptArrestChanceFactor>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Offworld</li>
+					<li>SatyrOnly</li>
+					<li>SatyrandFaun</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>SatyrandFaun</li>
+					<li>SatyrOnly</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<weaponMoney>77~730</weaponMoney>
+		<weaponStyleDef/>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+			<li>NeolithicRangedHeavy</li>
+		</weaponTags>
+		<apparelMoney>40~600</apparelMoney>
+		<apparelTags>
+			<li>Neolithic</li>
+			<li>Medieval</li>
+			<!-- Medieval Overhaul -->
+			<li>DankPyon_BrigandThug</li>
+			<li>DankPyon_Mercenary</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(64,61,58)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(64,61,58)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<color>(64,61,58)</color>
+			</li>
+		</specificApparelRequirements>
+		<techHediffsMoney>111~350</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.05</techHediffsChance>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">1</RBSF_Satyr>
+			</xenotypeChances>
+		</xenotypeSet>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~16</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>4~10</range>
+			</li>
+		</skills>
+		<gearHealthRange>0.3~1</gearHealthRange>
+		<disallowedTraits>
+			<li>BodyPurist</li>
+		</disallowedTraits>
+		<inventoryOptions>
+			<skipChance>0.75</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Gold</thingDef>
+					<countRange>5~10</countRange>
+				</li>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>10~60</countRange>
+				</li>
+				<li>
+					<thingDef>Beer</thingDef>
+					<countRange>1~7</countRange>
+				</li>
+				<li>
+					<thingDef>RBSF_MelodicHealingSongSheet</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+				<li MayRequire="DankPyon.Medieval.Overhaul">
+					<thingDef>DankPyon_BowlGold</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+				<li MayRequire="DankPyon.Medieval.Overhaul">
+					<thingDef>DankPyon_Cider</thingDef>
+					<countRange>1~10</countRange>
+				</li>
+				<li MayRequire="DankPyon.Medieval.Overhaul">
+					<thingDef>DankPyon_IronIngot</thingDef>
+					<countRange>5~10</countRange>
+				</li>
+				<li MayRequire="DankPyon.Medieval.Overhaul">
+					<thingDef>DankPyon_Ruby</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+				<li MayRequire="sarg.alphaanimals">
+					<thingDef>AA_BlackTruffles</thingDef>
+					<countRange>1~5</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<modExtensions>
+			<li MayRequire="Owlchemist.GiddyUp" Class="GiddyUp.CustomMounts">
+				<mountChance>4</mountChance>
 				<possibleMounts>
 					<li>
 						<key>Horse</key>

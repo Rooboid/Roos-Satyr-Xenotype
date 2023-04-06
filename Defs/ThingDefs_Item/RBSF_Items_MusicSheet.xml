@@ -51,7 +51,7 @@
 	<!-- Hymn -->
 	
 	<ThingDef ParentName="VirtuosoMusicSheetBase">
-		<defName>RBSFE_MelodicHymnSheet</defName>
+		<defName>RBSF_MelodicHymnSheet</defName>
 		<label>melodic hymn music sheet</label>
 		<description>A music sheet for a spiritual melody. Pawns with the Virtuoso gene can study it to learn a new ability.</description>
 		<graphicData>
