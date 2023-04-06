@@ -26,7 +26,7 @@ namespace Roos_Satyr_Xenotype
                 return;
             }
             
-            target.Pawn.Corpse.Destroy();
+            target.Thing.Destroy();
             Log.Message("Failure...");
             return;
         }
