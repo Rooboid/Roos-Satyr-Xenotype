@@ -379,6 +379,7 @@
     <verbProperties>
       <verbClass>Verb_CastAbilityTouch</verbClass>
       <drawAimPie>false</drawAimPie>
+	  <warmupEffecter>RBSF_MusicElegy</warmupEffecter>
       <range>-1</range>
       <warmupTime>9</warmupTime>
       <soundCast>RBSF_MelodicElegyFail</soundCast>

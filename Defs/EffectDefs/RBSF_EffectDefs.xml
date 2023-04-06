@@ -96,6 +96,23 @@
 		</mote>
 	</ThingDef>
 	
+		<!-- Music Fiddle -->
+	
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_MusicFiddle</defName>
+		<graphicData>
+			<texPath>Things/Mote/GoldenFiddle/RBSF_GoldenFiddle</texPath>
+			<shaderType>Mote</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<drawOffscreen>false</drawOffscreen>
+		<mote>
+			<fadeInTime>0.2</fadeInTime>
+			<solidTime>0.5</solidTime>
+			<fadeOutTime>0</fadeOutTime>
+		</mote>
+	</ThingDef>
+	
 	<!-- Music Range Indicator -->
 	
 	<ThingDef ParentName="MoteBase">
@@ -568,7 +585,59 @@
 	</EffecterDef>
 
 
-
+	<!-- Elegy -->
+	
+	<EffecterDef>
+		<defName>RBSF_MusicElegy</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<fleckDef>RBSF_MusicNotes</fleckDef>
+				<color>(231, 209, 82)</color>
+				<spawnLocType>OnSource</spawnLocType>
+				<rotationRate>-10~10</rotationRate>
+				<angle>-90~90</angle>
+				<speed>0.6~0.9</speed>
+				<burstCount>1</burstCount>
+				<chancePerTick>0.02</chancePerTick>
+				<scale>0.5~0.7</scale>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<scale>1.7~2.5</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<ticksBetweenMotes>280</ticksBetweenMotes>
+				<positionLerpFactor>0</positionLerpFactor>
+				<positionRadius>0</positionRadius>
+				<moteDef>Mote_MusicRing</moteDef>
+				<color>(130, 200, 79)</color>
+				<attachToSpawnThing>true</attachToSpawnThing>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<scale>1~1.3</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<ticksBetweenMotes>300</ticksBetweenMotes>
+				<positionLerpFactor>0</positionLerpFactor>
+				<positionRadius>0</positionRadius>
+				<moteDef>Mote_MusicAura</moteDef>
+				<color>(130, 200, 79)</color>
+				<angle>0~360</angle>
+				<attachToSpawnThing>true</attachToSpawnThing>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<scale>1.2</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<ticksBetweenMotes>20</ticksBetweenMotes>
+				<positionLerpFactor>0</positionLerpFactor>
+				<positionRadius>0</positionRadius>
+				<moteDef>Mote_MusicFiddle</moteDef>
+				<rotation>0</rotation>
+				<attachToSpawnThing>true</attachToSpawnThing>
+			</li>
+		</children>
+	</EffecterDef>
 
 
 
