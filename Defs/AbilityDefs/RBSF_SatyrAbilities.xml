@@ -369,7 +369,7 @@
     <defName>RBSF_MelodicElegy</defName>
     <label>melodic elegy</label>
     <description>The pawn plays an ancient melody capable of resurrecting a fallen pawn. The melody is said to reperesent a duel between the pawn and the devil themselves; if they win, the corpse is restored. If they lose, however, the soul is purged from the body, leaving nothing but bile and ash behind.</description>
-    <iconPath>UI/Abilities/Resurrect</iconPath>
+    <iconPath>UI/GeneIcons/RBSF_Ability_Elegy</iconPath>
     <cooldownTicksRange>6840000~7560000</cooldownTicksRange> <!-- 1.9~2.1 years -->
     <warmupMote>Mote_ResurrectAbility</warmupMote>
     <warmupStartSound>RBSF_MelodicElegyStartup</warmupStartSound>
@@ -379,6 +379,7 @@
     <verbProperties>
       <verbClass>Verb_CastAbilityTouch</verbClass>
       <drawAimPie>false</drawAimPie>
+	  <warmupEffecter>RBSF_MusicElegy</warmupEffecter>
       <range>-1</range>
       <warmupTime>9</warmupTime>
       <soundCast>RBSF_MelodicElegyFail</soundCast>
