@@ -44,13 +44,34 @@
 			<warmupEffecter>RBSF_MusicSonata</warmupEffecter>
 			<warmupTime>480</warmupTime>
 			<requireLineOfSight>false</requireLineOfSight>
-			<range>4.5</range>
+			<range>7</range>
 			<drawAimPie>false</drawAimPie>
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
 			</targetParams>
 		</verbProperties>
+		<comps>
+			<li Class="Roos_Satyr_Xenotype.RBSF_CompProperties_AbilityMelodicSonata"/>
+		</comps>
 	</AbilityDef>
+
+	<!--====================== Heard Sonata ======================-->
+	<!-- Is a thought, not a hediff -->
+  
+	<ThoughtDef>
+		<defName>RBSF_HeardSonata</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<durationDays>0.02</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>listening to a beautiful melody</label>
+				<description>That wonderful song makes me feel like everything is going to be okay.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 	
 	<!--====================== Ability: Melodic Healing ======================-->
 	<!-- Medium -->
@@ -69,7 +90,7 @@
 			<warmupEffecter>RBSF_MusicHealing</warmupEffecter>
 			<warmupTime>480</warmupTime>
 			<requireLineOfSight>false</requireLineOfSight>
-			<range>4.5</range>
+			<range>7</range>
 			<drawAimPie>false</drawAimPie>
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
@@ -137,12 +158,15 @@
 			<warmupEffecter>RBSF_MusicWarcall</warmupEffecter>
 			<warmupTime>480</warmupTime>
 			<requireLineOfSight>false</requireLineOfSight>
-			<range>4.5</range>
+			<range>7</range>
 			<drawAimPie>false</drawAimPie>
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
 			</targetParams>
 		</verbProperties>
+		<comps>
+			<li Class="Roos_Satyr_Xenotype.RBSF_CompProperties_AbilityMelodicWarcall"/>
+		</comps>
 	</AbilityDef>
 	
 	<HediffDef>
@@ -188,12 +212,15 @@
 			<warmupEffecter>RBSF_MusicLullaby</warmupEffecter>
 			<warmupTime>480</warmupTime>
 			<requireLineOfSight>false</requireLineOfSight>
-			<range>4.5</range>
+			<range>7</range>
 			<drawAimPie>false</drawAimPie>
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
 			</targetParams>
 		</verbProperties>
+		<comps>
+			<li Class="Roos_Satyr_Xenotype.RBSF_CompProperties_AbilityMelodicLullaby"/>
+		</comps>
 	</AbilityDef>
 	
 	<HediffDef>
@@ -235,12 +262,15 @@
 			<warmupEffecter>RBSF_MusicHymn</warmupEffecter>
 			<warmupTime>480</warmupTime>
 			<requireLineOfSight>false</requireLineOfSight>
-			<range>6</range>
+			<range>7</range>
 			<drawAimPie>false</drawAimPie>
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
 			</targetParams>
 		</verbProperties>
+		<comps>
+			<li Class="Roos_Satyr_Xenotype.RBSF_CompProperties_AbilityMelodicHymn"/>
+		</comps>
 	</AbilityDef>
 	
 	<HediffDef>
@@ -267,77 +297,7 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
-	<!--====================== Heard Sonata ======================-->
-	<!-- Is a thought, not a hediff -->
-  
-	<ThoughtDef>
-		<defName>RBSF_HeardSonata</defName>
-		<validWhileDespawned>true</validWhileDespawned>
-		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
-		<durationDays>0.02</durationDays>
-		<stackLimit>1</stackLimit>
-		<stages>
-			<li>
-				<label>listening to a beautiful melody</label>
-				<description>That wonderful song makes me feel like everything is going to be okay.</description>
-				<baseMoodEffect>10</baseMoodEffect>
-			</li>
-		</stages>
-	</ThoughtDef>
-		
-	<!--====================== Ability: Melodic Bugtest ======================-->
-	<!-- Sorry it's so messy -->
-	
-	<AbilityDef>
-		<defName>RBSF_MelodicBugtest</defName>
-		<label>melodic bugtest</label>
-		<description>The user tests a buggy ability that Roo made.</description>
-		<iconPath>UI/GeneIcons/RBSF_Ability_Healing</iconPath>
-		<displayOrder>51</displayOrder>
-		
-		<stunTargetWhileCasting>true</stunTargetWhileCasting>
-		<hostile>false</hostile>
-		<jobDef>CastAbilityOnThingWithoutWeaponInterruptible</jobDef>
-		<writeCombatLog>True</writeCombatLog>
-		<category>Satyr</category>
-		<statBases>
-			<Ability_Duration>1000</Ability_Duration>
-			<Ability_EffectRadius>0</Ability_EffectRadius>
-		</statBases>
-		<targetRequired>false</targetRequired>
-		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-		<showCastingProgressBar>false</showCastingProgressBar>
-		<comps>
-			<li Class="CompProperties_AbilityRequiresCapacity">
-				<capacity>Talking</capacity>
-			</li>
-			<li Class="CompProperties_AbilityGiveHediff">
-			<compClass>CompAbilityEffect_GiveHediff</compClass>
-				<hediffDef>RBSF_PlayingTune</hediffDef>
-				<onlyBrain>true</onlyBrain>
-				<onlyApplyToSelf>true</onlyApplyToSelf>
-				<severity>1</severity>
-			</li>
-			<li Class="CompProperties_AbilityEffecterOnTarget">
-				<effecterDef>RBSF_MusicHealing</effecterDef>
-				<maintainForTicks>1000</maintainForTicks>
-				<scale>1</scale>
-			</li>
-		</comps>
-		<cooldownTicksRange>0</cooldownTicksRange>
-		<aiCanUse>false</aiCanUse>
-		<verbProperties>
-			<verbClass>Verb_CastAbility</verbClass>
-			<warmupTime>0</warmupTime>
-			<requireLineOfSight>false</requireLineOfSight>
-			<range>6</range>
-			<drawAimPie>true</drawAimPie>
-			<targetParams>
-				<canTargetSelf>true</canTargetSelf>
-			</targetParams>
-		</verbProperties>
-	</AbilityDef>
+
 	
 	<!--====================== Playing Tune HeDiff ======================-->
 	<!-- Hopefully Applied to pawns using virtuoso ability -->

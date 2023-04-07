@@ -54,7 +54,7 @@
   <ItemGroup>
     <Compile Include="Deal With the Devil.cs" />
     <Compile Include="Instrument Equip Skillgain.cs" />
-    <Compile Include="Melodic Abilities.cs" />
+    <Compile Include="All Melodic Abilities.cs" />
     <Compile Include="DefOfs.cs" />
     <Compile Include="Startup Constructor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

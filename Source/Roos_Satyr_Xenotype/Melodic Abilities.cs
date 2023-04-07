@@ -1,7 +1,4 @@
 ﻿using RimWorld;
-using System.Collections.Generic;
-using System.Security.Cryptography;
-using UnityEngine;
 using Verse;
 
 namespace Roos_Satyr_Xenotype
@@ -13,26 +10,25 @@ namespace Roos_Satyr_Xenotype
         {
             get
             {
-                return (RBSF_CompProperties_AbilityMelodicHealing)this.props;
+                return this.props as RBSF_CompProperties_AbilityMelodicHealing;
             }
         }
 
-        public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
+        public override void CompTick()
         {
-            Log.Message("Melodic Sonata Begun");
+            if (!this.parent.pawn.IsHashIntervalTick(100))
+                return;
 
-            Map map = this.parent.pawn.Map;
-            var radius = Props.radius;
-            var pawnPos = this.parent.pawn.Position;
-            Hediff hediff = new Hediff();
-            hediff.def = RBSF_DefOf.RBSF_HeardHealing;
+            Hediff hediff = new Hediff
+            {
+                def = RBSF_DefOf.RBSF_HeardHealing,
+                Severity = 1
+            };
 
-            base.Apply(target, dest);
+            Utilities.ApplySong(this.parent.pawn, Props.radius, hediff);
 
-            Utilities.ApplyHediffInArea(map, pawnPos, radius, hediff);
-            
+            base.CompTick();
         }
-
     }
 
     public class RBSF_CompProperties_AbilityMelodicHealing : CompProperties_AbilityEffect
@@ -45,3 +41,4 @@ namespace Roos_Satyr_Xenotype
         public int radius = 6;
     }
 }
+

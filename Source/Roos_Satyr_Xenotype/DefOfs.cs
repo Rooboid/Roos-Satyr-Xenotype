@@ -20,5 +20,7 @@ namespace Roos_Satyr_Xenotype
         public static HediffDef RBSF_HeardHymn;
 
         public static WeaponClassDef RBSF_Instrument;
+
+        public static HediffDef RBSF_PlayingTune;
     }
 }

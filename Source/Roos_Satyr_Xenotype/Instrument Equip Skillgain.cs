@@ -1,9 +1,6 @@
-﻿
-using System;
-using System.Collections.Generic;
-using Verse;
-using HarmonyLib;
+﻿using HarmonyLib;
 using RimWorld;
+using Verse;
 
 namespace Roos_Satyr_Xenotype
 {
