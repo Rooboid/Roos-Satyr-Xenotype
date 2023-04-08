@@ -16,6 +16,7 @@
 		<spawnCategories>
 			<li>SatyrOnly</li>
 			<li>SatyrWild</li>
+			<li>Hellgoat</li>
 		</spawnCategories>
 		<skillGains>
 			<li>
@@ -50,7 +51,7 @@
 			</li>
 		</skillGains>
 		<workDisables>
-		<li>Firefighting</li>
+			<li>Firefighting</li>
 		</workDisables>
 	</BackstoryDef>
 	
@@ -130,6 +131,7 @@
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
 			<li>SatyrOnly</li>
+			<li>Hellgoat</li>
 		</spawnCategories>
 	</BackstoryDef>
 
@@ -406,7 +408,7 @@
 		<title>exiled nomad</title>
 		<titleShort>exiled</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>A rancerous night of drinking at [PAWN_nameDef]'s campside lead to a fatal argument between [PAWN_objective] and [PAWN_possesive] closest ally. Ultimately, only [PAWN_nameDef] returned home, and all fingers were pointed at [PAWN_objective], assuming that [PAWN_pronoun] was responsible. [PAWN_nameDef] was forced out of the village, never to return.</baseDesc>
+		<baseDesc>A rancerous night of drinking at [PAWN_nameDef]'s campside lead to a fatal argument between [PAWN_objective] and [PAWN_possessive] closest ally. Ultimately, only [PAWN_nameDef] returned home, and all fingers were pointed at [PAWN_objective], assuming that [PAWN_pronoun] was responsible. [PAWN_nameDef] was forced out of the village, never to return.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -615,7 +617,7 @@
 		</disallowedTraits>
 	</BackstoryDef>
 	
-		<!--============================== Loungelizard ============================-->
+	<!--============================== Loungelizard ============================-->
 	<!-- Increases melee, but adds bloodlust (Maybe that's a good thing?) -->
 	
 	<BackstoryDef>
@@ -623,7 +625,7 @@
 		<title>loungelizard</title>
 		<titleShort>gangster</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] typically lurked inside the town’s brothels; and whether or not [PAWN_pronoun] was looking for trouble, it usually found [PAWN_objective]. Fortunately, [PAWN_nameDef] not only had a way with words, but knives too, and used [PAWN_possessive] notoriety as a deterrent against unwelcome company who entered [PAWN_possessive] usual hangout spots. \n\nThe madams of the brothels always ensured that [PAWN_nameDef] had [PAWN_possessive] fill, in exchange for [PAWN_possessive] assured protection.</baseDesc>
+		<baseDesc>[PAWN_nameDef] lurked inside the town’s brothels; and whether or not [PAWN_pronoun] was looking for trouble, it usually found [PAWN_objective]. Fortunately, [PAWN_nameDef] not only had a way with words, but knives too, and used them as a deterrent against unwelcome company who entered [PAWN_possessive] usual hangout spots. \n\nThe madams of the brothels always ensured that [PAWN_nameDef] had [PAWN_possessive] fill, in exchange for keeping the premises safe.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -653,6 +655,124 @@
 			<li>Caring</li>
 			<li>ManualDumb</li>
 		</workDisables>
+	</BackstoryDef>
+	
+	<!--============================== Flaming Bard ============================-->
+	<!-- Works in the Hellgoat backstory. -->
+	
+	<BackstoryDef>
+		<defName>RBSF_FlamingBard</defName>
+		<title>flaming bard</title>
+		<titleShort>bard</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] joined an impid community as an entertainer. Though a typically depressive race, impids would crack- well, not entirely a smile- but a grimace, at [PAWN_nameDef]’s songs and jokes.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>Hellgoat</li>
+			<li>Bard</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<key>Social</key>
+				<value>8</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>-3</value>
+			</li>
+		</skillGains>
+		<disallowedTraits>
+			<Kind>0</Kind>
+		</disallowedTraits>
+		<workDisables>
+			<li>Animals</li>
+			<li>PlantWork</li>
+		</workDisables>
+	</BackstoryDef>
+	
+	<!--============================== Hellgoat ============================-->
+	<!-- Works in the Hellgoat backstory. -->
+	
+	<BackstoryDef>
+		<defName>RBSF_Hellgoat</defName>
+		<title>hellgoat</title>
+		<titleShort>hellgoat</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>Contrary to the pacifist nature of many satyrs, [PAWN_nameDef] always had a thirst for calamity and bloodshed. [PAWN_pronoun] lived alongside an impid tribe, and was heralded as a masterful tactician there.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>Hellgoat</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<key>Social</key>
+				<value>5</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>5</value>
+			</li>
+		</skillGains>
+		<disallowedTraits>
+			<Kind>0</Kind>
+		</disallowedTraits>
+		<workDisables>
+			<li>Caring</li>
+			<li>ManualDumb</li>
+		</workDisables>
+	</BackstoryDef>
+	
+	<!--============================== Dark Shaman ============================-->
+	<!-- Works in the Hellgoat backstory. -->
+	
+	<BackstoryDef>
+		<defName>RBSF_DarkShaman</defName>
+		<title>dark shaman</title>
+		<titleShort>shaman</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>During an expedition through the scorching desert, [PAWN_nameDef] was apprehended by a band of impids and enslaved by their tribe as a labourer. As time progressed, [PAWN_pronoun] outwitted and outsmarted [PAWN_possessive] masters time and time again with deceitful tricks and riddles, eventually earning a place in the tribe as a shaman.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>Hellgoat</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>9</value>
+			</li>
+		</skillGains>
+	</BackstoryDef>
+	
+	<!--============================== Flamesmith ============================-->
+	<!-- Works in the Hellgoat backstory. -->
+	
+	<BackstoryDef>
+		<defName>RBSF_Flamesmith</defName>
+		<title>flamesmith</title>
+		<titleShort>flamesmith</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] married into a community of impids.\n\n As war broke out across the badlands, [PAWN_nameDef] was drafted onto the front lines, and brandished a range of explosive weapons to keep [PAWN_possessive] spouse and family safe from outside invaders.</baseDesc>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<spawnCategories>
+			<li>Hellgoat</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>6</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>6</value>
+			</li>
+		</skillGains>
+		<forcedTraits>
+			<Pyromaniac>0</Pyromaniac>
+		</forcedTraits>
 	</BackstoryDef>
 	
 </Defs>

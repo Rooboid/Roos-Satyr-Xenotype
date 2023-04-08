@@ -17,7 +17,7 @@
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1</drawSize>
 		</graphicData>
-		<relicChance Inherit ="False">0</relicChance>
+		<relicChance Inherit="False">0</relicChance>
 		<soundInteract>RBSF_LuteEquip</soundInteract>
 		<techLevel>Neolithic</techLevel>
 		<weaponTags>
@@ -28,7 +28,7 @@
 			<li>RBSF_Instrument</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>1225</WorkToMake>
+			<WorkToMake>2200</WorkToMake>
 			<Mass>0.8</Mass>
 			<Beauty>15</Beauty>
 			<MarketValue>53</MarketValue>
@@ -91,7 +91,7 @@
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1</drawSize>
 		</graphicData>
-		<relicChance Inherit ="False">0</relicChance>
+		<relicChance Inherit="False">0</relicChance>
 		<soundInteract>RBSF_LyreEquip</soundInteract>
 		<techLevel>Medieval</techLevel>
 		<weaponTags>
@@ -102,7 +102,7 @@
 			<li>RBSF_Instrument</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>7500</WorkToMake>
+			<WorkToMake>4300</WorkToMake>
 			<Mass>0.4</Mass>
 			<Beauty>20</Beauty>
 			<MarketValue>40</MarketValue>
@@ -165,7 +165,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.6</drawSize>
 		</graphicData>
-		<relicChance Inherit ="False">0</relicChance>
+		<relicChance Inherit="False">0</relicChance>
 		<soundInteract>RBSF_ReedFluteEquip</soundInteract>
 		<techLevel>Neolithic</techLevel>
 		<weaponTags>
@@ -176,12 +176,12 @@
 			<li>RBSF_Instrument</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>7500</WorkToMake>
+			<WorkToMake>2300</WorkToMake>
 			<Mass>0.2</Mass>
 			<MarketValue>35</MarketValue>
 		</statBases>
 		<equippedAngleOffset>-90</equippedAngleOffset>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 			<li>Metallic</li>
@@ -213,6 +213,90 @@
 			<li>Instrument</li>
 		</tradeTags>
 	</ThingDef>
+	
+	<!-- Bodhran -->
+		
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>RBSF_Bodhran</defName>
+		<label>bodhrán</label>
+		<description>A traditional drum that passively increases the wielder's artistic skill. Throwing it at an enemy will cause it to smash and break.</description>
+		<graphicData>
+			<texPath>Things/Equipment/WeaponMelee/RBSF_Bodhran</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.95</drawSize>
+		</graphicData>
+		<relicChance Inherit="False">0</relicChance>
+		<soundInteract>RBSF_BodhranEquip</soundInteract>
+		<techLevel>Neolithic</techLevel>
+		<weaponTags>
+			<li>Instrument</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Neolithic</li>
+			<li>RBSF_Instrument</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.3</Mass>
+			<MarketValue>35</MarketValue>
+		</statBases>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costStuffCount>35</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costList>
+			<WoodLog>15</WoodLog>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_ShootOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RBSF_Bullet_Bodhran</defaultProjectile>
+				<warmupTime>0.8</warmupTime>
+				<range>10</range>
+				<soundCast>ThrowGrenade</soundCast>
+				<onlyManualCast>true</onlyManualCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>bodhrán</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>1.1</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<displayPriority>441</displayPriority>
+		</recipeMaker>
+		<tradeTags>
+			<li>Instrument</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>RBSF_Bullet_Bodhran</defName>
+		<label>bodhrán</label>
+		<graphicData>
+			<texPath>Things/Equipment/WeaponMelee/Projectile</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>RBSF_BluntBodhranDamage</damageDef>
+			<damageAmountBase>3</damageAmountBase>
+			<stoppingPower>1.3</stoppingPower>
+			<speed>35</speed>
+		</projectile>
+	</ThingDef>
 		
 	<DamageDef ParentName="BluntBase">
 		<defName>RBSF_BluntLuteDamage</defName>
@@ -230,6 +314,12 @@
 		<defName>RBSF_BluntReedFluteDamage</defName>
 		<label>blunt</label>
 		<damageEffecter>RBSF_Impact_ReedFlute</damageEffecter>
+	</DamageDef>
+	
+	<DamageDef ParentName="BluntBase">
+		<defName>RBSF_BluntBodhranDamage</defName>
+		<label>blunt</label>
+		<damageEffecter>RBSF_Impact_Bodhran</damageEffecter>
 	</DamageDef>
   
 	<!--====================== Instrument Impact Effects ======================-->
@@ -279,6 +369,25 @@
 			<li>
 				<subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
 				<soundDef>MeleeHit_Wood</soundDef>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<fleckDef>RBSF_InstrumentImpact</fleckDef>
+				<positionLerpFactor>0</positionLerpFactor>
+				<scale>0.8~2</scale>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+	
+		<!-- Bodhran Flute -->
+	
+	<EffecterDef>
+		<defName>RBSF_Impact_Bodhran</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+				<soundDef>RBSF_BodhranHit</soundDef>
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>

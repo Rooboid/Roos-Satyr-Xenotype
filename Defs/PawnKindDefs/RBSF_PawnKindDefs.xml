@@ -3,7 +3,7 @@
 
 	<!-- Satyr Bard - Weak, but sometimes carries music sheets. Appears in tribes and outlander unions -->
 		
-		<PawnKindDef Name ="SatyrBardParent" Abstract ="True">
+	<PawnKindDef Name="SatyrBardParent" Abstract="True">
 		<race>Human</race>
 		<isFighter>true</isFighter>
 		<defaultFactionType MayRequire="Rooboid.SatyrFaun.Expanded">RBSFE_TribeFae</defaultFactionType>
@@ -109,61 +109,61 @@
 	
 	<!-- Common -->
 	
-	<PawnKindDef ParentName ="SatyrBardParent">
+	<PawnKindDef ParentName="SatyrBardParent">
 		<defName>RBSF_SatyrBardTalentless</defName>
 		<label>satyr bard</label>
 	</PawnKindDef>
 		
-	<PawnKindDef ParentName ="SatyrBardParent">
+	<PawnKindDef ParentName="SatyrBardParent">
 		<defName>RBSF_SatyrBardSonata</defName>
 		<label>satyr bard</label>
 		<abilities>
-		<li>RBSF_MelodicSonata</li>
+			<li>RBSF_MelodicSonata</li>
 		</abilities>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName ="SatyrBardParent">
+	<PawnKindDef ParentName="SatyrBardParent">
 		<defName>RBSF_SatyrBardHealing</defName>
 		<label>satyr bard</label>
 		<abilities>
-		<li>RBSF_MelodicHealing</li>
+			<li>RBSF_MelodicHealing</li>
 		</abilities>
 	</PawnKindDef>
 	
 	<!-- Uncommon -->
 	
-	<PawnKindDef ParentName ="SatyrBardParent">
+	<PawnKindDef ParentName="SatyrBardParent">
 		<defName>RBSF_SatyrBardWarcall</defName>
 		<label>satyr bard</label>
 		<abilities>
-		<li>RBSF_MelodicWarcall</li>
+			<li>RBSF_MelodicWarcall</li>
 		</abilities>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName ="SatyrBardParent">
+	<PawnKindDef ParentName="SatyrBardParent">
 		<defName>RBSF_SatyrBardHymn</defName>
 		<label>satyr bard</label>
 		<abilities>
-		<li>RBSF_MelodicHymn</li>
+			<li>RBSF_MelodicHymn</li>
 		</abilities>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName ="SatyrBardParent">
+	<PawnKindDef ParentName="SatyrBardParent">
 		<defName>RBSF_SatyrBardTwoAbility</defName>
 		<label>satyr bard</label>
 		<abilities>
-		<li>RBSF_MelodicSonata</li>
-		<li>RBSF_MelodicWarcall</li>
+			<li>RBSF_MelodicSonata</li>
+			<li>RBSF_MelodicWarcall</li>
 		</abilities>
 	</PawnKindDef>
 	
 	<!-- Rare -->
 	
-	<PawnKindDef ParentName ="SatyrBardParent">
+	<PawnKindDef ParentName="SatyrBardParent">
 		<defName>RBSF_SatyrBardLullaby</defName>
 		<label>satyr bard</label>
 		<abilities>
-		<li>RBSF_MelodicLullaby</li>
+			<li>RBSF_MelodicLullaby</li>
 		</abilities>
 		<skills>
 			<li>
@@ -173,14 +173,29 @@
 		</skills>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName ="SatyrBardParent">
+	<PawnKindDef ParentName="SatyrBardParent">
 		<defName>RBSF_SatyrBardThreeAbility</defName>
 		<label>satyr bard</label>
 		<abilities>
-		<li>RBSF_MelodicHymn</li>
-		<li>RBSF_MelodicHealing</li>
-		<li>RBSF_MelodicLullaby</li>
+			<li>RBSF_MelodicHymn</li>
+			<li>RBSF_MelodicHealing</li>
+			<li>RBSF_MelodicLullaby</li>
 		</abilities>
+		<skills>
+			<li>
+				<skill>Artistic</skill>
+				<range>10~12</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SatyrBardParent">
+		<defName>RBSF_SatyrBardElegy</defName>
+		<label>satyr bard</label>
+		<abilities>
+			<li>RBSF_MelodicElegy</li>
+		</abilities>
+		<apparelColor Inherit="False">(223,200,63)</apparelColor>
 		<skills>
 			<li>
 				<skill>Artistic</skill>
@@ -329,6 +344,72 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+	
+	<PawnKindDef ParentName="TribalPenitentBase">
+		<defName>RBSF_Hellgoat</defName>
+		<label>hellgoat</label>
+		<weaponTags>
+			<li>NeolithicRangedFlame</li>
+			<li>GrenadeFlame</li>
+		</weaponTags>
+		<combatPower>70</combatPower>
+		<defaultFactionType>TribeSavageImpid</defaultFactionType>
+		<apparelColor>(35,35,35)</apparelColor>
+		<forcedHairColor>(35,35,35)</forcedHairColor>
+		<skinColorOverride Inherit="False">(35,35,35)</skinColorOverride>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelRequired>
+			<li MayRequire="Rooboid.Minotaur">RBApparel_Tailcoat</li>
+			<li>Apparel_Pants</li>
+			<li>Apparel_CollarShirt</li>
+		</apparelRequired>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Bard</li>
+					<li>Offworld</li>
+					<li>SatyrOnly</li>
+					<li>SatyrandFaun</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Hellgoat</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">1</RBSF_Satyr>
+			</xenotypeChances>
+		</xenotypeSet>
+		<styleItemTags>
+			<li>
+				<tag>Punk</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardFae</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooFacePunk</tag>
+				<baseWeight>0.1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooBodyPunk</tag>
+				<baseWeight>0.2</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</PawnKindDef>
 
 	<!-- Feral Satyr - Appears in tribes -->
 	
@@ -349,7 +430,6 @@
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		<gearHealthRange>1</gearHealthRange>
-		<!-- -->
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -369,6 +449,9 @@
 				<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">1</RBSF_Satyr>
 			</xenotypeChances>
 		</xenotypeSet>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
 	</PawnKindDef>
 
 </Defs>

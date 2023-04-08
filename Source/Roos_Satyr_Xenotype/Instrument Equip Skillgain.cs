@@ -1,6 +1,4 @@
 ﻿
-using System;
-using System.Collections.Generic;
 using Verse;
 using HarmonyLib;
 using RimWorld;
@@ -14,10 +12,14 @@ namespace Roos_Satyr_Xenotype
     {
         static void Postfix(Pawn ___pawn)
         {
-            var defName = ___pawn.equipment?.Primary?.def?.weaponClasses?.Contains(RBSF_DefOf.RBSF_Instrument);
-            if (defName == true)
-                ___pawn.skills.Learn(SkillDefOf.Artistic, 5);
+            bool? defContainsClass = ___pawn.equipment?.Primary?.def?.weaponClasses?.Contains(RBSF_DefOf.RBSF_Instrument);
+            if (defContainsClass == true)
+            {
+                if (___pawn.IsHashIntervalTick(250))
+                {
+                    ___pawn.skills.Learn(SkillDefOf.Artistic, 4);
+                }
+            }
         }
     }
-
 }

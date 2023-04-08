@@ -195,7 +195,7 @@
 			<match Class="PatchOperationAdd">
 				<xpath>Defs/FactionDef[@Name="VFEV_VikingBase"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
-					<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.15</RBSF_Satyr>
+					<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.09</RBSF_Satyr>
 				</value>
 			</match>
 		</match>
@@ -301,6 +301,7 @@
 				<!-- Rare -->
 				<RBSF_SatyrBardThreeAbility>0.05</RBSF_SatyrBardThreeAbility>
 				<RBSF_SatyrBardLullaby>0.05</RBSF_SatyrBardLullaby>
+				<RBSF_SatyrBardElegy>0.05</RBSF_SatyrBardElegy>
 			</value>
 		</match>
 	</Operation>
@@ -328,7 +329,7 @@
 	
 	<!-- Adds bards to tribal traders -->
 		
-		<Operation Class="PatchOperationConditional">
+	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[6]/guards</xpath>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[6]/guards</xpath>
@@ -343,13 +344,14 @@
 				<!-- Rare -->
 				<RBSF_SatyrBardThreeAbility>0.2</RBSF_SatyrBardThreeAbility>
 				<RBSF_SatyrBardLullaby>0.2</RBSF_SatyrBardLullaby>
+				<RBSF_SatyrBardElegy>0.05</RBSF_SatyrBardElegy>
 			</value>
 		</match>
-		</Operation>
+	</Operation>
 		
-		<!-- Adds bards to tribal raids -->
+	<!-- Adds bards to tribal raids -->
 		
-		<Operation Class="PatchOperationConditional">
+	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[1]/options</xpath>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[1]/options</xpath>
@@ -364,9 +366,10 @@
 				<!-- Rare -->
 				<RBSF_SatyrBardThreeAbility>0.2</RBSF_SatyrBardThreeAbility>
 				<RBSF_SatyrBardLullaby>0.2</RBSF_SatyrBardLullaby>
+				<RBSF_SatyrBardElegy>0.05</RBSF_SatyrBardElegy>
 			</value>
 		</match>
-		</Operation>
+	</Operation>
 	
 	<!-- Adds feral satyr/fauns to tribal raids -->
 	
@@ -392,7 +395,7 @@
 		</match>
 	</Operation>
 	
-		<!-- Adds bandits to pirate raids -->
+	<!-- Adds bandits to pirate raids -->
 	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[@Name="PirateBandBase"]/pawnGroupMakers</xpath>
@@ -401,6 +404,40 @@
 			<value>
 				<RBSF_SatyrBandit>5</RBSF_SatyrBandit>
 			</value>
+		</match>
+	</Operation>
+	
+	<!-- Adds hellgoats to Impid raids -->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="TribeSavageImpid"]/pawnGroupMakers</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[defName="TribeSavageImpid"]/pawnGroupMakers/li[1]/options</xpath>
+					<value>
+						<RBSF_Hellgoat>3</RBSF_Hellgoat>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[defName="TribeSavageImpid"]/pawnGroupMakers/li[2]/options</xpath>
+					<value>
+						<RBSF_Hellgoat>6</RBSF_Hellgoat>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[defName="TribeSavageImpid"]/pawnGroupMakers/li[3]/options</xpath>
+					<value>
+						<RBSF_Hellgoat>7</RBSF_Hellgoat>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[defName="TribeSavageImpid"]/pawnGroupMakers/li[7]/options</xpath>
+					<value>
+						<RBSF_Hellgoat>5</RBSF_Hellgoat>
+					</value>
+				</li>
+			</operations>
 		</match>
 	</Operation>
 

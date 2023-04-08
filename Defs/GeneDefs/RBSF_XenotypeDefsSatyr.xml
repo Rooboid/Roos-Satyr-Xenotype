@@ -4,8 +4,8 @@
 		<defName>RBSF_Satyr</defName>
 		<label>satyr</label>
 		<!-- Desc -->
-		<description>Within the clutches of the forest live the Satyr; a race of goat-like pranksters with a penchant for mischief and debauchery. They’re easily distinguished from Fauns by their goatish horns and curly beards, but before you even catch sight of them, Satyrs can be identified by their raucous laughter, limericks, and seemingly never-ending campfire songs. Despite their lecherous ways and hatred of hard work, their farsightedness makes them great rangers, and they possess an abundance of agricultural and musical knowledge; that is, if you can coax it out of them. \n\nThe Satyr carry a conniving reputation amongst travellers; though mainly harmless, Satyrs find great joy in engaging passers-by with riddles and tricks in the hopes of stealing a coin, a beer or a kiss or two.</description>
-		<descriptionShort>Satyrs are uncouth, goat-like pranksters with a penchant for causing mischief. Their unguligrade legs and thick beards adapt them well for traversing unsteady terrain, but the average Satyr would much rather spend their time making music, drinking alcohol and chasing beauties than put themselves in danger.</descriptionShort>
+		<description>Within the clutches of the forest live the Satyr; a race of goat-like pranksters with a penchant for mischief and debauchery. They’re easily distinguished from Fauns by their goatish horns and curly beards, but before you even catch sight of them, Satyrs can be identified by their raucous laughter, limericks, and seemingly never-ending campfire songs. Despite their lecherous ways and hatred of hard work, their farsightedness makes them great rangers, and they possess an abundance of agricultural and musical knowledge; that is, if you can coax it out of them. \n\nThe Satyr carry a conniving reputation amongst travellers; though mainly harmless, Satyrs find great joy in engaging passers-by with riddles and tricks in the hopes of stealing a coin, a beer or a kiss on the cheek.</description>
+		<descriptionShort>Satyrs are uncouth, goat-like pranksters with a penchant for causing mischief. Their unguligrade legs and thick beards adapt them well for traversing unsteady terrain, but the average Satyr would much rather spend their time making music, drinking alcohol and chasing beauties than putting themselves in danger.</descriptionShort>
 		<!-- Stats -->
 		<iconPath>UI/XenotypeIcons/RBS_Satyr</iconPath>
 		<inheritable>true</inheritable>
@@ -30,7 +30,7 @@
 			<!-- Misc -->
 			<li>MaxTemp_SmallIncrease</li>
 			<li>Sleepy</li> 
-			<li>RBSF_Uncouth</li> <!-- TODO -->		
+			<li>RBSF_Uncouth</li>	
 		</genes>
 	</XenotypeDef>
 </Defs>

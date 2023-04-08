@@ -69,6 +69,11 @@
 				<thingDefCountRange>1~2</thingDefCountRange>
 				<countRange>-1~2</countRange>
 			</li>
+			
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>RBSF_MelodicElegySheet</thingDef>
+				<countRange>-8~1</countRange>
+			</li>
       
 			<!-- Slaves -->
 			<!-- none -->

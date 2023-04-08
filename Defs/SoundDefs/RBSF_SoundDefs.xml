@@ -270,6 +270,25 @@
 		</subSounds>
 	</SoundDef>
 	
+		<!-- Bodhran Equip -->
+
+	<SoundDef>
+		<defName>RBSF_BodhranHit</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RBSF_WeaponSounds/RBSF_Bodhran/RBSF_BodhranHit</clipPath>
+					</li>
+				</grains>
+				<volumeRange>43</volumeRange>
+				<pitchRange>1</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
 		<!-- Reed Flute Equip -->
 
 	<SoundDef>
@@ -281,6 +300,25 @@
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>RBSF_WeaponSounds/RBSF_ReedFlute/RBSF_ReedFluteEquip</clipPath>
+					</li>
+				</grains>
+				<volumeRange>43</volumeRange>
+				<pitchRange>1</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Bodhran Equip -->
+
+	<SoundDef>
+		<defName>RBSF_BodhranEquip</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RBSF_WeaponSounds/RBSF_Bodhran/RBSF_BodhranEquip</clipPath>
 					</li>
 				</grains>
 				<volumeRange>43</volumeRange>

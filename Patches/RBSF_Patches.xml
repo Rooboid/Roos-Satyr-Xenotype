@@ -950,11 +950,11 @@
 					<defName>RBSF_SerenGoatHorns</defName>
 					<label>seren goat horns</label>
 					<description>Seren sensors that have formed into the shape of a satyr's horns.</description>
-					<iconPath>ModCompats/UI/GeneIcons/RBSF_SerenGoatHorns</iconPath>
+					<iconPath>UI/GeneIcons/RBSF_SerenGoatHorns</iconPath>
 					<displayOrderInCategory>115</displayOrderInCategory>
 					<graphicData>
 						<drawLoc>HeadTop</drawLoc>
-						<graphicPath>ModCompats/Things/Pawn/Humanlike/Horns/RBSF_SerenGoatHorns/RBSF_SerenGoatHorns</graphicPath>
+						<graphicPath>Things/Pawn/Humanlike/Horns/RBSF_SerenGoatHorns/RBSF_SerenGoatHorns</graphicPath>
 						<color>(255, 255, 255)</color>
 						<layer>PostHeadgear</layer>
 						<drawNorthAfterHair>false</drawNorthAfterHair>

@@ -50,7 +50,7 @@
 		<title>bard</title>
 		<titleShort>bard</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] performed in town squares for tips, usually reciting traditional poetry or tales of local legends and folklore. As [PAWN_pronoun] grew older, so did [PAWN_possessive] talent in playing various instruments. By adolescence, [PAWN_nameDef] had a proficiency in over five instruments.</baseDesc>
+		<baseDesc>[PAWN_nameDef] performed in town squares for tips, usually reciting traditional poetry or tales of local legends and folklore. As [PAWN_pronoun] grew, so did [PAWN_possessive] talent in playing various instruments. By adolescence, [PAWN_nameDef] had a proficiency in over five instruments.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -152,7 +152,7 @@
 		<title>chattel</title>
 		<titleShort>possession</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was bought by a wealthy lord and lady, who exhibited [PAWN_objective] like an exotic good at social soirees. High-status attendees would poke and prod at this exotic xenotype, having never seen one so small and ugly in the flesh before. When an open window presented itself as an opportunity to [PAWN_nameDef], [PAWN_pronoun] fled, never to return to the husk of a life they once lived.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was bought by an aristocratic couple, who exhibited [PAWN_objective] like an exotic good at social soirees. High-status attendees would poke and prod at this exotic xenotype, having never seen one so small and ugly in the flesh before. When an open window presented itself as an opportunity to [PAWN_nameDef], [PAWN_pronoun] fled, never to return to the husk of a life [PAWN_pronoun] once lived.</baseDesc>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<spawnCategories>
@@ -305,6 +305,7 @@
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
 			<li>SatyrandFaun</li>
+			<li>Hellgoat</li>
 		</spawnCategories>
 		<skillGains>
 			<li>
@@ -393,6 +394,7 @@
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
 			<li>SatyrandFaun</li>
+			<li>Hellgoat</li>
 		</spawnCategories>
 		<skillGains>
 			<li>
@@ -465,7 +467,7 @@
 		<title>dubious apothecarist</title>
 		<titleShort>apothecarist</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>Accidentally fermenting a rare genus of jungle plant lead [PAWN_nameDef] to a life of herbal drug trafficking and crime. The festering plant, when consumed, brought [PAWN_nameDef] to a high of unpredictable proportions, so [PAWN_pronoun] began to harvest and process this potent concoction and sell it to travelling merchants. \n\nWeeks passed, and merchants returned to [PAWN_nameDef], battered and bruised, begging [PAWN_pronoun] for more, lest their customers get angrier and more desperate. In time, [PAWN_nameDef] made a fortune from [PAWN_possessive] underground dealership.</baseDesc>
+		<baseDesc>Accidentally fermenting a rare genus of jungle plant brought [PAWN_nameDef] to a high of unpredictable proportions, so [PAWN_pronoun] began to harvest and process this potent drug and sell it to travelling merchants. \n\nWeeks passed, and merchants returned to [PAWN_nameDef], battered and bruised, begging [PAWN_objective] for more, lest their customers get angrier and more desperate. In time, [PAWN_nameDef] made a fortune from [PAWN_possessive] underground dealership, before fleeing for concerns of [PAWN_possessive] safety.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>

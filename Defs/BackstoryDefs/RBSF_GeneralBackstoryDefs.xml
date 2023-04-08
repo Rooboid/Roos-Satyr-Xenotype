@@ -94,6 +94,7 @@
 			<li>SatyrandFaun</li>
 			<li>Pirate</li>
 			<li>Tribal</li>
+			<li>Hellgoat</li>
 		</spawnCategories>
 		<skillGains>
 			<li>
@@ -174,6 +175,7 @@
 		<spawnCategories>
 			<li>SatyrOnly</li>
 			<li>Pirate</li>
+			<li>Hellgoat</li>
 		</spawnCategories>
 		<skillGains>
 			<li>

@@ -35,7 +35,7 @@
 		<label>melodic sonata</label>
 		<description>The user performs an uplifting tune that’s guaranteed to put a smile on people’s faces. Anyone who hears this song will feel uplifted for a while.</description>
 		<iconPath>UI/GeneIcons/RBSF_Ability_Sonata</iconPath>
-		<displayOrder>53</displayOrder>
+		<displayOrder>51</displayOrder>
 		<cooldownTicksRange>60000</cooldownTicksRange>
 		<aiCanUse>false</aiCanUse>
 		<hostile>false</hostile>
@@ -80,6 +80,7 @@
 		</comps>
 	</AbilityDef>
 	
+	<!-- Healing HeDiff -->
 		
 	<HediffDef>
 		<defName>RBSF_HeardHealing</defName>
@@ -120,7 +121,7 @@
 		</stages>
 	</HediffDef>
 	
-	<!--====================== Ability: Melodic Warcall ======================--> <!-- TODO -->
+	<!--====================== Ability: Melodic Warcall ======================-->
 	<!-- Medium -->
 	
 	<AbilityDef ParentName="MelodicBase">
@@ -144,6 +145,8 @@
 			</targetParams>
 		</verbProperties>
 	</AbilityDef>
+	
+	<!-- Warcall HeDiff -->
 	
 	<HediffDef>
 		<defName>RBSF_HeardWarcall</defName>
@@ -179,7 +182,7 @@
 		<label>melodic lullaby</label>
 		<description>The user plays a beautiful lullaby, bringing any pawns around them to their knees with exhaustion.</description>
 		<iconPath>UI/GeneIcons/RBSF_Ability_Lullaby</iconPath>
-		<displayOrder>50</displayOrder>
+		<displayOrder>53</displayOrder>
 		<cooldownTicksRange>60000</cooldownTicksRange>
 		<aiCanUse>true</aiCanUse>
 		<hostile>true</hostile>
@@ -195,6 +198,8 @@
 			</targetParams>
 		</verbProperties>
 	</AbilityDef>
+	
+	<!-- Lullaby HeDiff -->
 	
 	<HediffDef>
 		<defName>RBSF_HeardLullaby</defName>
@@ -228,7 +233,7 @@
 		<label>melodic hymn</label>
 		<description>The user plays a beautiful, spiritual tune, aiding pawns around them in their meditation. As long as the song continues, nearby pawns will be able to meditate much faster.</description>
 		<iconPath>UI/GeneIcons/RBSF_Ability_Hymn</iconPath>
-		<displayOrder>50</displayOrder>
+		<displayOrder>53</displayOrder>
 		<cooldownTicksRange>60000</cooldownTicksRange>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
@@ -242,6 +247,8 @@
 			</targetParams>
 		</verbProperties>
 	</AbilityDef>
+	
+	<!-- Hymn HeDiff -->
 	
 	<HediffDef>
 		<defName>RBSF_HeardHymn</defName>
@@ -267,6 +274,39 @@
 			</li>
 		</stages>
 	</HediffDef>
+	
+	<!--====================== Melodic Elegy ======================-->
+	<!-- A 50/50 chance of reving a dead pawn -->
+		
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>RBSF_MelodicElegy</defName>
+		<label>melodic elegy</label>
+		<description>The pawn plays an ancient melody that has a 50% chance of resurrecting a fallen pawn, but a 50% chance of permanently destroying the corpse instead. \n\nIn fae culture, the melody is said to reperesent a duel between the pawn and the devil itself; if they win, the corpse is restored to life. If they lose, however, the soul is taken by the devil, destroying the corpse and leaving nothing but bile and ash behind.</description>
+		<iconPath>UI/GeneIcons/RBSF_Ability_Elegy</iconPath>
+		<cooldownTicksRange>3600000</cooldownTicksRange><!-- 1 Year -->
+		<warmupMote>Mote_ResurrectAbility</warmupMote>
+		<warmupStartSound>RBSF_MelodicElegyStartup</warmupStartSound>
+		<category>Satyr</category>
+		<displayOrder>54</displayOrder>
+		<hostile>false</hostile>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<warmupEffecter>RBSF_MusicElegy</warmupEffecter>
+			<range>-1</range>
+			<warmupTime>9.6</warmupTime>
+			<soundCast>RBSF_MelodicElegyFail</soundCast>
+			<targetParams>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetCorpses>true</canTargetCorpses>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="Roos_Satyr_Xenotype.RBSF_CompProperties_Deal_With_the_Devil"/>
+		</comps>
+	</AbilityDef>
 	
 	<!--====================== Heard Sonata ======================-->
 	<!-- Is a thought, not a hediff -->
@@ -313,7 +353,7 @@
 				<capacity>Talking</capacity>
 			</li>
 			<li Class="CompProperties_AbilityGiveHediff">
-			<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
 				<hediffDef>RBSF_PlayingTune</hediffDef>
 				<onlyBrain>true</onlyBrain>
 				<onlyApplyToSelf>true</onlyApplyToSelf>
@@ -340,8 +380,7 @@
 	</AbilityDef>
 	
 	<!--====================== Playing Tune HeDiff ======================-->
-	<!-- Hopefully Applied to pawns using virtuoso ability -->
-		
+	<!-- Applied to pawns using virtuoso ability -->
 		
 	<HediffDef>
 		<defName>RBSF_PlayingTune</defName>
@@ -361,39 +400,4 @@
 		</stages>
 	</HediffDef>
 		
-		
-	<!--====================== Melodic Elegy ======================-->
-	<!-- Description -->
-		
-	<AbilityDef ParentName="AbilityTouchBase">
-    <defName>RBSF_MelodicElegy</defName>
-    <label>melodic elegy</label>
-    <description>The pawn plays an ancient melody capable of resurrecting a fallen pawn. The melody is said to reperesent a duel between the pawn and the devil themselves; if they win, the corpse is restored. If they lose, however, the soul is purged from the body, leaving nothing but bile and ash behind.</description>
-    <iconPath>UI/GeneIcons/RBSF_Ability_Elegy</iconPath>
-    <cooldownTicksRange>6840000~7560000</cooldownTicksRange> <!-- 1.9~2.1 years -->
-    <warmupMote>Mote_ResurrectAbility</warmupMote>
-    <warmupStartSound>RBSF_MelodicElegyStartup</warmupStartSound>
-   <category>Satyr</category>
-    <displayOrder>600</displayOrder>
-    <hostile>false</hostile>
-    <verbProperties>
-      <verbClass>Verb_CastAbilityTouch</verbClass>
-      <drawAimPie>false</drawAimPie>
-	  <warmupEffecter>RBSF_MusicElegy</warmupEffecter>
-      <range>-1</range>
-      <warmupTime>9</warmupTime>
-      <soundCast>RBSF_MelodicElegyFail</soundCast>
-      <targetParams>
-        <canTargetPawns>false</canTargetPawns>
-        <canTargetBuildings>false</canTargetBuildings>
-        <canTargetCorpses>true</canTargetCorpses>
-        <canTargetMechs>false</canTargetMechs>
-      </targetParams>
-    </verbProperties>
-    <comps>
-      <li Class="Roos_Satyr_Xenotype.RBSF_CompProperties_Deal_With_the_Devil" />
-    </comps>
-  </AbilityDef>
-
-	
 </Defs>

@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <StyleItemCategoryDef>
+    <defName>RBSFE_Fae</defName>
+    <label>fae</label>
+  </StyleItemCategoryDef>
+
 
 	<BeardDef>
 		<defName>RBSF_SatyrBeardA</defName>
 		<label>RBSF_Yule</label>
 		<texPath>Things/Pawn/Humanlike/Beards/RBSF_SatyrBeardA</texPath>
 		<styleGender>Male</styleGender>
-		<category>Rural</category>
+		<category>RBSFE_Fae</category>
 		<styleTags>
 			<li>BeardBushy</li>
 			<li>BeardLong</li>
@@ -21,7 +26,7 @@
 		<label>RBSF_Goatee</label>
 		<texPath>Things/Pawn/Humanlike/Beards/RBSF_SatyrBeardB</texPath>
 		<styleGender>Male</styleGender>
-		<category>Rural</category>
+		<category>RBSFE_Fae</category>
 		<styleTags>
 			<li>BeardBushy</li>
 			<li>BeardRural</li>
@@ -35,7 +40,7 @@
 		<label>RBSF_Trident</label>
 		<texPath>Things/Pawn/Humanlike/Beards/RBSF_SatyrBeardC</texPath>
 		<styleGender>Male</styleGender>
-		<category>Punk</category>
+		<category>RBSFE_Fae</category>
 		<styleTags>
 			<li>BeardBushy</li>
 			<li>BeardPunk</li>
@@ -48,7 +53,7 @@
 		<label>RBSF_Thick</label>
 		<texPath>Things/Pawn/Humanlike/Beards/RBSF_SatyrBeardD</texPath>
 		<styleGender>Male</styleGender>
-		<category>Tribal</category>
+		<category>RBSFE_Fae</category>
 		<styleTags>
 			<li>BeardBushy</li>
 			<li>BeardTribal</li>
@@ -61,7 +66,7 @@
 		<label>RBSF_Nest</label>
 		<texPath>Things/Pawn/Humanlike/Beards/RBSF_SatyrBeardE</texPath>
 		<styleGender>Male</styleGender>
-		<category>Tribal</category>
+		<category>RBSFE_Fae</category>
 		<styleTags>
 			<li>BeardBushy</li>
 			<li>BeardTribal</li>
@@ -74,7 +79,7 @@
 		<label>RBSF_Ribbon</label>
 		<texPath>Things/Pawn/Humanlike/Beards/RBSF_SatyrBeardF</texPath>
 		<styleGender>Male</styleGender>
-		<category>Misc</category>
+		<category>RBSFE_Fae</category>
 		<styleTags>
 			<li>BeardBushy</li>
 			<li>BeardFae</li>
@@ -86,7 +91,7 @@
 		<label>RBSF_DeVito</label>
 		<texPath>Things/Pawn/Humanlike/Beards/RBSF_SatyrBeardG</texPath>
 		<styleGender>Male</styleGender>
-		<category>Urban</category>
+		<category>RBSFE_Fae</category>
 		<styleTags>
 			<li>BeardBushy</li>
 			<li>BeardUrban</li>
@@ -99,7 +104,7 @@
 		<label>RBSF_Pinecone</label>
 		<texPath>Things/Pawn/Humanlike/Beards/RBSF_SatyrBeardH</texPath>
 		<styleGender>Male</styleGender>
-		<category>Rural</category>
+		<category>RBSFE_Fae</category>
 		<styleTags>
 			<li>BeardBushy</li>
 			<li>BeardRural</li>
@@ -112,7 +117,7 @@
 		<label>RBSF_Twin-Tip</label>
 		<texPath>Things/Pawn/Humanlike/Beards/RBSF_SatyrBeardI</texPath>
 		<styleGender>Male</styleGender>
-		<category>Punk</category>
+		<category>RBSFE_Fae</category>
 		<styleTags>
 			<li>BeardBushy</li>
 			<li>BeardPunk</li>
@@ -125,7 +130,7 @@
 		<label>RBSF_Streak</label>
 		<texPath>Things/Pawn/Humanlike/Beards/RBSF_SatyrBeardJ</texPath>
 		<styleGender>Male</styleGender>
-		<category>Urban</category>
+		<category>RBSFE_Fae</category>
 		<styleTags>
 			<li>BeardBushy</li>
 			<li>BeardUrban</li>
@@ -138,7 +143,7 @@
 		<label>RBSF_Plait</label>
 		<texPath>Things/Pawn/Humanlike/Beards/RBSF_SatyrBeardK</texPath>
 		<styleGender>Male</styleGender>
-		<category>Tribal</category>
+		<category>RBSFE_Fae</category>
 		<styleTags>
 			<li>BeardBushy</li>
 			<li>BeardTribal</li>
@@ -151,7 +156,7 @@
 		<label>RBSF_Bloom</label>
 		<texPath>Things/Pawn/Humanlike/Beards/RBSF_SatyrBeardL</texPath>
 		<styleGender>Male</styleGender>
-		<category>Tribal</category>
+		<category>RBSFE_Fae</category>
 		<styleTags>
 			<li>BeardBushy</li>
 			<li>BeardTribal</li>
@@ -164,7 +169,7 @@
 		<label>RBSF_Casanova</label>
 		<texPath>Things/Pawn/Humanlike/Beards/RBSF_SatyrBeardM</texPath>
 		<styleGender>Male</styleGender>
-		<category>Punk</category>
+		<category>RBSFE_Fae</category>
 		<styleTags>
 			<li>BeardBushy</li>
 			<li>BeardPunk</li>
@@ -177,7 +182,7 @@
 		<label>RBSF_Loveheart</label>
 		<texPath>Things/Pawn/Humanlike/Beards/RBSF_SatyrBeardN</texPath>
 		<styleGender>Male</styleGender>
-		<category>Urban</category>
+		<category>RBSFE_Fae</category>
 		<styleTags>
 			<li>BeardBushy</li>
 			<li>BeardUrban</li>
@@ -190,7 +195,7 @@
 		<label>RBSF_Boomerang</label>
 		<texPath>Things/Pawn/Humanlike/Beards/RBSF_SatyrBeardO</texPath>
 		<styleGender>Male</styleGender>
-		<category>Urban</category>
+		<category>RBSFE_Fae</category>
 		<styleTags>
 			<li>BeardBushy</li>
 			<li>BeardUrban</li>

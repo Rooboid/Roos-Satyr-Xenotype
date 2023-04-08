@@ -9,7 +9,7 @@
 			<GeneDef>RBSF_Virtuoso</GeneDef>
 		</descriptionHyperlinks>
 		<stackLimit>1</stackLimit>
-		<soundInteract>RBSF_WarcallSound</soundInteract>
+		<soundInteract>Standard_Pickup</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<graphicData>
 		<drawSize>(1.1,1.1)</drawSize>
@@ -145,6 +145,32 @@
 			<MarketValue>1750</MarketValue>
 		</statBases>
 		<tradeability>Buyable</tradeability>
+		<!--     <comps>
+      <li Class="CompProperties_UseEffect">
+        <compClass>XXXX</compClass>
+      </li> -->
+	</ThingDef>
+	
+		<!-- Elegy -->
+  
+	<ThingDef ParentName="VirtuosoMusicSheetBase">
+		<defName>RBSF_MelodicElegySheet</defName>
+		<label>melodic elegy music sheet</label>
+		<description>An ancient music sheet for a unique melody. Pawns with the Virtuoso gene can study it to learn a new ability, capable of ressurecting the dead.</description>
+		<graphicData>
+			<texPath>Things/Item/MusicSheets/RBSF_MusicSheetB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<tradeability>Buyable</tradeability>
+		<tradeTags Inherit="False">
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags Inherit="False">
+		<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<!--     <comps>
       <li Class="CompProperties_UseEffect">
         <compClass>XXXX</compClass>
