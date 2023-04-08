@@ -25,9 +25,10 @@ namespace Roos_Satyr_Xenotype
                 Log.Message("Success!");
                 return;
             }
-            
+
             target.Thing.Destroy();
             Log.Message("Failure...");
+
             return;
         }
     }
