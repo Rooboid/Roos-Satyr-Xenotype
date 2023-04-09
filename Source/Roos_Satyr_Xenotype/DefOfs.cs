@@ -23,5 +23,9 @@ namespace Roos_Satyr_Xenotype
         public static HediffDef RBSF_PlayingTune;
 
         public static WeaponClassDef RBSF_Instrument;
+
+        public static TraitDef RBSF_Uncouth;
+
+        public static InteractionDef RBSF_Vulgarity;
     }
 }

@@ -7,7 +7,7 @@
 	<InteractionDef>
 		<defName>RBSF_Vulgarity</defName>
 		<label>vulgarity</label>
-		<workerClass>InteractionWorker_Chitchat</workerClass>
+		<workerClass>Roos_Satyr_Xenotype.InteractionWorker_RBSF_Vulgarity</workerClass>
 		<symbol>Things/Mote/SpeechSymbols/RBSF_VulgarityIcon</symbol>
 		<socialFightBaseChance>0.005</socialFightBaseChance>
 	
@@ -78,8 +78,8 @@
 		<thoughtClass>Thought_MemorySocialCumulative</thoughtClass>
 		<stackLimit>300</stackLimit>
 		<maxCumulatedOpinionOffset>10</maxCumulatedOpinionOffset>
-		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
-		<socialTargetDevelopmentalStageFilter>Baby, Child, Adult</socialTargetDevelopmentalStageFilter>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<socialTargetDevelopmentalStageFilter>Adult</socialTargetDevelopmentalStageFilter>
 		<nullifyingTraits>
 			<li>RBSF_Uncouth</li>
 		</nullifyingTraits>
@@ -96,7 +96,7 @@
 	<ThoughtDef>
 		<defName>RBSF_BothUncouth</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>ThoughtWorker_Man</workerClass><!-- TODO -->
+		<workerClass>Roos_Satyr_Xenotype.ThoughtWorker_UncouthVsUncouth</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<requiredTraits>
 			<li>RBSF_Uncouth</li>
@@ -113,7 +113,7 @@
 	
 	<ThoughtDef>
 		<defName>RBSF_BeautyInColony</defName>
-		<validWhileDespawned>true</validWhileDespawned>
+		<workerClass>Roos_Satyr_Xenotype.ThoughtWorker_IsBeautyForUncouth</workerClass>
 		<developmentalStageFilter>Adult</developmentalStageFilter>
 		<stages>
 			<li>

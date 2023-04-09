@@ -59,6 +59,7 @@
     <Compile Include="DefOfs.cs" />
     <Compile Include="Startup Constructor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uncouth.cs" />
     <Compile Include="Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
