@@ -1,5 +1,6 @@
-﻿using RimWorld;
+﻿using System.Collections.Generic;
 using Verse;
+using RimWorld;
 
 namespace Roos_Satyr_Xenotype
 {
@@ -12,13 +13,13 @@ namespace Roos_Satyr_Xenotype
         public static AbilityDef RBSF_MelodicLullaby;
         public static AbilityDef RBSF_MelodicHymn;
 
-        public static ThoughtDef RBSF_HeardSonata;
-
         public static HediffDef RBSF_HeardHealing;
         public static HediffDef RBSF_HeardWarcall;
         public static HediffDef RBSF_HeardLullaby;
         public static HediffDef RBSF_HeardHymn;
         public static HediffDef RBSF_VineWrapHeDiff;
+
+        public static ThoughtDef RBSF_HeardSonata;
 
         public static HediffDef RBSF_PlayingTune;
 
@@ -26,6 +27,29 @@ namespace Roos_Satyr_Xenotype
 
         public static TraitDef RBSF_Uncouth;
 
+        public static GeneDef RBSF_Virtuoso;
+
         public static InteractionDef RBSF_Vulgarity;
+
+        public static JobDef UseMusicSheet;
+
+        public static SoundDef RBSF_LullabySound;
+        public static SoundDef RBSF_HealingSound;
+        public static SoundDef RBSF_WarcallSound;
+        public static SoundDef RBSF_SonataSound;
+        public static SoundDef RBSF_HymnSound;
+
+    }
+
+    public static class RBSF_DefLists
+    {
+        public static List<SoundDef> RBSF_SongSounds = new List<SoundDef>()
+        {
+            RBSF_DefOf.RBSF_LullabySound,
+            RBSF_DefOf.RBSF_HealingSound,
+            RBSF_DefOf.RBSF_WarcallSound,
+            RBSF_DefOf.RBSF_SonataSound,
+            RBSF_DefOf.RBSF_HymnSound
+        };
     }
 }

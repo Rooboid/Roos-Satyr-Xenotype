@@ -30,11 +30,6 @@
 		<tradeability>Buyable</tradeability>
 		<techLevel>Medieval</techLevel>
 		<comps>
-			<li Class="CompProperties_Usable">
-				<useJob>UseItem</useJob>
-				<useLabel>Read the {0_label}</useLabel>
-				<useDuration>3300</useDuration>
-			</li>
 			<li Class="CompProperties_UseEffectPlaySound">
 				<soundOnUsed>RBSF_FaunImplant</soundOnUsed>
 			</li>
@@ -62,10 +57,14 @@
 			<MarketValue>750</MarketValue>
 		</statBases>
 		<tradeability>Buyable</tradeability>
-		<!--     <comps>
-      <li Class="CompProperties_UseEffect">
-        <compClass>XXXX</compClass>
-      </li> -->
+		<comps>
+			<li Class="Roos_Satyr_Xenotype.CompProperties_MusicSheet">
+				<useJob>UseMusicSheet</useJob>
+				<useLabel>Read {0_label}</useLabel>
+				<useDuration>330</useDuration>
+			 	<ability>RBSF_MelodicHymn</ability>
+			</li>
+	 	</comps>
 	</ThingDef>
   
 	<!-- Sonata -->
@@ -82,10 +81,14 @@
 				<MarketValue>950</MarketValue>
 		</statBases>
 		<tradeability>Buyable</tradeability>
-		<!--     <comps>
-      <li Class="CompProperties_UseEffect">
-        <compClass>XXXX</compClass>
-      </li> -->
+		<comps>
+			<li Class="Roos_Satyr_Xenotype.CompProperties_MusicSheet">
+				<useJob>UseMusicSheet</useJob>
+				<useLabel>Read {0_label}</useLabel>
+				<useDuration>330</useDuration>
+			 	<ability>RBSF_MelodicSonata</ability>
+			</li>
+	 	</comps>
 	  <tradeTags>
 			<li>MusicSheet</li>
 		</tradeTags>
@@ -105,10 +108,14 @@
 			<MarketValue>1450</MarketValue>
 		</statBases>
 		<tradeability>Buyable</tradeability>
-		<!--     <comps>
-      <li Class="CompProperties_UseEffect">
-        <compClass>XXXX</compClass>
-      </li> -->
+		<comps>
+			<li Class="Roos_Satyr_Xenotype.CompProperties_MusicSheet">
+				<useJob>UseMusicSheet</useJob>
+				<useLabel>Read {0_label}</useLabel>
+				<useDuration>330</useDuration>
+			 	<ability>RBSF_MelodicHealing</ability>
+			</li>
+	 	</comps>
 	</ThingDef>
   
 	<!-- Warcall -->
@@ -125,10 +132,14 @@
 			<MarketValue>1200</MarketValue>
 		</statBases>
 		<tradeability>Buyable</tradeability>
-		<!--     <comps>
-      <li Class="CompProperties_UseEffect">
-        <compClass>XXXX</compClass>
-      </li> -->
+		<comps>
+      		<li Class="Roos_Satyr_Xenotype.CompProperties_MusicSheet">
+				<useJob>UseMusicSheet</useJob>
+				<useLabel>Read {0_label}</useLabel>
+				<useDuration>330</useDuration>
+        		<ability>RBSF_MelodicWarcall</ability>
+      		</li>
+		</comps>
 	</ThingDef>
   
 	<!-- Lullaby -->
@@ -145,10 +156,14 @@
 			<MarketValue>1750</MarketValue>
 		</statBases>
 		<tradeability>Buyable</tradeability>
-		<!--     <comps>
-      <li Class="CompProperties_UseEffect">
-        <compClass>XXXX</compClass>
-      </li> -->
+		<comps>
+			<li Class="Roos_Satyr_Xenotype.CompProperties_MusicSheet">
+				<useJob>UseMusicSheet</useJob>
+				<useLabel>Read {0_label}</useLabel>
+				<useDuration>330</useDuration>
+			  	<ability>RBSF_MelodicLullaby</ability>
+			</li>
+	 	</comps>
 	</ThingDef>
 	
 		<!-- Elegy -->
@@ -171,10 +186,14 @@
 		<thingSetMakerTags Inherit="False">
 		<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
-		<!--     <comps>
-      <li Class="CompProperties_UseEffect">
-        <compClass>XXXX</compClass>
-      </li> -->
+		<comps>
+			<li Class="Roos_Satyr_Xenotype.CompProperties_MusicSheet">
+				<useJob>UseMusicSheet</useJob>
+				<useLabel>Read {0_label}</useLabel>
+				<useDuration>330</useDuration>
+			  	<ability>RBSF_MelodicElegy</ability>
+			</li>
+	 	</comps>
 	</ThingDef>
 	
 </Defs>
