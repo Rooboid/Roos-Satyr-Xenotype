@@ -24,6 +24,7 @@
 							<li>uncouthfixed(tag=RBSF_VulgarityYesNo)->Alright, [RECIPIENT_nameDef]. Let’s play shag, marry, avoid. Me, a [Animal], or me again?</li>
 							<li>uncouthfixed->*Scratches backside*</li>
 							<li>uncouthfixed->*Picks nose*</li>
+							<li>uncouthfixed->*Yawns loudly*</li>
 							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->*Scratches genitals* That’s the spot…</li>
 							<li>uncouthfixed->It’s tough bein’ as smokin’ hot as me, but someone’s gotta do it…</li>
 		
@@ -40,11 +41,12 @@
 							<li>uncouthfixed(tag=RBSF_VulgarityYesNo)->Heh, did you hear that [NAME]’s caught sugma?</li>
 		
 							<li>uncouthfixed->Hubba hubba, [RECIPIENT_nameDef], yer lookin’ like a tasty snack today.</li>
-							<li>uncouthfixed->…Why the long face, [RECIPIENT_nameDef]? Oh, that's just yer face?</li>
+							<li>uncouthfixed->…Why the long face, [RECIPIENT_nameDef]? Oh, that's just how you look?</li>
 							<li>uncouthfixed->How’s it goin’, doll?</li>
+							<li>uncouthfixed->*Touches [RECIPIENT_nameDef]'s hair* It's so soft!</li>
 							<li>uncouthfixed->Look at the fivehead on you, [RECIPIENT_nameDef]. Could play noughts and crosses on that thing.</li>
 							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->C’mere, [RECIPIENT_nameDef]. Yer look like yer need a big hug.</li>
-							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->Who spat in your salad, [RECIPIENT_nameDef]? Why the long face? Oh. That's just how you look?</li>
+							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->Oh no, didn't you have enough time to brush your hair this morning, [RECIPIENT_nameDef]?</li>
 							<li>uncouthfixed->You’d look so much better if yer smiled more, [RECIPIENT_nameDef].</li>
 							<li>uncouthfixed->Dunno if I’ve ever told yer this, [RECIPIENT_nameDef], but you’re a solid 8. I wouldn’t go as far as 10, just on account of that massive nose, but still.</li>
 							<li>uncouthfixed->[RECIPIENT_nameDef], pull my finger.</li>
@@ -53,6 +55,7 @@
 							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->Riddle me this [RECIPIENT_nameDef], What’s white, sticky, and better to spit than to swallow? Toothpaste!</li>
 							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->*Pats [RECIPIENT_nameDef]’s backside* Lookin’ good, [RECIPIENT_nameDef]!</li>
 							<li>uncouthfixed->*Mumbles* I really wish I beat one out this mornin’…</li>
+							<li>uncouthfixed->You look like a dumpster fire, [RECIPIENT_nameDef], and I'm ready to go dumpster diving.</li>
 						</rulesStrings>
 					</value>
 				</li>

@@ -280,11 +280,11 @@
 		<skills>
 			<li>
 				<skill>Shooting</skill>
-				<range>4~16</range>
+				<range>4~12</range>
 			</li>
 			<li>
 				<skill>Melee</skill>
-				<range>4~10</range>
+				<range>4~7</range>
 			</li>
 		</skills>
 		<gearHealthRange>0.3~1</gearHealthRange>
@@ -382,6 +382,12 @@
 				<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">1</RBSF_Satyr>
 			</xenotypeChances>
 		</xenotypeSet>
+				<skills>
+			<li>
+				<skill>Intellectual</skill>
+				<range>6~16</range>
+			</li>
+		</skills>
 		<styleItemTags>
 			<li>
 				<tag>Punk</tag>

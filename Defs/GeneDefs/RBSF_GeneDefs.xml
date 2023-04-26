@@ -144,7 +144,7 @@
 			<li><def>Asexual</def></li>
 			<li><def>Kind</def></li>
 		</suppressedTraits>
-		<missingGeneRomanceChanceFactor>0.9</missingGeneRomanceChanceFactor>
+		<missingGeneRomanceChanceFactor>1.5</missingGeneRomanceChanceFactor>
 		<!-- Symbol -->
 		<symbolPack>
 			<prefixSymbols>
@@ -167,7 +167,7 @@
 	<GeneDef>
 		<defName>RBSF_Virtuoso</defName>
 		<label>Virtuoso</label>
-		<description>Pawns with this gene live their lives in tune with music. They adore musical recreation and are capable of learning a range of powerful songs.</description>
+		<description>Pawns with this gene live their lives in tune with music. They are capable of learning a range of powerful songs.</description>
 		<biostatCpx>2</biostatCpx>
 		<biostatMet>-2</biostatMet>
 		<displayCategory>Ability</displayCategory>
