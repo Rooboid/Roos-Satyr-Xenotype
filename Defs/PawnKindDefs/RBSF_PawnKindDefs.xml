@@ -70,7 +70,7 @@
 			<li>BodyPurist</li>
 		</disallowedTraits>
 		<inventoryOptions>
-			<skipChance>0.98</skipChance>
+			<skipChance>0.99</skipChance>
 			<subOptionsChooseOne>
 				<li>
 					<thingDef>RBSF_MelodicLullabySheet</thingDef>

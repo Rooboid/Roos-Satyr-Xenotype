@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <StyleItemCategoryDef>
-    <defName>RBSFE_Fae</defName>
-    <label>fae</label>
-  </StyleItemCategoryDef>
+	<StyleItemCategoryDef>
+		<defName>RBSFE_Fae</defName>
+		<label>fae</label>
+	</StyleItemCategoryDef>
 
 
 	<BeardDef>
@@ -190,7 +190,7 @@
 		</styleTags>
 	</BeardDef>
 	
-		<BeardDef>
+	<BeardDef>
 		<defName>RBSF_SatyrBeardO</defName>
 		<label>RBSF_Boomerang</label>
 		<texPath>Things/Pawn/Humanlike/Beards/RBSF_SatyrBeardO</texPath>
@@ -199,6 +199,18 @@
 		<styleTags>
 			<li>BeardBushy</li>
 			<li>BeardUrban</li>
+			<li>BeardFae</li>
+		</styleTags>
+	</BeardDef>
+	
+	<BeardDef>
+		<defName>RBSF_SatyrBeardP</defName>
+		<label>RBSF_Elegant</label>
+		<texPath>Things/Pawn/Humanlike/Beards/RBSF_SatyrBeardP</texPath>
+		<styleGender>Male</styleGender>
+		<category>RBSFE_Fae</category>
+		<styleTags>
+			<li>BeardBushy</li>
 			<li>BeardFae</li>
 		</styleTags>
 	</BeardDef>
