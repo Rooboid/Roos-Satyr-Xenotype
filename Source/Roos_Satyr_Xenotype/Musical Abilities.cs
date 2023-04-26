@@ -33,7 +33,7 @@ namespace Roos_Satyr_Xenotype
 
             foreach (Pawn pawn in startPawn.Map.mapPawns.AllPawnsSpawned)
             {
-                if (pawn == null || !pawn.Position.InHorDistOf(startPawn.Position, searchRadius) || pawn == startPawn)
+                if (pawn == null || !pawn.Position.InHorDistOf(startPawn.Position, searchRadius) || pawn == startPawn || !pawn.RaceProps.Humanlike || (pawn.HostileTo(this.parent.pawn.Faction) && !pawn.IsPrisoner) )
                 {
                     continue;
                 }

@@ -9,7 +9,7 @@ namespace Roos_Satyr_Xenotype
     public class SatyrSettings : ModSettings
     {
         // Default Mod Settings
-        public const float SatyrSongVolumeDefault = 1.0f;
+        public const float SatyrSongVolumeDefault = 100.0f;
 
 
         // setting variables to defaults
