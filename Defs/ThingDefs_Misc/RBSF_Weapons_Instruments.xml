@@ -67,10 +67,13 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<researchPrerequisite>Smithing</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
 			<displayPriority>439</displayPriority>
 		</recipeMaker>
 		<tradeTags>
@@ -143,7 +146,7 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<researchPrerequisite>Smithing</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -207,6 +210,9 @@
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
 			<displayPriority>441</displayPriority>
 		</recipeMaker>
 		<tradeTags>
@@ -276,6 +282,9 @@
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
 			<displayPriority>441</displayPriority>
 		</recipeMaker>
 		<tradeTags>
@@ -380,7 +389,7 @@
 		</children>
 	</EffecterDef>
 	
-		<!-- Bodhran Flute -->
+	<!-- Bodhran Flute -->
 	
 	<EffecterDef>
 		<defName>RBSF_Impact_Bodhran</defName>
