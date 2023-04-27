@@ -30,6 +30,9 @@ namespace Roos_Satyr_Xenotype
             if (!p.story.traits.HasTrait(RBSF_DefOf.RBSF_Uncouth))
                 return false;
 
+            if (!other.story.traits.HasTrait(RBSF_DefOf.RBSF_Uncouth))
+                return false;
+
             if (other.def != p.def)
                 return false;
 
