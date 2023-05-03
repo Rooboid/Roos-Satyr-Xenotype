@@ -27,7 +27,7 @@
 				
 				<li>uncouthabout->made a contemptuous remark about</li>
 				<li>uncouthabout->cracked an offensive joke about</li>
-				<li>uncouthabout->made an offensive joke about</li>
+				<li>uncouthabout->made a rude joke about</li>
 				<li>uncouthabout->ad-libbed a profane limerick about</li>
 				<li>uncouthabout->implied something gross about</li>
 				<li>uncouthabout->recited a distasteful rhyme about</li>
@@ -46,7 +46,7 @@
 				<li>uncouthfixed->[INITIATOR_nameDef] enquired if [RECIPIENT_nameDef] had recently gained weight.</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] playfully compared [RECIPIENT_nameDef]'s face to a [Vegetable].</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] pretended to sneeze on [RECIPIENT_nameDef].</li>
-				<li>uncouthfixed->[INITIATOR_nameDef] facetiously pestered [RECIPIENT_nameDef] for a hug.</li>
+				<li>uncouthfixed->[INITIATOR_nameDef] comically pestered [RECIPIENT_nameDef] for a hug.</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] wolfwhistled [RECIPIENT_nameDef] and blamed it on someone else.</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] pulled a playful prank on [RECIPIENT_nameDef].</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] asked [RECIPIENT_nameDef] where babies come from.</li>
@@ -128,22 +128,22 @@
 			</li>
 			<li>
 				<label>some beautiful pawns in the colony</label>
-				<description>We've got some hotties in the colony, and I like it! I wonder if they could recruit any of their friends to join us too...?</description>
+				<description>We've got some hotties in the colony, and I like it! I wonder if they could recruit any of their friends to join us?</description>
 				<baseMoodEffect>6</baseMoodEffect>
 			</li>
 			<li>
 				<label>surrounded by eye-candy</label>
-				<description>Everyone around here has such beautiful and smooth skin...w-wait. I've not got cataracts or something, have I?</description>
+				<description>Ahh. Everyone around here is drop-dead gorgeous, how can I be sad at a time like this?</description>
 				<baseMoodEffect>9</baseMoodEffect>
 			</li>
 			<li>
 				<label>awooga!</label>
-				<description>Every hour's hot-o'clock around here! Just look at all the beauties in our colony, it's like a dream come true...</description>
+				<description>I'm surrounded by solid 10's! Just look at all the beauties in our colony, it's like a dream come true...</description>
 				<baseMoodEffect>12</baseMoodEffect>
 			</li>
 			<li>
 				<label>my own harem!</label>
-				<description>Awooga! There's just so many beautiful pawns around here, it's like my very own harem!\n\nWell...it would be, if any of them liked me.</description>
+				<description>There's just so many beautiful pawns around here, it's like my very own harem!\n\nWell...it would be, if any of them liked me.</description>
 				<baseMoodEffect>15</baseMoodEffect>
 			</li>
 		</stages>

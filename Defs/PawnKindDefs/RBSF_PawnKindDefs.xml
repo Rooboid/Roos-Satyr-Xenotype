@@ -382,7 +382,7 @@
 				<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">1</RBSF_Satyr>
 			</xenotypeChances>
 		</xenotypeSet>
-				<skills>
+		<skills>
 			<li>
 				<skill>Intellectual</skill>
 				<range>6~16</range>

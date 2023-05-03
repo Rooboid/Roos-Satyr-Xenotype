@@ -193,9 +193,9 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
-					<MeleeDodgeChance>0.3</MeleeDodgeChance>
-					<MeleeHitChance>0.3</MeleeHitChance>
+					<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+					<MeleeDodgeChance>0.5</MeleeDodgeChance>
+					<MeleeHitChance>0.5</MeleeHitChance>
 				</statOffsets>
 			</li>
 		</stages>
