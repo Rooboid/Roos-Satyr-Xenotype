@@ -28,6 +28,7 @@ namespace Roos_Satyr_Xenotype
         public static TraitDef RBSF_Uncouth;
 
         public static GeneDef RBSF_Virtuoso;
+        public static GeneDef RBM_UnguligradeLegs;
 
         public static InteractionDef RBSF_Vulgarity;
 
@@ -38,6 +39,8 @@ namespace Roos_Satyr_Xenotype
         public static SoundDef RBSF_WarcallSound;
         public static SoundDef RBSF_SonataSound;
         public static SoundDef RBSF_HymnSound;
+
+
 
     }
 
