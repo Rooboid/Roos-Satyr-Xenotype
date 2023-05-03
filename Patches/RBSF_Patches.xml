@@ -429,9 +429,9 @@
 				<li>Giddy-Up 2</li>
 			</mods>
 			<match Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[defName="SatyrBardParent"]/modExtensions/li[1]/possibleMounts</xpath>
+				<xpath>Defs/PawnKindDef[@Name="SatyrBardParent"]/modExtensions/li[1]/possibleMounts</xpath>
 				<value>
-					<li MayRequire="sarg.magicalmenagerie">
+					<li>
 						<key>MM_CeryneianHind</key>
 						<value>5</value>
 					</li>
@@ -451,9 +451,9 @@
 				<li>Giddy-Up 2</li>
 			</mods>
 			<match Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[defName="SatyrBardParent"]/modExtensions/li[1]/possibleMounts</xpath>
+				<xpath>Defs/PawnKindDef[@Name="SatyrBardParent"]/modExtensions/li[1]/possibleMounts</xpath>
 				<value>
-					<li MayRequire="sarg.alphaanimals">
+					<li>
 						<key>AA_GreyCoatedMouflon</key>
 						<value>5</value>
 					</li>

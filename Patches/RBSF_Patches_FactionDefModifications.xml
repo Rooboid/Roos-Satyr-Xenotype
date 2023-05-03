@@ -164,19 +164,19 @@
 			<li>Vanilla Factions Expanded - Classical</li>
 		</mods>
 		<match Class="PatchOperationConditional">
-			<xpath>Defs/FactionDef[defName="VFEC_CentralRepublic"]/xenotypeSet/xenotypeChances</xpath>
+			<xpath>Defs/FactionDef[@Name="VFEC_RepublicBase"]/xenotypeSet/xenotypeChances</xpath>
 			<match Class="PatchOperationAdd">
-				<xpath>Defs/FactionDef[defName="VFEC_CentralRepublic"]/xenotypeSet/xenotypeChances</xpath>
+				<xpath>Defs/FactionDef[@Name="VFEC_RepublicBase"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
-					<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.02</RBSF_Satyr>
+					<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.06</RBSF_Satyr>
 				</value>
 			</match>
 			<nomatch Class="PatchOperationAdd">
-				<xpath>Defs/FactionDef[defName="VFEC_CentralRepublic"]</xpath>
+				<xpath>Defs/FactionDef[@Name="VFEC_CentralRepublic"]</xpath>
 				<value>
 					<xenotypeSet>
 						<xenotypeChances>
-							<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.02</RBSF_Satyr>
+							<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.06</RBSF_Satyr>
 						</xenotypeChances>
 					</xenotypeSet>
 				</value>
@@ -269,16 +269,6 @@
 					<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.1</RBSF_Satyr>
 				</value>
 			</match>
-			<nomatch Class="PatchOperationAdd">
-				<xpath>Defs/FactionDef[defName="FactionBase_Elders"]</xpath>
-				<value>
-					<xenotypeSet>
-						<xenotypeChances>
-							<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.1</RBSF_Satyr>
-						</xenotypeChances>
-					</xenotypeSet>
-				</value>
-			</nomatch>
 		</match>
 	</Operation>
 	
