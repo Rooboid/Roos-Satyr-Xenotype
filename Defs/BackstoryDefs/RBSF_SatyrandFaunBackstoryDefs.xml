@@ -10,7 +10,7 @@
 		<title>sheltered child</title>
 		<titleShort>sheltered</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was the first of [PAWN_possessive] gender to be born in [PAWN_possessive] tribe in years. [PAWN_possessive] elders treat [PAWN_objective] like a precious treasure, seldom allowing [PAWN_objective] to wander even an inch from their sight. It may be because of this safeguarding that [PAWN_nameDef] gained so little knowledge about the outside world.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was the first of [PAWN_possessive] gender to be born to [PAWN_possessive] tribe in years. [PAWN_possessive] elders treat [PAWN_objective] like a precious treasure, seldom allowing [PAWN_objective] to wander even an inch out of sight. This obsessive safeguarding lead to [PAWN_nameDef] gaining limited knowledge about the outside world.</baseDesc>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<spawnCategories>
@@ -114,7 +114,7 @@
 		<title>scamp</title>
 		<titleShort>scamp</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was orphaned at a young age, and so was the responsibility of [PAWN_possessive] entire community. Elders doted on this adorable little scamp, and taught [PAWN_objective] a myriad of skills.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was orphaned at a young age, and became the responsibility of [PAWN_possessive] entire community. Elders doted on this adorable little scamp, and taught [PAWN_objective] a myriad of skills.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -177,7 +177,7 @@
 		<titleShort>butler</titleShort>
 		<titleShortFemale>maid</titleShortFemale>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] served the highest members of society; providing them with dignified company and a clean and tidy castle to reside in. Social gatherings at the castle were [PAWN_nameDef]’s favourite, though, as many royal guests saw novelty in this strangely beautiful xeno, and oftentimes invited [PAWN_objective] to their lodgings once the sun had set.</baseDesc>
+		<baseDesc>[PAWN_nameDef] catered for the highest members of society. Social gatherings at [PAWN_possessive] master's castle were [PAWN_nameDef]’s favourite, though, as many royal guests saw novelty in such a strangely beautiful xenotype, and oftentimes invited [PAWN_objective] to their lodgings once the sun had set.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>

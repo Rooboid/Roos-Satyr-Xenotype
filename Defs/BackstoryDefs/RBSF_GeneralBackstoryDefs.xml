@@ -10,7 +10,7 @@
 		<title>roaming minstrel</title>
 		<titleShort>minstrel</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] wandered the grassy grottos of the rim with [PAWN_possessive] family, performing traditional music and poetry for passer-by caravans and aristocrats. Over time, [PAWN_nameDef] was bought [PAWN_possessive] by a wealthy nobleman, and performed for he and his guests at social events and royal dinners. \n\n[PAWN_nameDef] was housed by this nobleman in a basement chamber, and never got to see [PAWN_possessive] family again.</baseDesc>
+		<baseDesc>[PAWN_nameDef] wandered the grassy grottos of the rim with [PAWN_possessive] family, performing traditional music and poetry for wandering merchants and aristocrats. Over time, [PAWN_nameDef] was bought by a wealthy nobleman, and performed for he and his guests at social events and royal dinners. \n\n[PAWN_nameDef] was housed by this nobleman in a basement chamber, and never got to see [PAWN_possessive] family again.</baseDesc>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<spawnCategories>
@@ -169,7 +169,7 @@
 		<title>gambler</title>
 		<titleShort>gambler</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>If [PAWN_nameDef] owned it, [PAWN_nameDef] would gamble it; gold coins, animals, alcohol, even [PAWN_possessive] clothes, [PAWN_nameDef] wasn't afraid to risk anything for the chance of a hefty payout. Even now, you'll never find [PAWN_nameDef] without a trusty pack of cards in [PAWN_possessive] pocket.</baseDesc>
+		<baseDesc>If [PAWN_nameDef] owned it, [PAWN_nameDef] would wager it; gold coins, animals, alcohol, even [PAWN_possessive] clothes, [PAWN_nameDef] wasn't afraid to risk anything for the chance of a hefty payout. Even now, you'll never find [PAWN_nameDef] without a trusty pack of cards in [PAWN_possessive] pocket.</baseDesc>
 		<bodyTypeMale>Fat</bodyTypeMale>
 		<bodyTypeFemale>Fat</bodyTypeFemale>
 		<spawnCategories>

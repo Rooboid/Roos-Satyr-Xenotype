@@ -380,7 +380,7 @@
 		<title>diplomat</title>
 		<titleShort>diplomat</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] secured bountiful trade-deals overseas for [PAWN_possessive] growing hometown. It wasn't long before the high-stress position of a diplomat got to [PAWN_possessive] brain, and many failed deals later, [PAWN_nameDef] faded back into [PAWN_possessive] community as a has-been and a drunk.</baseDesc>
+		<baseDesc>[PAWN_nameDef] secured bountiful trade deals overseas for [PAWN_possessive] growing hometown. It wasn't long before the high-stress position of a diplomat got to [PAWN_possessive] brain, and many failed deals later, [PAWN_nameDef] faded back into [PAWN_possessive] community as a has-been and a drunk.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -542,7 +542,7 @@
 		<titleFemale>childbearer</titleFemale>
 		<titleShort>repopulator</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] founded a small colony atop the mountainous crown of a perilous wetland. [PAWN_pronoun] erected homes for [PAWN_possessive] recruits, and was personally responsible for reviving the satyr population in this forgotten corner of the world.</baseDesc>
+		<baseDesc>[PAWN_nameDef] founded a small colony atop the mountainous crown of a frosty tundra. [PAWN_pronoun] built homes for [PAWN_possessive] people and kept them well fed, but more impressively, was personally responsible for reviving the satyr population in [PAWN_possessive] forgotten corner of the world.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
