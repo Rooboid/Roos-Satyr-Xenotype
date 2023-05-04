@@ -52,7 +52,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Anima Rod Projectile.cs" />
     <Compile Include="PawnFur.cs" />
     <Compile Include="Deal With the Devil.cs" />
     <Compile Include="Instrument Equip Skillgain.cs" />
