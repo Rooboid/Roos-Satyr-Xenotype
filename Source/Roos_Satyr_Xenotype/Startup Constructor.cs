@@ -10,7 +10,7 @@ namespace Roos_Satyr_Xenotype
         {
             Harmony harmony = new Harmony("rimworld.mod.rooboid.satyr");
             harmony.PatchAll();
-            Log.Message("SATYR MOD LOADED.");
+            Log.Message("Roos_Satyr_Xenotype Mod Harmony Patches Loaded");
         }
     }
 }
