@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using Verse;
+using Verse.Sound;
 
 namespace Roos_Satyr_Xenotype
 {
@@ -16,18 +17,20 @@ namespace Roos_Satyr_Xenotype
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
-            Log.Message("Target was " + target.ToString());
+            //Log.Message("Target was " + target.ToString());
             var random = Rand.Value;
-            Log.Message("Random value was " + random.ToString());
+            //Log.Message("Random value was " + random.ToString());
             if (random >= Props.chance)
             {
                 base.Apply(target, dest);
-                Log.Message("Success!");
+                //Log.Message("Success!");
+                RBSF_DefOf.RBSF_MelodicElegySucceed.PlayOneShot(new TargetInfo(this.parent.pawn.Position, this.parent.pawn.Map, false));
                 return;
             }
 
             target.Thing.Destroy();
-            Log.Message("Failure...");
+            //Log.Message("Failure...");
+            RBSF_DefOf.RBSF_MelodicElegyFail.PlayOneShot(new TargetInfo(this.parent.pawn.Position, this.parent.pawn.Map, false));
 
             return;
         }

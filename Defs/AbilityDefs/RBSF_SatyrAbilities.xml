@@ -359,7 +359,7 @@
 	  <warmupEffecter>RBSF_MusicElegy</warmupEffecter>
       <range>-1</range>
       <warmupTime>9</warmupTime>
-      <soundCast>RBSF_MelodicElegyFail</soundCast>
+
       <targetParams>
         <canTargetPawns>false</canTargetPawns>
         <canTargetBuildings>false</canTargetBuildings>

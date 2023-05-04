@@ -11,6 +11,7 @@ namespace Roos_Satyr_Xenotype
         public static HediffDef appliedHediffDef;
         public static ThoughtDef appliedThoughtDef;
         public static AbilityDef usedAbilityDef;
+        public static bool affectsEnemies;
 
         //Constructor
         public RBSF_CompAbilityEffect_MelodicBase()
@@ -33,7 +34,7 @@ namespace Roos_Satyr_Xenotype
 
             foreach (Pawn pawn in startPawn.Map.mapPawns.AllPawnsSpawned)
             {
-                if (pawn == null || !pawn.Position.InHorDistOf(startPawn.Position, searchRadius) || pawn == startPawn || !pawn.RaceProps.Humanlike || (pawn.HostileTo(this.parent.pawn.Faction) && !pawn.IsPrisoner) )
+                if (pawn == null || !pawn.Position.InHorDistOf(startPawn.Position, searchRadius) || pawn == startPawn || !pawn.RaceProps.Humanlike || (pawn.HostileTo(this.parent.pawn.Faction) && !pawn.IsPrisoner && !affectsEnemies) )
                 {
                     continue;
                 }
@@ -60,6 +61,7 @@ namespace Roos_Satyr_Xenotype
         {
             appliedHediffDef = RBSF_DefOf.RBSF_HeardHealing;
             usedAbilityDef = RBSF_DefOf.RBSF_MelodicHealing;
+            affectsEnemies = false;
             base.CompTick();
         }
     }
@@ -80,6 +82,7 @@ namespace Roos_Satyr_Xenotype
         {
             appliedHediffDef = RBSF_DefOf.RBSF_HeardWarcall;
             usedAbilityDef = RBSF_DefOf.RBSF_MelodicWarcall;
+            affectsEnemies = false;
             base.CompTick();
         }
     }
@@ -99,6 +102,7 @@ namespace Roos_Satyr_Xenotype
         {
             appliedHediffDef = RBSF_DefOf.RBSF_HeardLullaby;
             usedAbilityDef = RBSF_DefOf.RBSF_MelodicLullaby;
+            affectsEnemies = true;
             base.CompTick();
         }
     }
@@ -119,6 +123,7 @@ namespace Roos_Satyr_Xenotype
         {
             appliedHediffDef = RBSF_DefOf.RBSF_HeardHymn;
             usedAbilityDef = RBSF_DefOf.RBSF_MelodicHymn;
+            affectsEnemies = false;
             base.CompTick();
         }
     }
@@ -138,7 +143,6 @@ namespace Roos_Satyr_Xenotype
         public override void ApplySong(Pawn pawn)
         {
             pawn.needs.mood.thoughts.memories.TryGainMemoryFast(appliedThoughtDef);
-            Log.Message("Pawn: " + pawn.Name + " given thought " + appliedThoughtDef.Label);
 
         }
 
@@ -146,6 +150,7 @@ namespace Roos_Satyr_Xenotype
         {
             appliedThoughtDef = RBSF_DefOf.RBSF_HeardSonata;
             usedAbilityDef = RBSF_DefOf.RBSF_MelodicSonata;
+            affectsEnemies = false;
             base.CompTick();
         }
 

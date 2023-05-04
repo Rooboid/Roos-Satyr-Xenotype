@@ -41,8 +41,6 @@ namespace Roos_Satyr_Xenotype
                 this.pawn.abilities.GainAbility(abilityDef);
             });
         }
-
-
     }
 
     public class CompMusicSheet : CompUsable

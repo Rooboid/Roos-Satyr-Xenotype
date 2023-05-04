@@ -1,10 +1,7 @@
 ﻿using HarmonyLib;
 using RimWorld;
 using Roos_Satyr_Xenotype;
-using System.Collections.Generic;
-using System;
 using Verse;
-using RimWorld.BaseGen;
 
 namespace Roos_Satyr_Xenotype
 {

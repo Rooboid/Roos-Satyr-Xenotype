@@ -80,16 +80,35 @@
 		<maxCumulatedOpinionOffset>10</maxCumulatedOpinionOffset>
 		<developmentalStageFilter>Adult</developmentalStageFilter>
 		<socialTargetDevelopmentalStageFilter>Adult</socialTargetDevelopmentalStageFilter>
-		<nullifyingTraits>
-			<li>RBSF_Uncouth</li>
-		</nullifyingTraits>
 		<stages>
 			<li>
 				<label>was uncouth</label>
 				<baseOpinionOffset>-0.75</baseOpinionOffset>
 			</li>
 		</stages>
+		<nullifyingTraits>
+			<li>RBSF_Uncouth</li>
+		</nullifyingTraits>
+		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 	</ThoughtDef>
+
+<!--	<ThoughtDef>
+		<defName>SoldPrisoner</defName>
+		<thoughtClass>Thought_Tale</thoughtClass>
+		<workerClass>ThoughtWorker_Tale</workerClass>
+		<taleDef>SoldPrisoner</taleDef>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+		  <li>
+			<label>sold prisoner to slavery</label>
+			<baseOpinionOffset>-15</baseOpinionOffset>
+		  </li>
+		</stages>
+		<nullifyingTraits>
+		  <li>Psychopath</li>
+		</nullifyingTraits>
+		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
+	  </ThoughtDef>-->
   
 	<!-- Uncouth likes other Uncouth Pawn -->
   

@@ -17,7 +17,6 @@ namespace Roos_Satyr_Xenotype
         public static HediffDef RBSF_HeardWarcall;
         public static HediffDef RBSF_HeardLullaby;
         public static HediffDef RBSF_HeardHymn;
-        public static HediffDef RBSF_VineWrapHeDiff;
 
         public static ThoughtDef RBSF_HeardSonata;
 
@@ -39,9 +38,8 @@ namespace Roos_Satyr_Xenotype
         public static SoundDef RBSF_WarcallSound;
         public static SoundDef RBSF_SonataSound;
         public static SoundDef RBSF_HymnSound;
-
-
-
+        public static SoundDef RBSF_MelodicElegySucceed;
+        public static SoundDef RBSF_MelodicElegyFail;
     }
 
     public static class RBSF_DefLists
