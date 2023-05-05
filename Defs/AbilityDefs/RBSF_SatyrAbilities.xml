@@ -144,7 +144,7 @@
 		</stages>
 	</HediffDef>
 	
-	<!--====================== Ability: Melodic Warcall ======================--> <!-- TODO -->
+	<!--====================== Ability: Melodic Warcall ======================-->
 	<!-- Medium -->
 	
 	<AbilityDef ParentName="MelodicBase">
@@ -312,7 +312,7 @@
 
 	
 	<!--====================== Playing Tune HeDiff ======================-->
-	<!-- Hopefully Applied to pawns using virtuoso ability -->
+	<!-- Applied to pawns using virtuoso ability -->
 		
 		
 	<HediffDef>
@@ -340,37 +340,36 @@
 		
 		
 	<!--====================== Melodic Elegy ======================-->
-	<!-- Description -->
+	<!-- High -->
 		
 	<AbilityDef ParentName="AbilityTouchBase">
-    <defName>RBSF_MelodicElegy</defName>
-    <label>melodic elegy</label>
-    <description>The pawn plays an ancient melody capable of resurrecting a fallen pawn. The melody is said to reperesent a duel between the pawn and the devil themselves; if they win, the corpse is restored. If they lose, however, the soul is purged from the body, leaving nothing but bile and ash behind.</description>
-    <iconPath>UI/GeneIcons/RBSF_Ability_Elegy</iconPath>
-    <cooldownTicksRange>6840000~7560000</cooldownTicksRange> <!-- 1.9~2.1 years -->
-    <warmupMote>Mote_ResurrectAbility</warmupMote>
-    <warmupStartSound>RBSF_MelodicElegyStartup</warmupStartSound>
-   <category>Satyr</category>
-    <displayOrder>600</displayOrder>
-    <hostile>false</hostile>
-    <verbProperties>
-      <verbClass>Verb_CastAbilityTouch</verbClass>
-      <drawAimPie>false</drawAimPie>
-	  <warmupEffecter>RBSF_MusicElegy</warmupEffecter>
-      <range>-1</range>
-      <warmupTime>9</warmupTime>
+		<defName>RBSF_MelodicElegy</defName>
+		<label>melodic elegy</label>
+		<description>The pawn plays an ancient melody capable of resurrecting a fallen pawn. The melody is said to reperesent a duel between the pawn and the devil themselves; if they win, the corpse is restored. If they lose, however, the soul is purged from the body, leaving nothing but bile and ash behind.</description>
+		<iconPath>UI/GeneIcons/RBSF_Ability_Elegy</iconPath>
+		<cooldownTicksRange>6840000~7560000</cooldownTicksRange><!-- 1.9~2.1 years -->
+		<warmupMote>Mote_ResurrectAbility</warmupMote>
+		<warmupStartSound>RBSF_MelodicElegyStartup</warmupStartSound>
+		<category>Satyr</category>
+		<displayOrder>600</displayOrder>
+		<hostile>false</hostile>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<warmupEffecter>RBSF_MusicElegy</warmupEffecter>
+			<range>-1</range>
+			<warmupTime>9</warmupTime>
 
-      <targetParams>
-        <canTargetPawns>false</canTargetPawns>
-        <canTargetBuildings>false</canTargetBuildings>
-        <canTargetCorpses>true</canTargetCorpses>
-        <canTargetMechs>false</canTargetMechs>
-      </targetParams>
-    </verbProperties>
-    <comps>
-      <li Class="Roos_Satyr_Xenotype.RBSF_CompProperties_Deal_With_the_Devil" />
-    </comps>
-  </AbilityDef>
+			<targetParams>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetCorpses>true</canTargetCorpses>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="Roos_Satyr_Xenotype.RBSF_CompProperties_Deal_With_the_Devil"/>
+		</comps>
+	</AbilityDef>
 
-	
 </Defs>

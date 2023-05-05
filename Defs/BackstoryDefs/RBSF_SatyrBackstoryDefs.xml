@@ -143,7 +143,7 @@
 		<title>uncouth</title>
 		<titleShort>uncouth</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was a troublesome child; always getting into trouble and starting fights with the other children, [PAWN_pronoun] never seemed to grasp the concept of kindness whatsoever.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was a troublesome child; always getting into spats and starting fights with the other children, [PAWN_pronoun] never seemed to grasp the concept of kindness whatsoever.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -214,7 +214,7 @@
 		<title>sleaze</title>
 		<titleShort>sleaze</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef]’s notoriety as the village lech preceded [PAWN_objective]. [PAWN_pronoun] galloped after fauns, humans and elves with open arms, begging for date or a, at least, peck on the cheek. The closest [PAWN_nameDef] ever got was a left-hook in the jaw.</baseDesc>
+		<baseDesc>[PAWN_nameDef]’s notoriety as the village lech preceded [PAWN_objective]. [PAWN_pronoun] galloped after fauns, humans and elves with open arms, begging for date or, at least, a peck on the cheek. The closest [PAWN_nameDef] ever got was a left-hook in the jaw.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -658,7 +658,7 @@
 	</BackstoryDef>
 	
 	<!--============================== Flaming Bard ============================-->
-	<!-- Works in the Hellgoat backstory. -->
+	<!-- Used in the Hellgoat PawnKind. -->
 	
 	<BackstoryDef>
 		<defName>RBSF_FlamingBard</defName>
@@ -692,7 +692,7 @@
 	</BackstoryDef>
 	
 	<!--============================== Hellgoat ============================-->
-	<!-- Works in the Hellgoat backstory. -->
+	<!-- Used in the Hellgoat PawnKind. -->
 	
 	<BackstoryDef>
 		<defName>RBSF_Hellgoat</defName>
@@ -725,7 +725,7 @@
 	</BackstoryDef>
 	
 	<!--============================== Dark Shaman ============================-->
-	<!-- Works in the Hellgoat backstory. -->
+	<!-- Used in the Hellgoat PawnKind. -->
 	
 	<BackstoryDef>
 		<defName>RBSF_DarkShaman</defName>
@@ -747,7 +747,7 @@
 	</BackstoryDef>
 	
 	<!--============================== Flamesmith ============================-->
-	<!-- Works in the Hellgoat backstory. -->
+	<!-- Used in the Hellgoat PawnKind. -->
 	
 	<BackstoryDef>
 		<defName>RBSF_Flamesmith</defName>
