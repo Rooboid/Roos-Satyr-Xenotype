@@ -36,7 +36,7 @@
 		<description>The user performs an uplifting tune that’s guaranteed to put a smile on people’s faces. Anyone who hears this song will feel uplifted for a while.</description>
 		<iconPath>UI/GeneIcons/RBSF_Ability_Sonata</iconPath>
 		<displayOrder>53</displayOrder>
-		<cooldownTicksRange>60000</cooldownTicksRange>
+		<cooldownTicksRange>0</cooldownTicksRange>
 		<aiCanUse>false</aiCanUse>
 		<hostile>false</hostile>
 		<verbProperties>
@@ -82,7 +82,7 @@
 		<description>The user plays an inspiring song of hope and joy. While this tune is played, anyone who hears this tune will heal much faster.</description>
 		<iconPath>UI/GeneIcons/RBSF_Ability_Healing</iconPath>
 		<displayOrder>51</displayOrder>
-		<cooldownTicksRange>60000</cooldownTicksRange>
+		<cooldownTicksRange>0</cooldownTicksRange>
 		<aiCanUse>false</aiCanUse>
 		<hostile>false</hostile>
 		<verbProperties>
@@ -153,7 +153,7 @@
 		<description>The user performs a foreboding war song to rally up nearby pawns. Pawns in range of this tune will have their accuracy and power boosted.</description>
 		<iconPath>UI/GeneIcons/RBSF_Ability_Warcall</iconPath>
 		<displayOrder>52</displayOrder>
-		<cooldownTicksRange>60000</cooldownTicksRange>
+		<cooldownTicksRange>0</cooldownTicksRange>
 		<aiCanUse>false</aiCanUse>
 		<hostile>false</hostile>
 		<verbProperties>
@@ -210,7 +210,7 @@
 		<description>The user plays a beautiful lullaby, bringing any pawns around them to their knees with exhaustion.</description>
 		<iconPath>UI/GeneIcons/RBSF_Ability_Lullaby</iconPath>
 		<displayOrder>50</displayOrder>
-		<cooldownTicksRange>60000</cooldownTicksRange>
+		<cooldownTicksRange>0</cooldownTicksRange>
 		<aiCanUse>true</aiCanUse>
 		<hostile>true</hostile>
 		<verbProperties>
@@ -265,7 +265,7 @@
 		<description>The user plays a beautiful, spiritual tune, aiding pawns around them in their meditation. As long as the song continues, nearby pawns will be able to meditate much faster.</description>
 		<iconPath>UI/GeneIcons/RBSF_Ability_Hymn</iconPath>
 		<displayOrder>50</displayOrder>
-		<cooldownTicksRange>60000</cooldownTicksRange>
+		<cooldownTicksRange>0</cooldownTicksRange>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupEffecter>RBSF_MusicHymn</warmupEffecter>

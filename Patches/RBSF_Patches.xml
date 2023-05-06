@@ -253,9 +253,9 @@
 					<statFactors>
 						<ShootingAccuracyFactor_Long>1.004</ShootingAccuracyFactor_Long>
 						<ShootingAccuracyFactor_Medium>1.002</ShootingAccuracyFactor_Medium>
-						<ShootingAccuracyFactor_Short>0.96</ShootingAccuracyFactor_Short>
-						<ShootingAccuracyFactor_Touch>0.5</ShootingAccuracyFactor_Touch>
-						<MortarMissRadiusFactor>1.5</MortarMissRadiusFactor>
+						<ShootingAccuracyFactor_Short>0.995</ShootingAccuracyFactor_Short>
+						<ShootingAccuracyFactor_Touch>0.985</ShootingAccuracyFactor_Touch>
+						<MortarMissRadiusFactor>1.2</MortarMissRadiusFactor>
 					</statFactors>
 					<symbolPack>
 						<prefixSymbols>
@@ -523,15 +523,6 @@
 					<xpath>Defs/BackstoryDef[defName="RBSF_TravellingBard"]/forcedTraits/GreatMemory</xpath>
 					<value>
 						<VTE_Wanderlust>0</VTE_Wanderlust>
-					</value>
-				</li>
-	
-				<!-- Game Archer -->
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/BackstoryDef[defName="RBSF_GameArcher"]/forcedTraits</xpath>
-					<value>
-						<VTE_Brave>0</VTE_Brave>
 					</value>
 				</li>
 	
