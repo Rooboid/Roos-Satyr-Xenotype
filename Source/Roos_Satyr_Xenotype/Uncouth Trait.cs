@@ -57,14 +57,14 @@ namespace Roos_Satyr_Xenotype
                 if (pawn.Faction != PawnAsker.Faction) 
                     continue;
 
-                if (pawn.story?.traits?.HasTrait(TraitDefOf.Beauty) != true)
-                    continue;
-                
-                float beautyAmount = pawn.story.traits.DegreeOfTrait(TraitDefOf.Beauty);
-                if (beautyAmount > 0)
-                {
+                float beautyAmount = pawn.GetStatValue(StatDefOf.Beauty);
+
+                if (beautyAmount > 2.0f)
+                    beautyAmount = 2.0f;
+
+                if (beautyAmount > 0.0f)
                     TotalBeauty += beautyAmount;
-                }
+                
             }
 
             //Log.Message("Checked beauty for uncouth pawn " + PawnAsker.Name + " total beauty was " + TotalBeauty);
