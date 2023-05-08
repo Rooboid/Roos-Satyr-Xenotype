@@ -66,12 +66,12 @@ namespace Roos_Satyr_Xenotype
                     beautyAmount = 2.0f;
 
                 if (beautyAmount > 0.0f)
-                    Log.Message("found beautiful pawn " + pawn.Name + "with a beauty value of: " + pawn.GetStatValue(StatDefOf.PawnBeauty) + ".");
+                    //Log.Message("found beautiful pawn " + pawn.Name + "with a beauty value of: " + pawn.GetStatValue(StatDefOf.PawnBeauty) + ".");
                     TotalBeauty += beautyAmount;
                 
             }
-            Log.Message("Total beauty was" + TotalBeauty+ ".");
-            Log.Message("");
+            //Log.Message("Total beauty was " + TotalBeauty+ ".");
+            //Log.Message("");
 
             //Log.Message("Checked beauty for uncouth pawn " + PawnAsker.Name + " total beauty was " + TotalBeauty);
             if (TotalBeauty < 1f)
