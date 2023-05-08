@@ -57,6 +57,9 @@ namespace Roos_Satyr_Xenotype
                 if (pawn.Faction != PawnAsker.Faction) 
                     continue;
 
+                if (pawn == PawnAsker)
+                    continue;
+
                 float beautyAmount = pawn.GetStatValue(StatDefOf.Beauty);
 
                 if (beautyAmount > 2.0f)
