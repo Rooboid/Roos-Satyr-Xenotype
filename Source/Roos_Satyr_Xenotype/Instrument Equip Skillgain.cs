@@ -12,14 +12,15 @@ namespace Roos_Satyr_Xenotype
     {
         static void Postfix(Pawn ___pawn)
         {
+            if (!___pawn.IsHashIntervalTick(SatyrSettings.SatyrInstrumentTickrateTicks))
+                return;
+
             bool? defContainsClass = ___pawn.equipment?.Primary?.def?.weaponClasses?.Contains(RBSF_DefOf.RBSF_Instrument);
             if (defContainsClass != true)
                 return;
 
-            if (!___pawn.IsHashIntervalTick(250))
-                return;
-
-            ___pawn.skills.Learn(SkillDefOf.Artistic, 4);
+            ___pawn.skills.Learn(SkillDefOf.Artistic, SatyrSettings.SatyrInstrumentTickrate);
+            //Log.Message("Tick!");
         }
     }
 }
