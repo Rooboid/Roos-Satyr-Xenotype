@@ -9,6 +9,7 @@
 		<defaultFactionType MayRequire="Rooboid.SatyrFaun.Expanded">RBSFE_TribeFae</defaultFactionType>
 		<maxGenerationAge>90</maxGenerationAge>
 		<combatPower>30</combatPower>
+		<invNutrition>1.5</invNutrition>
 		<chemicalAddictionChance>0.07</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0.02</backstoryCryptosleepCommonality>
 		<initialWillRange>4~5</initialWillRange>
@@ -427,7 +428,7 @@
 		<isFighter>True</isFighter>
 		<maxGenerationAge>60</maxGenerationAge>
 		<combatPower>50</combatPower>
-		<invNutrition>0</invNutrition>
+		<invNutrition>0.5</invNutrition>
 		<chemicalAddictionChance>0.08</chemicalAddictionChance>
 		<initialWillRange>2~3</initialWillRange>
 		<initialResistanceRange>5~18</initialResistanceRange>

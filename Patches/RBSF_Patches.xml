@@ -722,7 +722,7 @@
 			<li>RimJobWorld</li>
 		</mods>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/TraitDef[defName="RBSF_Uncouth"]</xpath>
+			<xpath>Defs/TraitDef[defName="RBSF_Uncouth"]/degreeDatas/li</xpath>
 			<value>
 				<statOffsets>
 					<SexFrequency>1.5</SexFrequency>

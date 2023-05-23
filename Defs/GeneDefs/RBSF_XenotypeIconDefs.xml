@@ -6,7 +6,7 @@
 
 	<XenotypeIconDef>
 		<defName>RBS_Satyr</defName>
-		<texPath>UI/XenotypeIcons/RBF_Satyr</texPath>
+		<texPath>UI/XenotypeIcons/RBS_Satyr</texPath>
 	</XenotypeIconDef>
 	
 	<!--============================== Custom Xenotype Icons ============================-->
