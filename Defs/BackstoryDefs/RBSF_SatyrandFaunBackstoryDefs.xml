@@ -19,18 +19,9 @@
 			<li>SatyrWild</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Social</key>
-				<value>-4</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>-3</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>4</value>
-			</li>
+			<Social>-4</Social>
+			<Intellectual>-3</Intellectual>
+			<Plants>4</Plants>
 		</skillGains>
 		<forcedTraits>
 			<Wimp>0</Wimp>
@@ -59,14 +50,8 @@
 			<li>Bard</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Artistic</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>5</value>
-			</li>
+			<Artistic>5</Artistic>
+			<Intellectual>5</Intellectual>
 		</skillGains>
 		<requiredWorkTags>
 			<li>Artistic</li>
@@ -88,14 +73,8 @@
 			<li>SatyrandFaun</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Construction</key>
-				<value>6</value>
-			</li>
-			<li>
-				<key>Crafting</key>
-				<value>3</value>
-			</li>
+			<Construction>6</Construction>
+			<Crafting>3</Crafting>
 		</skillGains>
 		<forcedTraits>
 			<Tough>0</Tough>
@@ -121,22 +100,10 @@
 			<li>SatyrandFaun</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Crafting</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Medicine</key>
-				<value>2</value>
-			</li>
+			<Crafting>4</Crafting>
+			<Plants>4</Plants>
+			<Social>2</Social>
+			<Medicine>2</Medicine>
 		</skillGains>
 		<disallowedTraits>
 			<Beauty>-2</Beauty>
@@ -185,22 +152,10 @@
 			<li>SatyrOnly</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Social</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Cooking</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>4</value>
-			</li>
+			<Social>5</Social>
+			<Cooking>4</Cooking>
+			<Intellectual>4</Intellectual>
+			<Plants>4</Plants>
 		</skillGains>
 		<forcedTraits>
 			<Beauty>1</Beauty>
@@ -232,14 +187,8 @@
 			<li>Bard</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Artistic</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>2</value>
-			</li>
+			<Artistic>5</Artistic>
+			<Intellectual>2</Intellectual>
 		</skillGains>
 		<workDisables>
 			<li>ManualDumb</li>
@@ -262,22 +211,10 @@
 			<li>Bard</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Artistic</key>
-				<value>6</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Cooking</key>
-				<value>2</value>
-			</li>
+			<Artistic>6</Artistic>
+			<Social>2</Social>
+			<Plants>2</Plants>
+			<Cooking>2</Cooking>
 		</skillGains>
 		<forcedTraits>
 			<GreatMemory>0</GreatMemory>
@@ -308,18 +245,9 @@
 			<li>Hellgoat</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Mining</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>4</value>
-			</li>
+			<Mining>5</Mining>
+			<Social>4</Social>
+			<Intellectual>4</Intellectual>
 		</skillGains>
 		<disallowedTraits>
 			<Ascetic>0</Ascetic>
@@ -328,18 +256,9 @@
 			<Asexual>0</Asexual>
 		</disallowedTraits>
 		<possessions>
-			<li>
-				<key>Jade</key>
-				<value>10</value>
-			</li>
-			<li>
-				<key>Gold</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Silver</key>
-				<value>5</value>
-			</li>
+			<Jade>10</Jade>
+			<Gold>5</Gold>
+			<Silver>5</Silver>
 		</possessions>
 	</BackstoryDef>
 	
@@ -359,14 +278,8 @@
 			<li>Bard</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Social</key>
-				<value>7</value>
-			</li>
-			<li>
-				<key>Animals</key>
-				<value>4</value>
-			</li>
+			<Social>7</Social>
+			<Animals>4</Animals>
 		</skillGains>
 		<forcedTraits>
 			<Industriousness>-1</Industriousness>
@@ -397,54 +310,18 @@
 			<li>Hellgoat</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Shooting</key>
-				<value>-7</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>-7</value>
-			</li>
-			<li>
-				<key>Construction</key>
-				<value>-7</value>
-			</li>
-			<li>
-				<key>Mining</key>
-				<value>-7</value>
-			</li>
-			<li>
-				<key>Cooking</key>
-				<value>-7</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>-7</value>
-			</li>
-			<li>
-				<key>Animals</key>
-				<value>-7</value>
-			</li>
-			<li>
-				<key>Crafting</key>
-				<value>-7</value>
-			</li>
-			<li>
-				<key>Artistic</key>
-				<value>-7</value>
-			</li>
-			<li>
-				<key>Medicine</key>
-				<value>-7</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>-7</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>-7</value>
-			</li>
+			<Shooting>-7</Shooting>
+			<Melee>-7</Melee>
+			<Construction>-7</Construction>
+			<Mining>-7</Mining>
+			<Cooking>-7</Cooking>
+			<Plants>-7</Plants>
+			<Animals>-7</Animals>
+			<Crafting>-7</Crafting>
+			<Artistic>-7</Artistic>
+			<Medicine>-7</Medicine>
+			<Social>-7</Social>
+			<Intellectual>-7</Intellectual>
 		</skillGains>
 		<forcedTraits>
 			<FastLearner>0</FastLearner>
@@ -474,18 +351,9 @@
 			<li>SatyrandFaun</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Plants</key>
-				<value>8</value>
-			</li>
-			<li>
-				<key>Cooking</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>4</value>
-			</li>
+			<Plants>8</Plants>
+			<Cooking>5</Cooking>
+			<Intellectual>4</Intellectual>
 		</skillGains>
 		<forcedTraits>
 			<Beauty>-1</Beauty>
@@ -508,10 +376,7 @@
 			<li>Bard</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Social</key>
-				<value>10</value>
-			</li>
+			<Social>10</Social>
 		</skillGains>
 		<forcedTraits>
 			<TorturedArtist>0</TorturedArtist>
@@ -544,14 +409,8 @@
 			<li>SatyrWild</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Animals</key>
-				<value>5</value>
-			</li>
+			<Melee>5</Melee>
+			<Animals>5</Animals>
 		</skillGains>
 		<disallowedTraits>
 			<NaturalMood>2</NaturalMood>
