@@ -113,9 +113,6 @@
 		<displayWound>false</displayWound>
 		<description>This pawn is experiencing accelerated healing due to being in the presence of a melodic healing song.</description>
 		<comps>
-			<li Class="HediffCompProperties_RemoveIfOtherHediff">
-				<otherHediff>TraumaSavant</otherHediff>
-			</li>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-90</severityPerDay>
 			</li>
@@ -183,9 +180,6 @@
 		<displayWound>false</displayWound>
 		<description>This pawn is primed for battle, thanks to the exhilarating sound of a nearby war song.</description>
 		<comps>
-			<li Class="HediffCompProperties_RemoveIfOtherHediff">
-				<otherHediff>TraumaSavant</otherHediff>
-			</li>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-90</severityPerDay>
 			</li>
@@ -240,9 +234,6 @@
 		<displayWound>false</displayWound>
 		<description>This pawn is rapidly falling asleep due to the sound of a beautiful lullaby.</description>
 		<comps>
-			<li Class="HediffCompProperties_RemoveIfOtherHediff">
-				<otherHediff>TraumaSavant</otherHediff>
-			</li>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-90</severityPerDay>
 			</li>
@@ -293,9 +284,6 @@
 		<displayWound>false</displayWound>
 		<description>This pawn can meditate much better thanks to the soothing song playing near them.</description>
 		<comps>
-			<li Class="HediffCompProperties_RemoveIfOtherHediff">
-				<otherHediff>TraumaSavant</otherHediff>
-			</li>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-90</severityPerDay>
 			</li>

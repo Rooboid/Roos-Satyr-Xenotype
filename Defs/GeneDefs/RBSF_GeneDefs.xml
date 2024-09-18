@@ -9,19 +9,29 @@
 		<label>goat ears</label>
 		<description>Carriers of this gene possess goat-like ears.</description>
 		<iconPath>UI/GeneIcons/RBSF_GoatEars</iconPath>
-		<graphicData>
-		<graphicPath Inherit="False"/>
-			<graphicPaths>
+		<renderNodeProperties>
+		  <li>
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+			<texPaths>
 				<li>Things/Pawn/Humanlike/Ears/RBSF_GoatEarsA/RBSF_GoatEarsA</li>
 				<li>Things/Pawn/Humanlike/Ears/RBSF_GoatEarsB/RBSF_GoatEarsB</li>
 				<li>Things/Pawn/Humanlike/Ears/RBSF_GoatEarsC/RBSF_GoatEarsC</li>
 				<li>Things/Pawn/Humanlike/Ears/RBSF_GoatEarsD/RBSF_GoatEarsD</li>
 				<li>Things/Pawn/Humanlike/Ears/RBSF_GoatEarsE/RBSF_GoatEarsE</li>
-			</graphicPaths>
-			<drawOffsetEast>(-0.05, 0.0, 0.0)</drawOffsetEast>
+			</texPaths>
 			<colorType>Skin</colorType>
-			<layer>PostSkin</layer>
-		</graphicData>
+			<parentTagDef>Head</parentTagDef>
+			<useSkinShader>true</useSkinShader>
+			<useRottenColor>true</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+			  <defaultData>
+				<layer>70</layer>
+			  </defaultData>
+			</drawData>
+		  </li>
+		</renderNodeProperties>
 		<symbolPack>
 			<prefixSymbols>
 				<li><symbol>goa</symbol></li>
@@ -42,8 +52,11 @@
 		<description>Carriers of this gene sport a pair of goat-like horns atop their heads.</description>
 		<iconPath>UI/GeneIcons/RBSF_GoatHorns</iconPath>
 		<displayOrderInCategory>113</displayOrderInCategory>
-		<graphicData>
-			<graphicPaths>
+		<renderNodeProperties>
+		  <li>
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+			<texPaths>
 				<li>Things/Pawn/Humanlike/Horns/RBSF_GoatHornsA/RBSF_GoatHornsA</li>
 				<!-- Duplicated for higher chance-->
 				<li>Things/Pawn/Humanlike/Horns/RBSF_GoatHornsB/RBSF_GoatHornsB</li>
@@ -55,11 +68,20 @@
 				<li>Things/Pawn/Humanlike/Horns/RBSF_GoatHornsE/RBSF_GoatHornsE</li>
 				<li>Things/Pawn/Humanlike/Horns/RBSF_GoatHornsF/RBSF_GoatHornsF</li>
 				<li>Things/Pawn/Humanlike/Horns/RBSF_GoatHornsG/RBSF_GoatHornsG</li>
-			</graphicPaths>
-			<color>(255, 255, 255)</color>
-			<layer>PostHeadgear</layer>
-			<drawNorthAfterHair>false</drawNorthAfterHair>
-		</graphicData>
+			</texPaths>
+			<colorType>Custom</colorType>
+			<color>(255,255,255)</color>
+			<parentTagDef>Head</parentTagDef>
+			<useSkinShader>true</useSkinShader>
+			<useRottenColor>true</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+			  <defaultData>
+				<layer>70</layer>
+			  </defaultData>
+			</drawData>
+		  </li>
+		</renderNodeProperties>
 		<exclusionTags>
 			<li>SerenSensors</li>
 		</exclusionTags>

@@ -57,7 +57,7 @@ namespace Roos_Satyr_Xenotype
         {
 
             JobFailReason.Clear();
-            if (!selPawn.genes.HasGene(RBSF_DefOf.RBSF_Virtuoso))
+            if (!selPawn.genes.HasActiveGene(RBSF_DefOf.RBSF_Virtuoso))
             {
                 JobFailReason.Is(selPawn.Name + "is not a Virtuoso", null);
                 yield return new FloatMenuOption("Cannot use Music Sheet: " + JobFailReason.Reason.CapitalizeFirst(), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
