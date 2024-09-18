@@ -85,6 +85,7 @@
 		<cooldownTicksRange>0</cooldownTicksRange>
 		<aiCanUse>false</aiCanUse>
 		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupEffecter>RBSF_MusicHealing</warmupEffecter>
@@ -153,6 +154,7 @@
 		<cooldownTicksRange>0</cooldownTicksRange>
 		<aiCanUse>false</aiCanUse>
 		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupEffecter>RBSF_MusicWarcall</warmupEffecter>
@@ -207,6 +209,7 @@
 		<cooldownTicksRange>0</cooldownTicksRange>
 		<aiCanUse>true</aiCanUse>
 		<hostile>true</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupEffecter>RBSF_MusicLullaby</warmupEffecter>
@@ -257,6 +260,7 @@
 		<iconPath>UI/GeneIcons/RBSF_Ability_Hymn</iconPath>
 		<displayOrder>50</displayOrder>
 		<cooldownTicksRange>0</cooldownTicksRange>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupEffecter>RBSF_MusicHymn</warmupEffecter>
@@ -341,6 +345,7 @@
 		<category>Satyr</category>
 		<displayOrder>600</displayOrder>
 		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<verbProperties>
 			<verbClass>Verb_CastAbilityTouch</verbClass>
 			<drawAimPie>false</drawAimPie>
