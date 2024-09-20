@@ -50,7 +50,7 @@ namespace Roos_Satyr_Xenotype
 
             Hediff hediff = HediffMaker.MakeHediff(appliedHediffDef, pawn);
             pawn.health.AddHediff(hediff);
-            Log.Message("Pawn: " + pawn.Name + " given hediff " + hediff.Label);
+            //Log.Message("Pawn: " + pawn.Name + " given hediff " + hediff.Label);
             return;
         }
     }

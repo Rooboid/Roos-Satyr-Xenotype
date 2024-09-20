@@ -35,7 +35,7 @@ namespace Roos_Satyr_Xenotype
             yield return Toils_General.Do(delegate
             {
                 AbilityDef abilityDef = MusicSheetComp.Props.ability;
-                Log.Message("Pawn: " + pawn.Name + "used the music sheet, and gained " + abilityDef.defName);
+                //Log.Message("Pawn: " + pawn.Name + "used the music sheet, and gained " + abilityDef.defName);
                 this.pawn.abilities.GainAbility(abilityDef);
                 Toil use = base.Use();
             });

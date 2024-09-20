@@ -17,21 +17,22 @@ namespace Roos_Satyr_Xenotype
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
-            //Log.Message("Target was " + target.ToString());
-            var random = Rand.Value;
-            //Log.Message("Random value was " + random.ToString());
-            if (random >= Props.chance)
+
+            if (Rand.Chance(Props.chance))
             {
-                base.Apply(target, dest);
                 //Log.Message("Success!");
+                base.Apply(target, dest);
                 RBSF_DefOf.RBSF_MelodicElegySucceed.PlayOneShot(new TargetInfo(this.parent.pawn.Position, this.parent.pawn.Map, false));
+                Find.LetterStack.ReceiveLetter("Elegy Success", parent.pawn.Name.ToStringShort + "'s melodic elegy was breathtaking, beautiful and sincere. The golden fiddle evaporated into a shining light, and the corpse has been resurrected.\n\nIt will be a long time before " + parent.pawn.Name.ToStringShort + " can summon up the courage to play such a challenging melody again.", LetterDefOf.PositiveEvent);
                 return;
             }
 
-            target.Thing.Destroy();
             //Log.Message("Failure...");
+            float radius  = 0.5f;
+            GenExplosion.DoExplosion(target.Thing.Position, this.parent.pawn.MapHeld, radius, DamageDefOf.Flame, this.parent.pawn);
+            GenExplosion.DoExplosion(this.parent.pawn.Position, this.parent.pawn.MapHeld, radius, DamageDefOf.Flame, this.parent.pawn);
             RBSF_DefOf.RBSF_MelodicElegyFail.PlayOneShot(new TargetInfo(this.parent.pawn.Position, this.parent.pawn.Map, false));
-
+            Find.LetterStack.ReceiveLetter("Elegy Failed", parent.pawn.Name.ToStringShort + "'s melodic elegy failed to resurrect the corpse, setting it on fire.\n\nIt will be a long time before " + parent.pawn.Name.ToStringShort + " dares to play such a harrowing melody again...", LetterDefOf.NegativeEvent);
             return;
         }
     }
@@ -42,6 +43,6 @@ namespace Roos_Satyr_Xenotype
         {
             this.compClass = typeof(RBSF_Deal_With_the_Devil);
         }
-        public float chance = 0.5f;
+        public float chance = 0.65f;
     }
 }
