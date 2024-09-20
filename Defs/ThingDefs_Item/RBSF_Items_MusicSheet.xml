@@ -169,7 +169,13 @@
 	<ThingDef ParentName="VirtuosoMusicSheetBase">
 		<defName>RBSF_MelodicElegySheet</defName>
 		<label>melodic elegy music sheet</label>
-		<description>An ancient music sheet for a unique melody. Pawns with the Virtuoso gene can study it to learn a new ability, capable of ressurecting the dead.</description>
+		<description>A music sheet for an ancient, complex melody. The music sheet glows with an ethereal golden light. Pawns with the Virtuoso gene can study it to learn a new ability, capable of ressurecting the dead.
+		
+		\n\n\n"I guess you didn't know it, but I'm a fiddle player too,
+		And if you'd care to take a dare, I'll make a bet with you.
+		Now you play a pretty good fiddle, boy, but give the Devil his due,
+		I'll bet a fiddle o' gold against your soul 'cause I think I'm better than you."</description>
+		
 		<graphicData>
 			<texPath>Things/Item/MusicSheets/RBSF_MusicSheetB</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
