@@ -18,23 +18,24 @@
 	
 		<logRulesInitiator>
 			<rulesStrings>
-				<li>r_logentry(p=4)->[INITIATOR_nameDef] [uncouthabout] [TalkTopicLight] to [RECIPIENT_nameDef].</li>
+				<li>r_logentry(p=2)->[INITIATOR_nameDef] [uncouthabout] [TalkTopicLight] to [RECIPIENT_nameDef].</li>
 				<li>r_logentry->[uncouthfixed]</li>
-
-				<li>uncouthabout(p=4)->asked an inappropriate question about</li>
-				<li>uncouthabout(p=3)->recited a dirty joke about</li>
+				
+				<li>uncouthabout(p=4)->told a dirty joke about</li>
+				
+				<li>uncouthabout(p=3)->asked an inappropriate question about</li>
 				<li>uncouthabout(p=3)->said something inappropriate about</li>
 				
 				<li>uncouthabout->made a contemptuous remark about</li>
-				<li>uncouthabout->cracked an offensive joke about</li>
+				<li>uncouthabout->made an offensive joke about</li>
 				<li>uncouthabout->made a rude joke about</li>
-				<li>uncouthabout->ad-libbed a profane limerick about</li>
+				<li>uncouthabout->sang a profane limerick about</li>
 				<li>uncouthabout->implied something gross about</li>
-				<li>uncouthabout->recited a distasteful rhyme about</li>
+				<li>uncouthabout->sang a distasteful rhyme about</li>
 				<li>uncouthabout->invented an inappropriate rumour about</li>
 
 				<li>uncouthfixed->[INITIATOR_nameDef] performed an inappropriate impression of a [Animal] for [RECIPIENT_nameDef]. [RECIPIENT_nameDef] tried to look away, but couldn't.</li>
-				<li>uncouthfixed->[INITIATOR_nameDef] asked [RECIPIENT_nameDef] how many past lovers [RECIPIENT_pronoun] has had. [RECIPIENT_nameDef] wasn’t sure what to say.</li>
+				<li>uncouthfixed->[INITIATOR_nameDef] asked [RECIPIENT_nameDef] how many past lovers [RECIPIENT_pronoun] had. [RECIPIENT_nameDef] avoided the question.</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] attempted to tickle [RECIPIENT_nameDef].</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] tried to impress [RECIPIENT_nameDef] by licking [INSTIGATOR_possessive] elbow. This impressed nobody.</li>
 				<li>uncouthfixed->[RECIPIENT_nameDef] caught [INITIATOR_nameDef] scratching [INSTIGATOR_possessive] groin.</li>
@@ -43,10 +44,10 @@
 				<li>uncouthfixed->[INITIATOR_nameDef] tried to distract [RECIPIENT_nameDef] by shaking [INITIATOR_possessive] backside.</li>
 				<li>uncouthfixed->[RECIPIENT_nameDef] caught [INITIATOR_nameDef] picking [INSTIGATOR_possessive] nose.</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] told [RECIPIENT_nameDef] that the word 'gullible' was written on the ceiling. [RECIPIENT_nameDef] looked up to check.</li>
-				<li>uncouthfixed->[INITIATOR_nameDef] enquired if [RECIPIENT_nameDef] had recently gained weight.</li>
+				<li>uncouthfixed->[INITIATOR_nameDef] asked if [RECIPIENT_nameDef] had recently gained weight.</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] playfully compared [RECIPIENT_nameDef]'s face to a [Vegetable].</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] pretended to sneeze on [RECIPIENT_nameDef].</li>
-				<li>uncouthfixed->[INITIATOR_nameDef] comically pestered [RECIPIENT_nameDef] for a hug.</li>
+				<li>uncouthfixed->[INITIATOR_nameDef] pestered [RECIPIENT_nameDef] for a hug. The request was ignored.</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] wolfwhistled [RECIPIENT_nameDef] and blamed it on someone else.</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] pulled a playful prank on [RECIPIENT_nameDef].</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] asked [RECIPIENT_nameDef] where babies come from.</li>
@@ -59,13 +60,13 @@
 				<li>uncouthfixed->[RECIPIENT_nameDef] started to talk to [INITIATOR_nameDef] about [TalkTopicLight]. [INITIATOR_nameDef] yawned loudly.</li>
 				<li>uncouthfixed->During a casual conversation about [TalkTopicLight], [INITIATOR_nameDef] continued to speak over and interrupt [RECIPIENT_nameDef].</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] offered [RECIPIENT_nameDef] a breath mint.</li>
-				<li>uncouthfixed->[INITIATOR_nameDef] boasted to [RECIPIENT_nameDef], in detail, about [INITIATOR_possessive] sexual prowess.</li>
+				<li>uncouthfixed->[INITIATOR_nameDef] boasted to [RECIPIENT_nameDef] about [INITIATOR_possessive] sexual prowess. In an uncomfortable amount of detail.</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] asked [RECIPIENT_nameDef] to pull [INITIATOR_possessive] finger.</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] facetiously asked [RECIPIENT_nameDef] when [RECIPIENT_possessive] baby is due.</li>
-				<li>uncouthfixed->[INITIATOR_nameDef] whispered something vulgar in [RECIPIENT_nameDef]'s ear.</li>
-				<li>uncouthfixed->[INITIATOR_nameDef] pretended to doze off and snore while [RECIPIENT_nameDef] was talking.</li>
+				<li>uncouthfixed->[INITIATOR_nameDef] muttered something vulgar in [RECIPIENT_nameDef]'s ear.</li>
+				<li>uncouthfixed->[INITIATOR_nameDef] pretended to snore while [RECIPIENT_nameDef] was talking.</li>
 				<li>uncouthfixed->[INITIATOR_nameDef] playfully mocked [RECIPIENT_nameDef]'s accent.</li>
-				<li>uncouthfixed->[INITIATOR_nameDef] boasted about a certain one of [INITIATOR_possessive] body parts.</li>
+				<li>uncouthfixed->[INITIATOR_nameDef] tried to convince [RECIPIENT_nameDef] that the planet is flat.</li>
 				
 			</rulesStrings>
 		</logRulesInitiator>
@@ -141,18 +142,18 @@
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 			<li>
-				<label>a beautiful pawn in the colony</label>
-				<description>A beautiful pawn keeps catching my eye, and my-oh-my, are they a sight for sore eyes.</description>
+				<label>beautiful pawn in the colony</label>
+				<description>A beautiful pawn keeps catching my eye.</description>
 				<baseMoodEffect>3</baseMoodEffect>
 			</li>
 			<li>
 				<label>some beautiful pawns in the colony</label>
-				<description>We've got some hotties in the colony, and I like it! I wonder if they could recruit any of their friends to join us?</description>
+				<description>We've got some real hotties around here, and I like it! I wonder if we could recruit any of their friends to join us?</description>
 				<baseMoodEffect>6</baseMoodEffect>
 			</li>
 			<li>
-				<label>surrounded by eye-candy</label>
-				<description>Mmm...Everyone around here is drop-dead gorgeous, how can I be sad at a time like this?</description>
+				<label>many beautiful pawns in the colony</label>
+				<description>Everyone around here is drop-dead gorgeous; how could I be sad at a time like this?</description>
 				<baseMoodEffect>9</baseMoodEffect>
 			</li>
 			<li>

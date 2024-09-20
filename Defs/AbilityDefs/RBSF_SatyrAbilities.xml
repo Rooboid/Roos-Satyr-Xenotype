@@ -33,7 +33,7 @@
 	<AbilityDef ParentName="MelodicBase">
 		<defName>RBSF_MelodicSonata</defName>
 		<label>melodic sonata</label>
-		<description>The user performs an uplifting tune that’s guaranteed to put a smile on people’s faces. Anyone who hears this song will feel uplifted for a while.</description>
+		<description>The user performs an uplifting tune that’s guaranteed to put a smile on pawns' faces. Anyone who hears this song will feel uplifted for a while.</description>
 		<iconPath>UI/GeneIcons/RBSF_Ability_Sonata</iconPath>
 		<displayOrder>53</displayOrder>
 		<cooldownTicksRange>0</cooldownTicksRange>
@@ -79,7 +79,7 @@
 	<AbilityDef ParentName="MelodicBase">
 		<defName>RBSF_MelodicHealing</defName>
 		<label>melodic healing</label>
-		<description>The user plays an inspiring song of hope and joy. While this tune is played, anyone who hears this tune will heal much faster.</description>
+		<description>The user plays an inspiring song of hope and joy. While this tune is played, anyone who hears it will heal much faster.</description>
 		<iconPath>UI/GeneIcons/RBSF_Ability_Healing</iconPath>
 		<displayOrder>51</displayOrder>
 		<cooldownTicksRange>0</cooldownTicksRange>
@@ -337,7 +337,7 @@
 	<AbilityDef ParentName="AbilityTouchBase">
 		<defName>RBSF_MelodicElegy</defName>
 		<label>melodic elegy</label>
-		<description>The pawn plays an ancient melody capable of resurrecting a fallen pawn. The melody is said to reperesent a duel between the pawn and the devil themselves; if they win, the corpse is restored. If they lose, however, the soul is purged from the body, leaving nothing but bile and ash behind.</description>
+		<description>The pawn plays an ancient melody capable of resurrecting a fallen pawn. The melody is said to reperesent a duel between the pawn and The Devil themselves. If the pawn wins, the corpse is resurrected. But if they lose, the corpse's soul becomes enveloped in the flames of the hells.</description>
 		<iconPath>UI/GeneIcons/RBSF_Ability_Elegy</iconPath>
 		<cooldownTicksRange>6840000~7560000</cooldownTicksRange><!-- 1.9~2.1 years -->
 		<warmupMote>Mote_ResurrectAbility</warmupMote>
