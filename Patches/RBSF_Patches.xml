@@ -69,52 +69,34 @@
 							<iconPath>UI/GeneIcons/RBM_BovineLegs</iconPath>
 							<iconColor>(0.75, 0.75, 0.75)</iconColor>
 							<fur>RBM_UnguligradeLegs</fur>
-							<skinIsHairColor>true</skinIsHairColor>
-							<tattoosVisible>false</tattoosVisible>
-							<renderNodeProperties>
-								<li>
-									<debugLabel>Fur</debugLabel>
-									<nodeClass>PawnRenderNode_Fur</nodeClass>
-									<workerClass>PawnRenderNodeWorker_Fur</workerClass>
-									<baseLayer>5</baseLayer>
-									<rotDrawMode>Fresh, Rotting</rotDrawMode>
-									<colorType>Hair</colorType>
-									<parentTagDef>Body</parentTagDef>
-								</li>
-							</renderNodeProperties>
+							<!-- <tattoosVisible>false</tattoosVisible> -->
 							<symbolPack>
 								<prefixSymbols>
-									<li>
-										<symbol>faun</symbol>
-									</li>
-									<li>
-										<symbol>jog</symbol>
-									</li>
-									<li>
-										<symbol>bov</symbol>
-									</li>
-									<li>
-										<symbol>bolt</symbol>
-									</li>
+									<li><symbol>faun</symbol></li>
+									<li><symbol>jog</symbol></li>
+									<li><symbol>bov</symbol></li>
+									<li><symbol>bolt</symbol></li>
 								</prefixSymbols>
 								<suffixSymbols>
-									<li>
-										<symbol>yr</symbol>
-									</li>
-									<li>
-										<symbol>ine</symbol>
-									</li>
-									<li>
-										<symbol>trotter</symbol>
-									</li>
-									<li>
-										<symbol>hoof</symbol>
-									</li>
-									<li>
-										<symbol>ped</symbol>
-									</li>
+									<li><symbol>yr</symbol></li>
+									<li><symbol>ine</symbol></li>
+									<li><symbol>trotter</symbol></li>
+									<li><symbol>hoof</symbol></li>
+									<li><symbol>ped</symbol></li>
 								</suffixSymbols>
 							</symbolPack>
+							<renderNodeProperties>
+							  <li>
+								
+								<debugLabel>Fur</debugLabel>
+								<nodeClass>PawnRenderNode_Fur</nodeClass>
+								<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+								<baseLayer>5</baseLayer>
+								<rotDrawMode>Fresh, Rotting</rotDrawMode>
+								<colorType>Hair</colorType>
+								<parentTagDef>Body</parentTagDef>
+							  </li>
+							</renderNodeProperties>
 							<!-- Thee following will occur if you ARE running vanilla framework expanded. If not, a patch is added to tie the gene buffs to the pawn, as opposed to the body part -->
 							<modExtensions>
 								<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
