@@ -10,7 +10,7 @@
 		<title>sheltered child</title>
 		<titleShort>sheltered</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was the first of [PAWN_possessive] gender to be born to [PAWN_possessive] tribe in years. [PAWN_possessive] elders treat [PAWN_objective] like a precious treasure, seldom allowing [PAWN_objective] to wander even an inch out of sight. This obsessive safeguarding lead to [PAWN_nameDef] gaining limited knowledge about the outside world.</baseDesc>
+		<baseDesc>Having been born in the midsts of a harrowing, bloody war, [PAWN_nameDef] was considered a blessing from the Gods. And [PAWN_possessive] elders treat [PAWN_objective] as such, seldom allowing [PAWN_objective] to wander even an inch out of sight. This obsessive safeguarding lead to [PAWN_nameDef] gaining limited knowledge of the outside world.</baseDesc>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<spawnCategories>
@@ -66,7 +66,7 @@
 		<title>captured</title>
 		<titleShort>captured</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef]'s community was shackled and enslaved to a Sanguaphage kingdom, with [PAWN_nameDef] assigned to endless nights of manual labour. \n\n[PAWN_nameDef] made [PAWN_possessive] escape by squeezing [PAWN_objective]self in a transport pod full of cargo and launching to freedom.</baseDesc>
+		<baseDesc>[PAWN_nameDef]'s community was shackled and enslaved to a Sanguaphage kingdom, with [PAWN_nameDef] forced to endure endless nights of manual labour. \n\n[PAWN_nameDef] made [PAWN_possessive] escape by squeezing [PAWN_objective]self in a transport pod full of cargo and launching to freedom.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -93,7 +93,7 @@
 		<title>scamp</title>
 		<titleShort>scamp</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was orphaned at a young age, and became the responsibility of [PAWN_possessive] entire community. Elders doted on this adorable little scamp, and taught [PAWN_objective] a myriad of skills.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was orphaned at a young age, and became the responsibility of [PAWN_possessive] entire community. Elders doted on this adorable little scamp, and taught [PAWN_objective] a myriad of skills that ensured [PAWN_possessive] survival.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -119,7 +119,7 @@
 		<title>chattel</title>
 		<titleShort>possession</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was bought by an aristocratic couple, who exhibited [PAWN_objective] like an exotic good at social soirees. High-status attendees would poke and prod at this exotic xenotype, having never seen one so small and ugly in the flesh before. When an open window presented itself as an opportunity to [PAWN_nameDef], [PAWN_pronoun] fled, never to return to the husk of a life [PAWN_pronoun] once lived.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was bought by an aristocratic couple who exhibited [PAWN_objective] like an exotic artefact. High-status friends of the couple would poke and prod at this unusual xenotype as if [PAWN_pronoun] was nothing more than a novelty. When an open window presented itself as an opportunity to flee, [PAWN_nameDef] did, and never returned to the husk of a life [PAWN_pronoun] once lived.</baseDesc>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<spawnCategories>
@@ -237,7 +237,7 @@
 		<title>gemcutter</title>
 		<titleShort>gemcutter</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] curated a shimmering collection of wondrous gemstones. Mixed into this display were also an assortment of common, shabby stones; but with [PAWN_possessive] silver-tongue, [PAWN_nameDef] could convince anyone with more money than sense that these chunks of dirt were priceless.</baseDesc>
+		<baseDesc>[PAWN_nameDef] peddled a shimmering collection of wondrous gemstones to the social elite. Mixed in with these treasures were an assortment of common, shabby stones; but with [PAWN_possessive] silver-tongue, [PAWN_nameDef] could convince anyone with more money than sense that these chunks of dirt were just as priceless.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -270,7 +270,7 @@
 		<title>jester</title>
 		<titleShort>jester</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] resided in the stables of a royal lord’s castle. Thinking that [PAWN_pronoun] was worth no more than livestock, [PAWN_possessive] lord had little to do with [PAWN_objective], and only called on for [PAWN_objective] for entertainment and cheap laughs. \n\nThe joke was on the royal lord, however, because [PAWN_nameDef] adored this simple life, and found fulfilment in caring for the animals in the stables like they were family.</baseDesc>
+		<baseDesc>[PAWN_nameDef] resided in the stables of a royal lord’s castle. Thinking that [PAWN_pronoun] was worth no more than livestock, [PAWN_possessive] lord had little to do with [PAWN_objective], and only called on for [PAWN_objective] for entertainment and cheap laughs. \n\nThe joke was on the royal lord however, because [PAWN_nameDef] adored this simple life, and found fulfilment in caring for the animals in the stables like they were family.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -302,7 +302,7 @@
 		<title>statue</title>
 		<titleShort>amnesiac</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>A fateful encounter with what [PAWN_nameDef] described as a snake-like, humanoid creature left [PAWN_nameDef] encased in stone for an unknown number of years. Having lost almost all memories of [PAWN_possessive] life before this encounter, [PAWN_nameDef] has been tasked to uncover [PAWN_possessive] identity once again.</baseDesc>
+		<baseDesc>A fateful encounter with what [PAWN_nameDef] described as a snake-like, humanoid creature left [PAWN_nameDef] encased in stone for an unknown number of years. Having lost almost all memories of [PAWN_possessive] life before this encounter, [PAWN_nameDef] must uncover [PAWN_possessive] identity once again.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -344,7 +344,7 @@
 		<title>dubious apothecarist</title>
 		<titleShort>apothecarist</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>Accidentally fermenting a rare genus of jungle plant brought [PAWN_nameDef] to a high of unpredictable proportions, so [PAWN_pronoun] began to harvest and process this potent drug and sell it to travelling merchants. \n\nWeeks passed, and merchants returned to [PAWN_nameDef], battered and bruised, begging [PAWN_objective] for more, lest their customers get angrier and more desperate. In time, [PAWN_nameDef] made a fortune from [PAWN_possessive] underground dealership, before fleeing for concerns of [PAWN_possessive] safety.</baseDesc>
+		<baseDesc>Accidentally fermenting a rare genus of jungle plant brought [PAWN_nameDef] to a high of unpredictable proportions. [PAWN_pronoun] began to harvest and process this potent drug and sell it to travelling merchants as a novelty. \n\nWeeks passed, and merchants returned to [PAWN_nameDef], battered and bruised, begging [PAWN_objective] for more, lest their customers get angrier and more desperate. In time, [PAWN_nameDef] made a fortune from [PAWN_possessive] underground dealership, before fleeing for concerns of [PAWN_possessive] safety.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
