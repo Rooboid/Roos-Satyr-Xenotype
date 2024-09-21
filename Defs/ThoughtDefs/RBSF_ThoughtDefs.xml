@@ -143,27 +143,27 @@
 			</li>
 			<li>
 				<label>beautiful pawn in the colony</label>
-				<description>A beautiful pawn keeps catching my eye.</description>
+				<description>A gorgeous pawn keeps catching my eye...</description>
 				<baseMoodEffect>3</baseMoodEffect>
 			</li>
 			<li>
 				<label>some beautiful pawns in the colony</label>
-				<description>We've got some real hotties around here, and I like it! I wonder if we could recruit any of their friends to join us?</description>
+				<description>We've got some absolute snacks in the colony. \n\nBut why stop there? Let's recruit some more.</description>
 				<baseMoodEffect>6</baseMoodEffect>
 			</li>
 			<li>
 				<label>many beautiful pawns in the colony</label>
-				<description>Everyone around here is drop-dead gorgeous; how could I be sad at a time like this?</description>
+				<description>Everyone around here is drop-dead gorgeous, I can barely get any work done!</description>
 				<baseMoodEffect>9</baseMoodEffect>
 			</li>
 			<li>
 				<label>awooga!</label>
-				<description>I'm surrounded by solid 10's! Just look at all the beauties in our colony, it's like a dream come true...</description>
+				<description>There's so much eye-candy around here, I don't know where to look! It's like a dream come true...</description>
 				<baseMoodEffect>12</baseMoodEffect>
 			</li>
 			<li>
 				<label>my own harem!</label>
-				<description>There's just so many beautiful pawns around here, it's like my very own harem!\n\nWell...it would be, if any of them liked me.</description>
+				<description>I'm surrounded by so many hotties, it's like my very own harem! \n\nWell...it would be, if any of them actually liked me.</description>
 				<baseMoodEffect>15</baseMoodEffect>
 			</li>
 		</stages>

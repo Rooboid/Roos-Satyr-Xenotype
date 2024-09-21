@@ -10,7 +10,7 @@
 		<title>roaming minstrel</title>
 		<titleShort>minstrel</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] wandered the grassy grottos of the rim with [PAWN_possessive] family, performing traditional music and poetry for wandering merchants and aristocrats. Over time, [PAWN_nameDef] was bought by a wealthy nobleman, and performed for he and his guests at social events and royal dinners. \n\n[PAWN_nameDef] was housed by this nobleman in a basement chamber, and never got to see [PAWN_possessive] family again.</baseDesc>
+		<baseDesc>[PAWN_nameDef] wandered the rim with [PAWN_possessive] family, performing traditional poetry for merchants and aristocrats alike. One of these aristocrats took a liking to [PAWN_nameDef], and paid a pretty penny for [PAWN_possessive] subservience. [PAWN_pronoun] was housed and fed by [PAWN_possessive] master, and performed for his guests at social events and royal dinners every evening. [PAWN_pronoun] never saw [PAWN_possessive] family again.</baseDesc>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<spawnCategories>
@@ -39,7 +39,7 @@
 		<title>troubadour</title>
 		<titleShort>troubadour</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was schooled within an affluent academy for the creatively gifted. [PAWN_pronoun] was taught not only to sing, but also to fight, and with time, [PAWN_pronoun] became proficient at doing both of these things on horseback.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was schooled at an affluent academy for the creatively gifted. [PAWN_pronoun] was taught not only to sing, but also to fight, and with time, [PAWN_pronoun] became proficient at doing both of these things at the same time.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -69,7 +69,7 @@
 		<title>rogue</title>
 		<titleShort>rogue</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] and [PAWN_possessive] troupe scouted the mountaintops for careless travellers and trade caravans. As they slept, [PAWN_nameDef] would strike from a distance with [PAWN_possessive] trusty bow, taking home a handsome bounty every time. \n\nUltimately, [PAWN_nameDef]’s troupe turned traitor and escaped with the group’s treasures, leaving [PAWN_nameDef] atop the cliffs without food, money, or even [PAWN_possessive] bow.</baseDesc>
+		<baseDesc>[PAWN_nameDef] would scout the mountaintops for careless travellers who had lost their way. From the bushes, [PAWN_nameDef] would strike, and take whatever those lost lambs' corpses left behind.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -99,7 +99,7 @@
 		<title>minstrel</title>
 		<titleShort>minstrel</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] documented [PAWN_possessive] tribe’s history through poetry and elegies. Tribespeople would gather around the fire while [PAWN_nameDef] called out from above the flames, singing tales of life, death and love to all who would listen. \n\nThough [PAWN_pronoun] wrote in detail about the callous violence of the battlefield, [PAWN_nameDef] would never, ever step foot on bloodied soil for anyone.</baseDesc>
+		<baseDesc>[PAWN_nameDef] documented [PAWN_possessive] tribe’s history through magnificent poetry. [PAWN_possessive] people would gather around the fire while [PAWN_pronoun] called out from above the flames, reciting tales of life, death and love to all who would listen. \n\nWriting such graphic accounts of war scarred [PAWN_objective] for life.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -136,7 +136,7 @@
 		<title>gambler</title>
 		<titleShort>gambler</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>If [PAWN_nameDef] owned it, [PAWN_nameDef] would wager it; gold coins, animals, alcohol, even [PAWN_possessive] clothes, [PAWN_nameDef] wasn't afraid to risk anything for the chance of a hefty payout. Even now, you'll never find [PAWN_nameDef] without a trusty pack of cards in [PAWN_possessive] pocket.</baseDesc>
+		<baseDesc>If [PAWN_nameDef] owned it, [PAWN_nameDef] would wager it; gold coins, animals, alcohol, even [PAWN_possessive] clothes. [PAWN_nameDef] wasn't afraid to risk anything for the chance of a hefty payout. Even today, you'll never find [PAWN_nameDef] without a trusty pack of cards in [PAWN_possessive] pocket.</baseDesc>
 		<bodyTypeMale>Fat</bodyTypeMale>
 		<bodyTypeFemale>Fat</bodyTypeFemale>
 		<spawnCategories>
@@ -161,9 +161,9 @@
 		<title>entertainer</title>
 		<titleShort>bard</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef], with [PAWN_possessive] band of fellow performers, serenaded marketplace patrons with [PAWN_possessive] whimsical and comedic tunes. [PAWN_nameDef]’s lyrics told stories of legendary warriors, dramatic fantasies and witty anecdotes of [PAWN_possessive] own adventures.</baseDesc>
-		<bodyTypeMale>Hulk</bodyTypeMale>
-		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef], with [PAWN_possessive] band of fellow performers, serenaded marketplace patrons with [PAWN_possessive] whimsical tunes. [PAWN_nameDef]’s imaginative ditties told stories of legendary warriors, bovine heroes and their mythical, snake-like foes.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<spawnCategories>
 			<li>Offworld</li>
 			<li>Bard</li>
@@ -182,7 +182,7 @@
 		<title>luthier</title>
 		<titleShort>luthier</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] manufactured guitars for a living, overseeing the entire process. From felling the tree that the instrument was carved from, to teaching buyers how to play a tune or two before they took their new purchase home, [PAWN_nameDef] was a dab hand at it all.</baseDesc>
+		<baseDesc>[PAWN_nameDef] manufactured guitars for a living. From felling the tree that the instrument was carved from, to teaching customers how to play a tune or two before they took their new purchase home, [PAWN_nameDef] was a dab hand at it all.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>

@@ -337,7 +337,7 @@
 	<AbilityDef ParentName="AbilityTouchBase">
 		<defName>RBSF_MelodicElegy</defName>
 		<label>melodic elegy</label>
-		<description>The pawn plays an ancient melody capable of resurrecting a fallen pawn. The melody is said to reperesent a duel between the pawn and The Devil themselves. If the pawn wins, the corpse is resurrected. But if they lose, the corpse's soul becomes enveloped in the flames of the hells.</description>
+		<description>The pawn plays an ancient melody capable of resurrecting a corpse. /n/nThe melody is said to reperesent a duel between the caster and The Devil themselves. If the pawn wins, the corpse is resurrected. But if they lose, the corpse's body remains lifeless and becomes enveloped in the flames of the hells.</description>
 		<iconPath>UI/GeneIcons/RBSF_Ability_Elegy</iconPath>
 		<cooldownTicksRange>6840000~7560000</cooldownTicksRange><!-- 1.9~2.1 years -->
 		<warmupMote>Mote_ResurrectAbility</warmupMote>

@@ -10,7 +10,7 @@
 		<title>fool</title>
 		<titleShort>fool</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was raised in a secluded grotto by a tribe of mysterious fauns. [PAWN_nameDef] was treat like a toy by these faun, who would insist that [PAWN_pronoun] dance, sing and make a fool of [PAWN_objective]self for their amusement.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was raised by a tribe of fauns, who insisted that [PAWN_pronoun] sing, dance and make a fool of [PAWN_objective]helf all for their own amusement.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -34,7 +34,7 @@
 		<title>trumpeter</title>
 		<titleShort>trumpeter</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] tooted [PAWN_possessive] own horn, literally, at [PAWN_possessive] community’s ritual parades. \n\nThe meaning of these celebrations became all-too clear when the shaman of the community burned none-believers in a roaring, ritualistic fire before the parade attendees. [PAWN_nameDef] could never approach fire or toot the trumpet ever again, in fear of awakening that bygone trauma once more.</baseDesc>
+		<baseDesc>[PAWN_nameDef] tooted [PAWN_possessive] own horn, literally, at [PAWN_possessive] community’s ritual parades. \n\nThe meaning of these celebrations became all-too clear when the shaman of the community burned the none-believers in a roaring, ritualistic fire before the parade attendees. [PAWN_nameDef] could never approach fire or toot the trumpet ever again, in fear of awakening that bygone trauma once more.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -80,7 +80,7 @@
 		<title>roustabout</title>
 		<titleShort>roustabout</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef], unlike many satyrs, was always willing to lend a hand to [PAWN_possessive] neighbours, and took up odd-jobs in farming and carpentry to make [PAWN_possessive] parents ends meet.</baseDesc>
+		<baseDesc>[PAWN_nameDef], unlike many satyrs, was always willing to lend a hand to [PAWN_possessive] neighbours, and took up odd-jobs to make [PAWN_possessive] parents ends meet.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -105,7 +105,7 @@
 		<title>incognito</title>
 		<titleShort>incognito</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was born from a forbidden relationship between a human and a satyr. [PAWN_possessive] adoptive mother brought [PAWN_nameDef] into an urban society of humans, and attempted to conceal her child’s identity as a satyr. [PAWN_nameDef] would hide [PAWN_possessive] horns underneath a hat, and cover [PAWN_possessive] hooves with adult-size shoes. \n\nAs [PAWN_pronoun] grew older, this disguise became harder to maintain, and the family were eventually shunned from the community for their façade.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was born from a forbidden relationship between a human and a satyr. [PAWN_possessive]  mother brought [PAWN_objective] into an urban society of humans, and attempted to conceal her child’s identity as a satyr.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -122,7 +122,7 @@
 		<title>uncouth</title>
 		<titleShort>uncouth</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was a troublesome child; always getting into spats and starting fights with the other children, [PAWN_pronoun] never seemed to grasp the concept of kindness whatsoever.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was a troublesome child; always getting into spats and starting fights with the other children. [PAWN_pronoun] never seemed to grasp the concept of kindness.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -159,7 +159,7 @@
 		<title>rejected suitor</title>
 		<titleShort>dumped</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>When the heir to a nearby settlement was promised a gorgeous suitor as a peace offering, they were a little underwhelmed when [PAWN_nameDef] arrived at their door. But to [PAWN_nameDef], [PAWN_pronoun] had practically won life’s lottery; getting to spend [PAWN_possessive] days schmoozing around the royal chambers, dining on plate after plate of exotic fruits and meats, and having [PAWN_possessive] image immortalised by royal painters; life was perfect. \n\nAlas, the arranged marriage never happened, and [PAWN_nameDef] was returned to [PAWN_possessive] settlement with a “thank you, but no”.</baseDesc>
+		<baseDesc>When the heir to a nearby settlement was promised a gorgeous suitor as a peace offering, they were a little underwhelmed when [PAWN_nameDef] arrived at their door. \n\nAlas, the arranged marriage never went through, and [PAWN_nameDef] was returned to [PAWN_possessive] settlement with a “thank you, but no”.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -239,7 +239,7 @@
 		<title>life model</title>
 		<titleShort>model</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>While reclining in [PAWN_possessive] usual resting spot, [PAWN_nameDef] turned [PAWN_possessive] head to spot a troupe of artistic fauns painting [PAWN_possessive] portrait. While initially shy, the fauns returned weekly to paint [PAWN_nameDef]’s image, and eventually, [PAWN_nameDef] amassed quite a following.</baseDesc>
+		<baseDesc>[PAWN_nameDef] found [PAWN_possessive] calling as a life model for budding artists. [PAWN_pronoun] rarely posed with any clothes on.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -262,7 +262,7 @@
 		<title>berserker</title>
 		<titleShort>berserker</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] was an up-close-and-personal brawler for a dreaded cult of forest folk. Though paladins and adventurers attempted to put an end to [PAWN_possessive] clan time-and-time-again, [PAWN_nameDef] never failed to bite back and give these warriors a warning that they’d never forget, sending them home with ruthless, life-changing injuries.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was an up-close-and-personal brawler for a dreaded cult of forest folk. Though paladins and adventurers attempted to put an end to [PAWN_possessive] tyranny, [PAWN_nameDef] never failed to bite back and give these warriors a warning  they’d never forget, sending them home with ruthless, life-changing injuries.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -291,7 +291,7 @@
 		<title>stone-faced guard</title>
 		<titleShort>guard</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>While satyrs are known for their playful jokes and devilish streaks, [PAWN_nameDef] is certainly not cut from the same cloth. [PAWN_nameDef] patrolled the outskirts of the forestry grove for intruders and thieves, using [PAWN_possessive] gallant horns to smite down any who dare trespass on satyr soil.</baseDesc>
+		<baseDesc>While satyrs are usually known for their playful jokes and devilish streaks, [PAWN_nameDef] is certainly not cut from the same cloth. \n\n[PAWN_nameDef] patrolled the outskirts of [PAWN_possessive]  grove for intruders and thieves, using [PAWN_possessive] gallant horns to smite down any who dare trespass on satyr soil.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -320,7 +320,7 @@
 		<title>diplomat</title>
 		<titleShort>diplomat</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] secured bountiful trade deals overseas for [PAWN_possessive] growing hometown. It wasn't long before the high-stress position of a diplomat got to [PAWN_possessive] brain, and many failed deals later, [PAWN_nameDef] faded back into [PAWN_possessive] community as a has-been and a drunk.</baseDesc>
+		<baseDesc>[PAWN_nameDef] secured bountiful trade deals overseas for [PAWN_possessive] growing hometown. It wasn't long before the high-stress position of a diplomat got to [PAWN_objective], and many failed deals later, [PAWN_pronoun] faded back into [PAWN_possessive] community as a has-been and a drunk.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -345,7 +345,7 @@
 		<title>exiled nomad</title>
 		<titleShort>exiled</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>A rancerous night of drinking at [PAWN_nameDef]'s campside lead to a fatal argument between [PAWN_objective] and [PAWN_possessive] closest ally. Ultimately, only [PAWN_nameDef] returned home, and all fingers were pointed at [PAWN_objective], assuming that [PAWN_pronoun] was responsible. [PAWN_nameDef] was forced out of the village, never to return.</baseDesc>
+		<baseDesc>A rancerous night of drinking lead to a fatal argument between [PAWN_nameDef] and [PAWN_possessive] closest ally. The altercation became violent, and only [PAWN_nameDef] returned home alive the next day. All hooves were pointed at [PAWN_objective], dubbing [PAWN_objective] a murderer. [PAWN_nameDef] was forced out of the village, never to return.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -403,7 +403,7 @@
 		<title>loafer</title>
 		<titleShort>loafer</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>No matter the treacherousness of an adventure, no matter the risk, the danger, the distance; you could always count on [PAWN_nameDef]...to not do it. [PAWN_pronoun] was usually far too busy anyway: finding the perfect patch of shade to fall asleep in was tiring work.</baseDesc>
+		<baseDesc>No matter the treacherousness of an adventure, no matter the risk, the danger, the distance; you could always count on [PAWN_nameDef]...to not do it. [PAWN_pronoun] was usually far too busy anyway: finding the perfect patch of shade to fall asleep in was really tiring work.</baseDesc>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<spawnCategories>
@@ -458,7 +458,7 @@
 	<BackstoryDef>
 		<defName>RBSF_Stud</defName>
 		<title>stud</title>
-		<titleFemale>childbearer</titleFemale>
+		<titleFemale>leader</titleFemale>
 		<titleShort>repopulator</titleShort>
 		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] founded a small colony atop the mountainous crown of a frosty tundra. [PAWN_pronoun] built homes for [PAWN_possessive] people and kept them well fed, but more impressively, was personally responsible for reviving the satyr population in [PAWN_possessive] forgotten corner of the world.</baseDesc>
@@ -488,7 +488,7 @@
 		<title>croupier</title>
 		<titleShort>croupier</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef]'s family embraced their natural heritage and went off to live in the wild, but [PAWN_nameDef] wasn't cut out of a life filled with creepy-crawlies and doing [PAWN_possessive] business out in the open. Instead, [PAWN_pronoun] moved to an industrial, smog-blanketed city and became a dealer at an underground casino. Tourists would flock here just to see this exotic xeno in the flesh.</baseDesc>
+		<baseDesc>[PAWN_nameDef]'s family embraced their natural heritage and went off to live in the wild, but [PAWN_nameDef] wasn't cut out of a life filled with creepy-crawlies and doing [PAWN_possessive] business out in the open. Instead, [PAWN_pronoun] moved to an industrial, smog-blanketed city and became a dealer at an underground casino. Tourists flocked there just to see this exotic xeno in the flesh.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -520,7 +520,7 @@
 		<title>loungelizard</title>
 		<titleShort>gangster</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] lurked inside the town’s brothels; and whether or not [PAWN_pronoun] was looking for trouble, it usually found [PAWN_objective]. Fortunately, [PAWN_nameDef] not only had a way with words, but knives too, and used them as a deterrent against unwelcome company who entered [PAWN_possessive] usual hangout spots. \n\nThe madams of the brothels always ensured that [PAWN_nameDef] had [PAWN_possessive] fill, in exchange for keeping the premises safe.</baseDesc>
+		<baseDesc>[PAWN_nameDef] could always be found in a brothel; and whether or not [PAWN_pronoun] was looking for trouble, it usually found [PAWN_objective]. Fortunately, [PAWN_nameDef] not only had a way with words, but knives too, and used them as a deterrent against unwelcome company who entered [PAWN_possessive] usual hangout spots. \n\nThe madams of the brothels always ensured that [PAWN_nameDef] had [PAWN_possessive] fill, in exchange for keeping the premises safe.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -554,7 +554,7 @@
 		<title>flaming bard</title>
 		<titleShort>bard</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] joined an impid community as an entertainer. Though a typically depressive race, impids would crack- well, not entirely a smile- but a grimace, at [PAWN_nameDef]’s songs and jokes.</baseDesc>
+		<baseDesc>[PAWN_nameDef] joined an impid community as an entertainer. Though a typically depressive race, impids would crack — well, not entirely a smile — but a grimace, at [PAWN_nameDef]’s songs and jokes.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
