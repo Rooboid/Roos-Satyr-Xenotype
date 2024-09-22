@@ -27,9 +27,12 @@
 			<li>Hair_DarkSaturatedReddish</li>
 			<li>Hair_ReddishBrown</li>
 			<li>Hair_DarkBrown</li>
+			<!-- Skills -->
+			<li>AptitudeStrong_Artistic</li>
 			<!-- Misc -->
 			<li>MaxTemp_SmallIncrease</li>
 			<li>Sleepy</li> 
+			<li>NakedSpeed</li> 
 			<li>RBSF_Uncouth</li>	
 		</genes>
 	</XenotypeDef>
