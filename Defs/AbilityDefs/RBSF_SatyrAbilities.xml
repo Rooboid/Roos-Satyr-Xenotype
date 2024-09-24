@@ -19,6 +19,7 @@
 		</statBases>
 		<targetRequired>false</targetRequired>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<showCastingProgressBar>false</showCastingProgressBar>
 		<comps>
 			<li Class="CompProperties_AbilityRequiresCapacity">
@@ -189,9 +190,9 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
-					<MeleeDodgeChance>0.5</MeleeDodgeChance>
-					<MeleeHitChance>0.5</MeleeHitChance>
+					<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+					<MeleeDodgeChance>2</MeleeDodgeChance>
+					<MeleeHitChance>1</MeleeHitChance>
 				</statOffsets>
 			</li>
 		</stages>

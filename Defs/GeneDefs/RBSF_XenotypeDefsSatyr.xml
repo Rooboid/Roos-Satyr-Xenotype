@@ -4,7 +4,7 @@
 		<defName>RBSF_Satyr</defName>
 		<label>satyr</label>
 		<!-- Desc -->
-		<description>Within the clutches of the forest live the Satyr; a race of goat-like pranksters with a penchant for causing mischief. They’re easily distinguishable from Fauns by their goatish horns and curly beards, but before you even catch sight of them, Satyrs can be identified by a choir of risqué campfire songs and raucous, goatish laughter. \n\nThe satyr carry a conniving reputation amongst travellers. Though mainly harmless, they find great joy in engaging passers-by with riddles and tricks in the hopes of stealing a coin, a beer, or even a date. Despite their lecherous ways and hatred of hard work, they are adept rangers, nimble travellers and charismatic diplomats.</description>
+		<description>Within the clutches of the forest live the satyr; a race of goat-like pranksters with a penchant for causing mischief. They’re easily distinguishable from their cousins — the fauns — by their goatish horns, curly beards and highly unsettling bedroom eyes.\n\nSatyrs carry a conniving reputation amongst travellers. Though mainly harmless, they find great joy in engaging passers-by with riddles and tricks in the hopes of stealing a coin, a beer, or even a date. \n\nBut despite their lecherous ways, they can become fantastic diplomats and creatives. In fact, a satyr’s heartbeat is said to pound in a swing beat, as they connect with music on both a spiritual and biological level. This power grants them the potential to learn several unique musical abilities.</description>
 		<descriptionShort>Satyrs are uncouth, goat-like pranksters with a penchant for causing mischief. Their unguligrade legs and thick beards adapt them well for traversing unsteady terrain, but the average satyr would much rather spend their time making music, drinking alcohol and chasing beauties than putting themselves in danger.</descriptionShort>
 		<!-- Stats -->
 		<iconPath>UI/XenotypeIcons/RBS_Satyr</iconPath>
@@ -32,6 +32,7 @@
 			<!-- Misc -->
 			<li>MaxTemp_SmallIncrease</li>
 			<li>Sleepy</li> 
+			<li>Libido_High</li>
 			<li>NakedSpeed</li> 
 			<li>RBSF_Uncouth</li>	
 		</genes>

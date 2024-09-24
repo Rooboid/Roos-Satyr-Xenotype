@@ -3,53 +3,9 @@
 	<!--============================== Roo's Satyr and Faun Xenotype Patches ============================-->
 	<!--============================== Unguligrade patches ============================-->
 	<!-- Only adds the Unguiligrade Legs gene if it isn't already present i.e. within Roo's Minotaur Xenotypes or Roo's Faun Xenotype -->
-	<!-- Unguiligrade Legs body part (For VE) -->
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/GeneDef[defName="RBM_UnguligradeLegs"]</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs</xpath>
-			<value>
-				<HediffDef ParentName="AddedBodyPartBase">
-					<defName>UnguligradeLegPart</defName>
-					<label>unguligrade leg</label>
-					<labelNoun>an unguligrade leg</labelNoun>
-					<description>An unguligrade leg with a cloven hoof, perfect for hotfooting it out of trouble, not-so-perfect for keeping the floor clean.</description>
-					<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
-					<addedPartProps>
-						<solid>true</solid>
-						<partEfficiency>1</partEfficiency>
-					</addedPartProps>
-					<comps>
-						<li Class="HediffCompProperties_VerbGiver">
-							<tools>
-								<li>
-									<label>hoof</label>
-									<capacities>
-										<li>Blunt</li>
-									</capacities>
-									<power>8</power>
-									<cooldownTime>2</cooldownTime>
-									<soundMeleeHit>Pawn_Melee_Punch_HitPawn</soundMeleeHit>
-									<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
-								</li>
-							</tools>
-						</li>
-					</comps>
-					<stages>
-						<li>
-							<minSeverity>0</minSeverity>
-							<statOffsets>
-								<MoveSpeed>0.15</MoveSpeed>
-								<FilthRate>5</FilthRate>
-								<MeleeDodgeChance>10</MeleeDodgeChance>
-							</statOffsets>
-						</li>
-					</stages>
-				</HediffDef>
-			</value>
-		</nomatch>
-	</Operation>
+	
 	<!-- Unguiligrade Legs gene -->
+	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/GeneDef[defName="RBM_UnguligradeLegs"]</xpath>
 		<nomatch Class="PatchOperationSequence">
@@ -112,6 +68,7 @@
 						</GeneDef>
 					</value>
 				</li>
+				
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
 					<match Class="PatchOperationAdd">
@@ -121,6 +78,7 @@
 						</value>
 					</match>
 				</li>
+				
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
 					<match Class="PatchOperationAdd">
@@ -130,6 +88,7 @@
 						</value>
 					</match>
 				</li>
+				
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
 					<match Class="PatchOperationAdd">
@@ -139,6 +98,7 @@
 						</value>
 					</match>
 				</li>
+				
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
 					<match Class="PatchOperationAdd">
@@ -148,6 +108,7 @@
 						</value>
 					</match>
 				</li>
+				
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Vanilla Expanded Framework</li>
@@ -167,6 +128,7 @@
 			</operations>
 		</nomatch>
 	</Operation>
+	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/GeneDef[defName="RBM_UnguligradeLegs"]/renderNodeProperties</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -186,6 +148,7 @@
 			</value>
 		</nomatch>
 	</Operation>
+	
 	<!--============================== Horizontal Pupil patches ============================-->
 	<!-- Only adds the Horizontal Pupils gene if it isn't already present i.e. within Roo's Faun Xenotype -->
 	<Operation Class="PatchOperationConditional">
@@ -261,9 +224,11 @@
 			</value>
 		</nomatch>
 	</Operation>
+	
 	<!--============================== Uncouth Trait Patches ============================-->
 	<!-- Makes the trait "Uncouth" work -->
 	<!-- Uncouth cancels out RebuffedMyRomanceAttemptMood thought -->
+	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="RebuffedMyRomanceAttemptMood"]/nullifyingTraits</xpath>
 		<match Class="PatchOperationAdd">
@@ -281,6 +246,7 @@
 			</value>
 		</nomatch>
 	</Operation>
+	
 	<!-- Uncouth cancels out RebuffedMyRomanceAttempt thought -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="RebuffedMyRomanceAttempt"]/nullifyingTraits</xpath>
@@ -299,6 +265,7 @@
 			</value>
 		</nomatch>
 	</Operation>
+	
 	<!-- Uncouth cancels out RebuffedMyRomanceAttempt thought -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMe"]/nullifyingTraits</xpath>
@@ -317,6 +284,7 @@
 			</value>
 		</nomatch>
 	</Operation>
+	
 	<!-- Uncouth cancels out FailedRomanceAttemptOnMeLowOpinionMood thought -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMeLowOpinionMood"]/nullifyingTraits</xpath>
@@ -335,6 +303,7 @@
 			</value>
 		</nomatch>
 	</Operation>
+	
 	<!-- Uncouth cancels out RejectedMyProposal thought -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="RejectedMyProposal"]/nullifyingTraits</xpath>
@@ -353,6 +322,7 @@
 			</value>
 		</nomatch>
 	</Operation>
+	
 	<!-- Uncouth cancels out RejectedMyProposalMood thought -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="RejectedMyProposalMood"]/nullifyingTraits</xpath>
@@ -371,6 +341,7 @@
 			</value>
 		</nomatch>
 	</Operation>
+	
 	<!-- Uncouth cancels out IRejectedTheirProposal thought -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="IRejectedTheirProposal"]/nullifyingTraits</xpath>
@@ -389,9 +360,11 @@
 			</value>
 		</nomatch>
 	</Operation>
+	
 	<!--============================== PawnKind Patches ============================-->
 	<!-- Gives DLC / mod-appropriate apparel / mounts to PawnKinds -->
 	<!--Add Ideology apparel to SatyrFeral-->
+	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Ideology</li>
@@ -406,7 +379,9 @@
 			</value>
 		</match>
 	</Operation>
+	
 	<!--Add Alpha Mythology mounts to PawnKindDefs -->
+	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Alpha Mythology</li>
@@ -426,7 +401,9 @@
 			</match>
 		</match>
 	</Operation>
+	
 	<!--Add Alpha Animals mounts to PawnKindDefs -->
+	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Alpha Animals</li>
@@ -446,9 +423,12 @@
 			</match>
 		</match>
 	</Operation>
+	
 	<!--============================== Modded Trait Patches ============================-->
 	<!-- Add compatibility with mods that add new traits. Replaces some vanilla traits with these in the BackstoryDefs -->
+	
 	<!-- Vanilla Traits Expanded Traits -->
+	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Traits Expanded</li>
@@ -519,6 +499,7 @@
 			</operations>
 		</match>
 	</Operation>
+	
 	<!-- Consolidated Traits -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
@@ -559,16 +540,18 @@
 			</operations>
 		</match>
 	</Operation>
+	
 	<!--============================== Misc Patches ============================-->
 	<!-- Add compatibility with other mods and misc functions that haven't been done via MayRequire -->
 	<!-- Vanilla - Add music sheets to orbital trader and outlander trader inventory -->
+	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TraderKindDef[defName="Orbital_BulkGoods"]/stockGenerators</xpath>
 		<value>
 			<li Class="StockGenerator_Tag">
 				<tradeTag>MusicSheet</tradeTag>
 				<thingDefCountRange>1~2</thingDefCountRange>
-				<countRange>-3~2</countRange>
+				<countRange>1~2</countRange>
 			</li>
 		</value>
 	</Operation>
@@ -592,14 +575,18 @@
 			</li>
 		</value>
 	</Operation>
+	
 	<!-- Vanilla - Add musical trader to tribal trader pool -->
+	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/FactionDef[@Name="TribeBase"]/caravanTraderKinds</xpath>
 		<value>
 			<li>RBSF_Visitor_Bards</li>
 		</value>
 	</Operation>
+	
 	<!-- Vanilla Factions Expanded - Medieval - Add musical trader to medieval faction trader pool -->
+	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Factions Expanded - Medieval</li>
@@ -611,7 +598,9 @@
 			</value>
 		</match>
 	</Operation>
+	
 	<!-- Vanilla Factions Expanded - Vikings - Add musical trader to viking faction trader pool -->
+	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Factions Expanded - Vikings</li>
@@ -623,6 +612,8 @@
 			</value>
 		</match>
 	</Operation>
+	
+	
 	<!-- Elders Faction - Add musical trader to viking faction trader pool -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
@@ -635,6 +626,8 @@
 			</value>
 		</match>
 	</Operation>
+	
+	
 	<!-- RJW - Make uncouth pawns have an increased "holding-hands" frequency -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
@@ -649,7 +642,9 @@
 			</value>
 		</match>
 	</Operation>
+	
 	<!-- [Alien/Race] Seren, from Stardust - Add RBSF_SerenGoatHorns gene, a hybrid of seren and satyr horns -->
+	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>[Alien/Race] Seren, from Stardust</li>
@@ -682,7 +677,9 @@
 			</value>
 		</match>
 	</Operation>
+	
 	<!-- Add FaunImplant sound if Roo's Faun Xenotype isn't present -->
+	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Roo's Faun Xenotype</li>
@@ -709,6 +706,9 @@
 			</value>
 		</nomatch>
 	</Operation>
+	
+	<!-- Add furdef if not already added -->
+	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FurDef[defName="RBM_UnguligradeLegs"]</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -725,7 +725,6 @@
 						<Thin>Things/Pawn/Humanlike/Unguligrade Legs/RB_UnguligradeLegs</Thin>
 						<Child>Things/Pawn/Humanlike/Unguligrade Legs/RB_UnguligradeLegs</Child>
 						<Baby>Things/Pawn/Humanlike/Unguligrade Legs/RB_UnguligradeLegs</Baby>
-						<!-- Always covered by swaddled graphic -->
 					</bodyTypeGraphicPaths>
 				</FurDef>
 			</value>

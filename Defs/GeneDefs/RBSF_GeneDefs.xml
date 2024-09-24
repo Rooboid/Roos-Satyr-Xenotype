@@ -147,10 +147,10 @@
 	<GeneDef>
 		<defName>RBSF_Uncouth</defName>
 		<label>Uncouth</label>
-		<description>Pawns with this gene are unapologetically crass. Their vulgar and sleazy ways tend to leave a bad impression on others.</description>
+		<description>Pawns with this gene are unapologetically crass. Their vulgar and sleazy ways tend to leave a bad impression on others. Fortunately, romantic rejection doesn't bother them.</description>
 		<customEffectDescriptions>
-			<li>Unlocks new social interaction.</li>
-			<li>+25 relationship with other uncouth pawns.</li>
+			<li>Unlocks a new social interaction.</li>
+			<li>Likes other uncouth pawns.</li>
 		</customEffectDescriptions>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>1</biostatMet>
@@ -168,7 +168,7 @@
 			<li><def>Asexual</def></li>
 			<li><def>Kind</def></li>
 		</suppressedTraits>
-		<missingGeneRomanceChanceFactor>5</missingGeneRomanceChanceFactor>
+		<missingGeneRomanceChanceFactor>-0.2</missingGeneRomanceChanceFactor>
 		<!-- Symbol -->
 		<symbolPack>
 			<prefixSymbols>
@@ -191,15 +191,9 @@
 	<GeneDef>
 		<defName>RBSF_Virtuoso</defName>
 		<label>Virtuoso</label>
-		<description>Pawns with this gene live their lives in tune with music. They are capable of learning a range of powerful songs that can buff or hinder the pawns around them. \n\nIn order to learn these mystical songs, Virtuosos must study music sheets. These can be bought from traders or obtained as quest rewards.</description>
+		<description>Pawns with this gene live their lives in tune with music. They are capable of learning a range of powerful songs that can buff or hinder the pawns around them. \n\nIn order to learn these songs, Virtuosos must study music sheets. These can be bought from traders or obtained as quest rewards.</description>
 		<customEffectDescriptions>
-			<li>Pawn can learn the following abilities:\n
-				- Melodic Sonata;\n
-				- Melodic Healing;\n
-				- Melodic Warcall;\n
-				- Melodic Lullaby;\n
-				- Melodic Hymn;\n
-				- Melodic Elegy.</li>
+			<li>Virtuoso pawns can learn the following abilities: Melodic Sonata, Melodic Healing, Melodic Warcall, Melodic Lullaby, Melodic Hymn, Melodic Elegy.</li>
 		</customEffectDescriptions>
 		<biostatCpx>2</biostatCpx>
 		<biostatMet>-1</biostatMet>
