@@ -51,10 +51,10 @@ namespace Roos_Satyr_Xenotype
 
             foreach (Pawn pawn in PawnAsker.Map.mapPawns.AllPawnsSpawned)
             {
-                if (pawn == null || !pawn.RaceProps.Humanlike) 
+                if (pawn == null || !pawn.RaceProps.Humanlike)
                     continue;
 
-                if (pawn.Faction != PawnAsker.Faction) 
+                if (pawn.Faction != PawnAsker.Faction)
                     continue;
 
                 if (pawn == PawnAsker)
@@ -68,7 +68,7 @@ namespace Roos_Satyr_Xenotype
                 if (beautyAmount > 0.0f)
                     //Log.Message("found beautiful pawn " + pawn.Name + "with a beauty value of: " + pawn.GetStatValue(StatDefOf.PawnBeauty) + ".");
                     TotalBeauty += beautyAmount;
-                
+
             }
             //Log.Message("Total beauty was " + TotalBeauty+ ".");
             //Log.Message("");

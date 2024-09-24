@@ -28,7 +28,7 @@ namespace Roos_Satyr_Xenotype
             }
 
             //Log.Message("Failure...");
-            float radius  = 0.5f;
+            float radius = 0.5f;
             GenExplosion.DoExplosion(target.Thing.Position, this.parent.pawn.MapHeld, radius, DamageDefOf.Flame, this.parent.pawn);
             GenExplosion.DoExplosion(this.parent.pawn.Position, this.parent.pawn.MapHeld, radius, DamageDefOf.Flame, this.parent.pawn);
             RBSF_DefOf.RBSF_MelodicElegyFail.PlayOneShot(new TargetInfo(this.parent.pawn.Position, this.parent.pawn.Map, false));

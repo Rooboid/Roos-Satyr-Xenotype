@@ -1,7 +1,7 @@
 ﻿
-using Verse;
 using HarmonyLib;
 using RimWorld;
+using Verse;
 
 namespace Roos_Satyr_Xenotype
 {

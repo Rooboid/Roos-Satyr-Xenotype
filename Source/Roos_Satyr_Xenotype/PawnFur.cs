@@ -11,7 +11,8 @@ namespace Roos_Satyr_Xenotype
     {
         static bool Prefix(Pawn pawn, ref Graphic __result)
         {
-            if (!pawn.RaceProps.Humanlike) {
+            if (!pawn.RaceProps.Humanlike)
+            {
                 return true;
             }
 

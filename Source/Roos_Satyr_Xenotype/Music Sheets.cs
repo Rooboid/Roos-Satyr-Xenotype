@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
-using Verse.Sound;
 using Verse.AI;
-using RimWorld;
 
 namespace Roos_Satyr_Xenotype
 {
