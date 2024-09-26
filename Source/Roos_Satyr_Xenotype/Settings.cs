@@ -1,6 +1,4 @@
-﻿using Roos_Satyr_Xenotype;
-using System;
-using UnityEngine;
+﻿using UnityEngine;
 using Verse;
 using Verse.Sound;
 
@@ -75,6 +73,6 @@ namespace Roos_Satyr_Xenotype
         }
     }
 
-    
+
 
 }
