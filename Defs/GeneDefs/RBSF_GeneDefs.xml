@@ -168,7 +168,7 @@
 			<li><def>Asexual</def></li>
 			<li><def>Kind</def></li>
 		</suppressedTraits>
-		<missingGeneRomanceChanceFactor>-0.2</missingGeneRomanceChanceFactor>
+		<missingGeneRomanceChanceFactor>-0.1</missingGeneRomanceChanceFactor>
 		<!-- Symbol -->
 		<symbolPack>
 			<prefixSymbols>

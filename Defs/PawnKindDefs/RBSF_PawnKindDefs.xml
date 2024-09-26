@@ -7,9 +7,10 @@
 		<race>Human</race>
 		<isFighter>true</isFighter>
 		<defaultFactionType MayRequire="Rooboid.SatyrFaun.Expanded">RBSFE_TribeFae</defaultFactionType>
+		<minGenerationAge>18</minGenerationAge>
 		<maxGenerationAge>90</maxGenerationAge>
 		<combatPower>30</combatPower>
-		<invNutrition>1.5</invNutrition>
+		<invNutrition>2.55</invNutrition>
 		<chemicalAddictionChance>0.07</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0.02</backstoryCryptosleepCommonality>
 		<initialWillRange>4~5</initialWillRange>
@@ -39,6 +40,7 @@
 		<apparelTags>
 			<li>Neolithic</li>
 			<li>Medieval</li>
+			<li>Satyr</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
 		<apparelRequired>
@@ -239,7 +241,7 @@
 			<li>MedievalMeleeBasic</li>
 			<li>NeolithicRangedHeavy</li>
 		</weaponTags>
-		<apparelMoney>40~600</apparelMoney>
+		<apparelMoney>300</apparelMoney>
 		<apparelTags>
 			<li>Neolithic</li>
 			<li>Medieval</li>
@@ -354,10 +356,12 @@
 			<li>GrenadeFlame</li>
 		</weaponTags>
 		<combatPower>70</combatPower>
+		<minGenerationAge>16</minGenerationAge>
 		<defaultFactionType>TribeSavageImpid</defaultFactionType>
 		<apparelColor>(35,35,35)</apparelColor>
 		<forcedHairColor>(35,35,35)</forcedHairColor>
-		<skinColorOverride Inherit="False">(35,35,35)</skinColorOverride>
+		<skinColorOverride>(35,35,35)</skinColorOverride>
+		<favoriteColor>(35,35,35)</favoriteColor>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<apparelRequired>
 			<li MayRequire="Rooboid.Minotaur">RBApparel_Tailcoat</li>
@@ -428,7 +432,7 @@
 		<isFighter>True</isFighter>
 		<maxGenerationAge>60</maxGenerationAge>
 		<combatPower>50</combatPower>
-		<invNutrition>0.5</invNutrition>
+		<invNutrition>2.55</invNutrition>
 		<chemicalAddictionChance>0.08</chemicalAddictionChance>
 		<initialWillRange>2~3</initialWillRange>
 		<initialResistanceRange>5~18</initialResistanceRange>
