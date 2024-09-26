@@ -77,7 +77,7 @@
 			<rotDrawMode>Fresh, Rotting</rotDrawMode>
 			<drawData>
 			  <defaultData>
-				<layer>70</layer>
+				<layer>75</layer>
 			  </defaultData>
 			</drawData>
 		  </li>
@@ -167,6 +167,7 @@
 		<suppressedTraits>
 			<li><def>Asexual</def></li>
 			<li><def>Kind</def></li>
+			<li MayRequire = "VanillaExpanded.VanillaTraitsExpanded"><def MayRequire = "VanillaExpanded.VanillaTraitsExpanded">VTE_Prude</def></li>
 		</suppressedTraits>
 		<missingGeneRomanceChanceFactor>-0.1</missingGeneRomanceChanceFactor>
 		<!-- Symbol -->

@@ -24,6 +24,11 @@
 							<iconPath>UI/GeneIcons/RBM_BovineLegs</iconPath>
 							<iconColor>(0.75, 0.75, 0.75)</iconColor>
 							<fur>RBM_UnguligradeLegs</fur>
+							<statOffsets>
+								<MoveSpeed>0.15</MoveSpeed>
+								<FilthRate>3</FilthRate>
+								<MeleeDodgeChance>10</MeleeDodgeChance>
+							</statOffsets>
 							<!-- <tattoosVisible>false</tattoosVisible> -->
 							<symbolPack>
 								<prefixSymbols>
@@ -41,30 +46,16 @@
 								</suffixSymbols>
 							</symbolPack>
 							<renderNodeProperties>
-							  <li>
-								<debugLabel>Fur</debugLabel>
-								<nodeClass>PawnRenderNode_Fur</nodeClass>
-								<workerClass>PawnRenderNodeWorker_Fur</workerClass>
-								<baseLayer>5</baseLayer>
-								<rotDrawMode>Fresh, Rotting</rotDrawMode>
-								<colorType>Hair</colorType>
-								<parentTagDef>Body</parentTagDef>
-							  </li>
-							</renderNodeProperties>
-							<!-- Thee following will occur if you ARE running vanilla framework expanded. If not, a patch is added to tie the gene buffs to the pawn, as opposed to the body part -->
-							<modExtensions>
-								<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-									<hediffsToBodyParts>
-										<li>
-											<hediff>UnguligradeLegPart</hediff>
-											<bodyparts>
-												<li>Leg</li>
-												<li>Leg</li>
-											</bodyparts>
-										</li>
-									</hediffsToBodyParts>
+								<li>
+									<debugLabel>Fur</debugLabel>
+									<nodeClass>PawnRenderNode_Fur</nodeClass>
+									<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+									<baseLayer>5</baseLayer>
+									<rotDrawMode>Fresh, Rotting</rotDrawMode>
+									<colorType>Hair</colorType>
+									<parentTagDef>Body</parentTagDef>
 								</li>
-							</modExtensions>
+							</renderNodeProperties>
 						</GeneDef>
 					</value>
 				</li>
@@ -108,26 +99,11 @@
 						</value>
 					</match>
 				</li>
-				
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Expanded Framework</li>
-					</mods>
-					<nomatch Class="PatchOperationAdd">
-						<xpath>Defs/GeneDef[defName="RBM_UnguligradeLegs"]</xpath>
-						<value>
-							<statOffsets>
-								<!-- <StaggerDurationFactor>-0.25</StaggerDurationFactor> -->
-								<MoveSpeed>0.15</MoveSpeed>
-								<FilthRate>5</FilthRate>
-								<MeleeDodgeChance>10</MeleeDodgeChance>
-							</statOffsets>
-						</value>
-					</nomatch>
-				</li>
 			</operations>
 		</nomatch>
 	</Operation>
+	
+	<!-- Fur patch -->
 	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/GeneDef[defName="RBM_UnguligradeLegs"]/renderNodeProperties</xpath>
@@ -165,38 +141,38 @@
 					<displayOrderInCategory>4</displayOrderInCategory>
 					<iconPath>UI/GeneIcons/RBSF_HorizontalPupils</iconPath>
 					<renderNodeProperties>
-					  <li Class="PawnRenderNodeProperties_Eye">
-						<texPath>Things/Pawn/Humanlike/Eyes/RBSF_HorizontalPupils/RBSF_HorizontalPupils</texPath>
-						<anchorTag>RightEye</anchorTag>
-						<rotDrawMode>Fresh, Rotting</rotDrawMode>
-						<parentTagDef>Head</parentTagDef>
-						<drawSize>0.07</drawSize>
-						<side>Right</side>
-						<drawData>
-						  <defaultData>
-							<layer>54</layer>
-							<offset>(0, 0, -0.25)</offset>
-						  </defaultData>
-						</drawData>
-					  </li>
-					  <li Class="PawnRenderNodeProperties_Eye">
-						<texPath>Things/Pawn/Humanlike/Eyes/RBSF_HorizontalPupils/RBSF_HorizontalPupils</texPath>
-						<anchorTag>LeftEye</anchorTag>
-						<rotDrawMode>Fresh, Rotting</rotDrawMode>
-						<parentTagDef>Head</parentTagDef>
-						<drawSize>0.07</drawSize>
-						<side>Left</side>
-						<drawData>
-						  <defaultData>
-							<layer>54</layer>
-							<offset>(0, 0, -0.25)</offset>
-							<flip>true</flip>
-						  </defaultData>
-						  <dataWest>
-							<flip>false</flip>
-						  </dataWest>
-						</drawData>
-					  </li>
+						<li Class="PawnRenderNodeProperties_Eye">
+							<texPath>Things/Pawn/Humanlike/Eyes/RBSF_HorizontalPupils/RBSF_HorizontalPupils</texPath>
+							<anchorTag>RightEye</anchorTag>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<parentTagDef>Head</parentTagDef>
+							<drawSize>0.07</drawSize>
+							<side>Right</side>
+							<drawData>
+								<defaultData>
+									<layer>54</layer>
+									<offset>(0, 0, -0.25)</offset>
+								</defaultData>
+							</drawData>
+						</li>
+						<li Class="PawnRenderNodeProperties_Eye">
+							<texPath>Things/Pawn/Humanlike/Eyes/RBSF_HorizontalPupils/RBSF_HorizontalPupils</texPath>
+							<anchorTag>LeftEye</anchorTag>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<parentTagDef>Head</parentTagDef>
+							<drawSize>0.07</drawSize>
+							<side>Left</side>
+							<drawData>
+								<defaultData>
+									<layer>54</layer>
+									<offset>(0, 0, -0.25)</offset>
+									<flip>true</flip>
+								</defaultData>
+								<dataWest>
+									<flip>false</flip>
+								</dataWest>
+							</drawData>
+						</li>
 					</renderNodeProperties>
 					<statFactors>
 						<ShootingAccuracyFactor_Long>1.05</ShootingAccuracyFactor_Long>
@@ -248,6 +224,7 @@
 	</Operation>
 	
 	<!-- Uncouth cancels out RebuffedMyRomanceAttempt thought -->
+	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="RebuffedMyRomanceAttempt"]/nullifyingTraits</xpath>
 		<match Class="PatchOperationAdd">
@@ -267,6 +244,7 @@
 	</Operation>
 	
 	<!-- Uncouth cancels out RebuffedMyRomanceAttempt thought -->
+	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMe"]/nullifyingTraits</xpath>
 		<match Class="PatchOperationAdd">
@@ -286,6 +264,7 @@
 	</Operation>
 	
 	<!-- Uncouth cancels out FailedRomanceAttemptOnMeLowOpinionMood thought -->
+	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMeLowOpinionMood"]/nullifyingTraits</xpath>
 		<match Class="PatchOperationAdd">
@@ -305,6 +284,7 @@
 	</Operation>
 	
 	<!-- Uncouth cancels out RejectedMyProposal thought -->
+	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="RejectedMyProposal"]/nullifyingTraits</xpath>
 		<match Class="PatchOperationAdd">
@@ -324,6 +304,7 @@
 	</Operation>
 	
 	<!-- Uncouth cancels out RejectedMyProposalMood thought -->
+	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="RejectedMyProposalMood"]/nullifyingTraits</xpath>
 		<match Class="PatchOperationAdd">
@@ -343,6 +324,7 @@
 	</Operation>
 	
 	<!-- Uncouth cancels out IRejectedTheirProposal thought -->
+	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="IRejectedTheirProposal"]/nullifyingTraits</xpath>
 		<match Class="PatchOperationAdd">
@@ -501,6 +483,7 @@
 	</Operation>
 	
 	<!-- Consolidated Traits -->
+	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>[LC] Consolidated Traits</li>
@@ -611,10 +594,10 @@
 				<li>RBSF_Visitor_Bards</li>
 			</value>
 		</match>
-	</Operation>
-	
+	</Operation>	
 	
 	<!-- Elders Faction - Add musical trader to viking faction trader pool -->
+	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Elders Faction</li>
@@ -626,9 +609,9 @@
 			</value>
 		</match>
 	</Operation>
-	
-	
+		
 	<!-- RJW - Make uncouth pawns have an increased "holding-hands" frequency -->
+	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>RimJobWorld</li>
@@ -658,21 +641,34 @@
 					<description>Seren sensors that have formed into the shape of a satyr's horns.</description>
 					<iconPath>UI/GeneIcons/RBSF_SerenGoatHorns</iconPath>
 					<displayOrderInCategory>115</displayOrderInCategory>
-					<graphicData>
-						<drawLoc>HeadTop</drawLoc>
-						<graphicPath>Things/Pawn/Humanlike/Horns/RBSF_SerenGoatHorns/RBSF_SerenGoatHorns</graphicPath>
-						<color>(255, 255, 255)</color>
-						<layer>PostHeadgear</layer>
-						<drawNorthAfterHair>false</drawNorthAfterHair>
-					</graphicData>
+					<renderNodeProperties>
+						<li>
+							<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+							<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+							<texPaths>
+								<li>Things/Pawn/Humanlike/Horns/RBSF_SerenGoatHorns/RBSF_SerenGoatHorns</li>
+							</texPaths>
+							<colorType>Custom</colorType>
+							<color>(255,255,255)</color>
+							<parentTagDef>Head</parentTagDef>
+							<useSkinShader>false</useSkinShader>
+							<useRottenColor>false</useRottenColor>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<drawData>
+								<defaultData>
+									<layer>70</layer>
+								</defaultData>
+							</drawData>
+						</li>
+					</renderNodeProperties>
 					<exclusionTags>
 						<li>SerenSensors</li>
 					</exclusionTags>
-					<biostatCpx>0</biostatCpx>
+					<!-- 					<biostatCpx>0</biostatCpx>
 					<endogeneCategory>Headbone</endogeneCategory>
 					<displayCategory>Cosmetic</displayCategory>
 					<iconColor>(0.75, 0.75, 0.75)</iconColor>
-					<randomChosen>true</randomChosen>
+					<randomChosen>true</randomChosen> -->
 				</GeneDef>
 			</value>
 		</match>

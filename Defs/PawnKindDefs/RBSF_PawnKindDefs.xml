@@ -322,10 +322,6 @@
 					<countRange>1~10</countRange>
 				</li>
 				<li MayRequire="DankPyon.Medieval.Overhaul">
-					<thingDef>DankPyon_IronIngot</thingDef>
-					<countRange>5~10</countRange>
-				</li>
-				<li MayRequire="DankPyon.Medieval.Overhaul">
 					<thingDef>DankPyon_Ruby</thingDef>
 					<countRange>0~1</countRange>
 				</li>

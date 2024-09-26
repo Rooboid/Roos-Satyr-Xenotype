@@ -17,45 +17,48 @@
 						<rulesStrings>
 							<li>r_logentry->[uncouthfixed]</li>
 		
-							<li>uncouthfixed(tag=RBSF_VulgarityYesNo)->Hey, so…[RECIPIENT_nameDef]. If we were the last two people in the world. Would you…y’know?</li>
-							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->I heard you’ve slept around a bit, [RECIPIENT_nameDef]. Nowt wrong with it, just thought you had, y’know, standards.</li>
-							<li>uncouthfixed->Hey, [RECIPIENT_nameDef] watch this. I can lick my elbow! Mlem…mleem…</li>
+							<li>uncouthfixed(tag=RBSF_VulgarityYesNo)->Hey, so…[RECIPIENT_nameDef]. If we were the last two people in the world. Would you...y’know, with me?</li>
+							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->I heard you’ve slept around a bit, [RECIPIENT_nameDef]. Nothing wrong with it, just figured you had standards.</li>
+							<li>uncouthfixed->Hey, [RECIPIENT_nameDef] want to see me lick my below? Mlem…mleem…</li>
 							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->Tch. I’ve got a real itch on my- ah...that's better.</li>
 							<li>uncouthfixed(tag=RBSF_VulgarityYesNo)->Alright, [RECIPIENT_nameDef]. Let’s play shag, marry, avoid. Me, a [Animal], or me again?</li>
 							<li>uncouthfixed->*Scratches backside*</li>
 							<li>uncouthfixed->*Picks nose*</li>
 							<li>uncouthfixed->*Yawns loudly*</li>
-							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->*Scratches genitals* That’s the spot…</li>
-							<li>uncouthfixed->It’s tough bein’ as smokin’ hot as me, but someone’s gotta do it…</li>
+							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->*Scratches genitals* That’s the spot...</li>
+							<li>uncouthfixed->It’s tough being this hot, but someone’s gotta do it around here...</li>
 		
 							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->*Wolfwhistles [RECIPIENT_nameDef]*</li>
-							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->Yer looked a tad slimmer the last time I saw you, [RECIPIENT_nameDef].</li>
-							<li>uncouthfixed->I’m likin’ the new look, [RECIPIENT_nameDef]. A bit of extra weight around the gut suits you.</li>
-							<li>uncouthfixed(tag=RBSF_VulgarityYesNo)->Blimey, someone’s been dining out on one-too-many fine meals lately, huh, [RECIPIENT_nameDef]?</li>
-							<li>uncouthfixed->*Picks food out of teeth*</li>
-							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->Psst, [RECIPIENT_nameDef]. I’m not wearin’ any undies. Wanna see?</li>
+							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->You looked a tad slimmer the last time I saw you, [RECIPIENT_nameDef].</li>
+							<li>uncouthfixed->I’m liking the new look, [RECIPIENT_nameDef]. A bit of extra weight around the gut suits you.</li>
+							<li>uncouthfixed(tag=RBSF_VulgarityYesNo)->Wow, someone’s been dining out on one-too-many fine meals lately, huh, [RECIPIENT_nameDef]?</li>
+							<li>uncouthfixed->*Picks food out of teeth* Yum.</li>
+							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->Psst, [RECIPIENT_nameDef]. I’m not wearing any underwear. Wanna see?</li>
 							<li>uncouthfixed->*Belches* Nice.</li>
 							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->*Stares at [RECIPIENT_nameDef]’s backside*</li>
 							<li>uncouthfixed(tag=RBSF_VulgarityYesNo)->Listen, [RECIPIENT_nameDef]. Have I ever told you about my updog?</li>
 							<li>uncouthfixed->Hey, [RECIPIENT_nameDef], I’m sorry to hear you caught ligma.</li>
 							<li>uncouthfixed(tag=RBSF_VulgarityYesNo)->Heh, did you hear that [NAME]’s caught sugma?</li>
 		
-							<li>uncouthfixed->Hubba hubba, [RECIPIENT_nameDef], yer lookin’ like a tasty snack today.</li>
-							<li>uncouthfixed->…Why the long face, [RECIPIENT_nameDef]? Oh, that's just how you look?</li>
+							<li>uncouthfixed->Why the long face, [RECIPIENT_nameDef]? Oh, that's just how you look?</li>
 							<li>uncouthfixed->How’s it goin’, doll?</li>
-							<li>uncouthfixed->*Touches [RECIPIENT_nameDef]'s hair* It's so soft!</li>
+							<li>uncouthfixed->*Ruffles [RECIPIENT_nameDef]'s hair*</li>
 							<li>uncouthfixed->Look at the fivehead on you, [RECIPIENT_nameDef]. Could play noughts and crosses on that thing.</li>
-							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->C’mere, [RECIPIENT_nameDef]. Yer look like yer need a big hug.</li>
+							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->C’mere, [RECIPIENT_nameDef]. Give me a hug. Don't act like you don't like it.</li>
 							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->Oh no, didn't you have enough time to brush your hair this morning, [RECIPIENT_nameDef]?</li>
 							<li>uncouthfixed->You’d look so much better if yer smiled more, [RECIPIENT_nameDef].</li>
-							<li>uncouthfixed->Dunno if I’ve ever told yer this, [RECIPIENT_nameDef], but you’re a solid 8. I wouldn’t go as far as 10, just on account of that massive nose, but still.</li>
+							<li>uncouthfixed->Dunno if I’ve ever told yer this, [RECIPIENT_nameDef], but you’re a solid 8. I wouldn’t go as far as 10, just on account of that massive nose, but still. An 8 is pretty good.</li>
 							<li>uncouthfixed->[RECIPIENT_nameDef], pull my finger.</li>
-							<li>uncouthfixed->Yaaawn…Oh, [RECIPIENT_nameDef]! I had a dream ‘bout you last night…</li>
-							<li>uncouthfixed(tag=RBSF_VulgarityYesNo)->Hear me out…but ain’t Scythers kinda…y’know?</li>
+							<li>uncouthfixed->Yaaawn...Oh, [RECIPIENT_nameDef]! I had a dream about you last night. I wonder if you're that spicy in real life?</li>
+							<li>uncouthfixed(tag=RBSF_VulgarityYesNo)->Hear me out...but ain’t Scythers kinda...y’know?</li>
 							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->Riddle me this [RECIPIENT_nameDef], What’s white, sticky, and better to spit than to swallow? Toothpaste!</li>
 							<li>uncouthfixed(tag=RBSF_VulgarityReaction)->*Pats [RECIPIENT_nameDef]’s backside* Lookin’ good, [RECIPIENT_nameDef]!</li>
-							<li>uncouthfixed->*Mumbles* I really wish I beat one out this mornin’…</li>
-							<li>uncouthfixed->You look like a dumpster fire, [RECIPIENT_nameDef], and I'm ready to go dumpster diving.</li>
+							<li>uncouthfixed->Ugh, I really wish I beat one out this morning...</li>
+							<li>uncouthfixed->You should smile more, [RECIPIENT_nameDef].</li>
+							<li>uncouthfixed->You're so cute when you're angry, [RECIPIENT_nameDef].</li>
+							<li>uncouthfixed->You're so much prettier when you smile, [RECIPIENT_nameDef].</li>
+							<li>uncouthfixed->You're such a prude, [RECIPIENT_nameDef].</li>
+							<li>uncouthfixed->Smells like someone needs a shower, [RECIPIENT_nameDef].</li>
 						</rulesStrings>
 					</value>
 				</li>
