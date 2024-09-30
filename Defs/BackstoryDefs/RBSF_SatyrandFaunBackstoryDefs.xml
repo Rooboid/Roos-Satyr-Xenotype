@@ -71,6 +71,7 @@
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
 			<li>SatyrandFaun</li>
+			<li>Minotaur</li>
 		</spawnCategories>
 		<skillGains>
 			<Construction>6</Construction>
@@ -98,6 +99,7 @@
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
 			<li>SatyrandFaun</li>
+			<li>Minotaur</li>
 		</spawnCategories>
 		<skillGains>
 			<Crafting>4</Crafting>
@@ -124,6 +126,7 @@
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<spawnCategories>
 			<li>SatyrandFaun</li>
+			<li>Minotaur</li>
 		</spawnCategories>
 		<forcedTraits>
 			<Beauty>-1</Beauty>
@@ -243,6 +246,7 @@
 		<spawnCategories>
 			<li>SatyrandFaun</li>
 			<li>Hellgoat</li>
+			<li>Minotaur</li>
 		</spawnCategories>
 		<skillGains>
 			<Mining>5</Mining>
@@ -276,6 +280,7 @@
 		<spawnCategories>
 			<li>SatyrandFaun</li>
 			<li>Bard</li>
+			<li>Minotaur</li>
 		</spawnCategories>
 		<skillGains>
 			<Social>7</Social>
@@ -302,12 +307,13 @@
 		<title>statue</title>
 		<titleShort>amnesiac</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>A fateful encounter with what [PAWN_nameDef] described as a snake-like, humanoid creature left [PAWN_nameDef] encased in stone for an unknown number of years. Having lost almost all memories of [PAWN_possessive] life before this encounter, [PAWN_nameDef] must uncover [PAWN_possessive] identity once again.</baseDesc>
+		<baseDesc>A fateful encounter with what [PAWN_nameDef] described as a snake-like, humanoid creature left [PAWN_nameDef] encased in stone for an unknown number of years. Having lost almost all memories of [PAWN_possessive] life before the encounter, [PAWN_nameDef] must uncover [PAWN_possessive] identity once again.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
 			<li>SatyrandFaun</li>
 			<li>Hellgoat</li>
+			<li>MinotaurTribe</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>-7</Shooting>

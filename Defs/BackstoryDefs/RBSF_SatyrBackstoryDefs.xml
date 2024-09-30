@@ -10,7 +10,7 @@
 		<title>fool</title>
 		<titleShort>fool</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was raised by a tribe of fauns, who insisted that [PAWN_pronoun] sing, dance and make a fool of [PAWN_objective]helf all for their own amusement.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was raised by a tribe of fauns, who insisted that [PAWN_pronoun] sing, dance and make a fool of [PAWN_objective]self for their amusement.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -105,7 +105,7 @@
 		<title>incognito</title>
 		<titleShort>incognito</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was born from a forbidden relationship between a human and a satyr. [PAWN_possessive]  mother brought [PAWN_objective] into an urban society of humans, and attempted to conceal her child’s identity as a satyr.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was born from a forbidden relationship between a human and a satyr. [PAWN_possessive] mother brought [PAWN_objective] into an urban society of humans, and attempted to conceal her child’s identity as a satyr.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -262,14 +262,14 @@
 		<title>berserker</title>
 		<titleShort>berserker</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] was an up-close-and-personal brawler for a dreaded cult of forest folk. Though paladins and adventurers attempted to put an end to [PAWN_possessive] tyranny, [PAWN_nameDef] never failed to bite back and give these warriors a warning  they’d never forget, sending them home with ruthless, life-changing injuries.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was an up-close-and-personal brawler for a dreaded cult of forest folk. Though paladins and adventurers attempted to put an end to [PAWN_possessive] tyranny, [PAWN_nameDef] never failed to bite back and give these warriors a warning  they’d never forget, sending them home with ruthless, life-changing scars.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
 			<li>SatyrOnly</li>
 		</spawnCategories>
 		<skillGains>
-			<Melee>14</Melee>
+			<Melee>13</Melee>
 			<Plants>5</Plants>
 		</skillGains>
 		<forcedTraits>
@@ -352,7 +352,7 @@
 			<li>SatyrOnly</li>
 		</spawnCategories>
 		<skillGains>
-			<Melee>8</Melee>
+			<Melee>7</Melee>
 			<Shooting>5</Shooting>
 			<Crafting>5</Crafting>
 		</skillGains>
@@ -457,8 +457,8 @@
 	
 	<BackstoryDef>
 		<defName>RBSF_Stud</defName>
-		<title>stud</title>
-		<titleFemale>leader</titleFemale>
+		<title>repopulator</title>
+		<titleFemale>repopulator</titleFemale>
 		<titleShort>repopulator</titleShort>
 		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] founded a small colony atop the mountainous crown of a frosty tundra. [PAWN_pronoun] built homes for [PAWN_possessive] people and kept them well fed, but more impressively, was personally responsible for reviving the satyr population in [PAWN_possessive] forgotten corner of the world.</baseDesc>
@@ -488,7 +488,7 @@
 		<title>croupier</title>
 		<titleShort>croupier</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef]'s family embraced their natural heritage and went off to live in the wild, but [PAWN_nameDef] wasn't cut out of a life filled with creepy-crawlies and doing [PAWN_possessive] business out in the open. Instead, [PAWN_pronoun] moved to an industrial, smog-blanketed city and became a dealer at an underground casino. Tourists flocked there just to see this exotic xeno in the flesh.</baseDesc>
+		<baseDesc>[PAWN_nameDef]'s family embraced their natural heritage and went off to live in the wild, but [PAWN_nameDef] wasn't cut out of a life filled with creepy-crawlies and doing [PAWN_possessive] business out in the open. Instead, [PAWN_pronoun] moved to an industrial, smog-blanketed city and became a dealer at an underground casino. Tourists flocked there just to see such an exotic xeno in the flesh.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -520,7 +520,7 @@
 		<title>loungelizard</title>
 		<titleShort>gangster</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] could always be found in a brothel; and whether or not [PAWN_pronoun] was looking for trouble, it usually found [PAWN_objective]. Fortunately, [PAWN_nameDef] not only had a way with words, but knives too, and used them as a deterrent against unwelcome company who entered [PAWN_possessive] usual hangout spots. \n\nThe madams of the brothels always ensured that [PAWN_nameDef] had [PAWN_possessive] fill, in exchange for keeping the premises safe.</baseDesc>
+		<baseDesc>[PAWN_nameDef] could always be found in a brothel; and whether or not [PAWN_pronoun] was looking for trouble, it usually found [PAWN_objective]. Fortunately, [PAWN_nameDef] not only had a way with words, but knives too, and used them as a deterrent against unwelcome company who entered [PAWN_possessive] usual hangout spots. \n\nThe bosses of the brothels always ensured that [PAWN_nameDef] had [PAWN_possessive] fill, in exchange for keeping the premises safe.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -554,7 +554,7 @@
 		<title>flaming bard</title>
 		<titleShort>bard</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] joined an impid community as an entertainer. Though a typically depressive race, impids would crack — well, not entirely a smile — but a grimace, at [PAWN_nameDef]’s songs and jokes.</baseDesc>
+		<baseDesc>[PAWN_nameDef] joined an impid community as an entertainer. Though a typically depressive race, impids would crack — well, not entirely a smile — but a grimace, at [PAWN_nameDef]’s various songs and jokes.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>

@@ -443,10 +443,11 @@
 					</value>
 				</li>
 				<!-- Jester -->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/BackstoryDef[defName="RBSF_Jester"]/forcedTraits</xpath>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Jester"]/forcedTraits/Industriousness</xpath>
 					<value>
 						<VTE_FunLoving>0</VTE_FunLoving>
+						<VTE_Menagerist>0</VTE_Menagerist>
 					</value>
 				</li>
 				<!-- Dubious Apothecarist -->
@@ -456,7 +457,10 @@
 						<VTE_Tycoon>0</VTE_Tycoon>
 					</value>
 				</li>
-				<!-- Roaming Minstrel -->
+				
+				
+				
+								<!-- Roaming Minstrel -->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/BackstoryDef[defName="RBSF_RoamingMinstrel"]/forcedTraits/DislikesMen</xpath>
 					<value>
@@ -478,6 +482,166 @@
 						<VTE_FunLoving>0</VTE_FunLoving>
 					</value>
 				</li>
+				
+				
+								<!-- Troubadour -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Troubadour"]/forcedTraits</xpath>
+					<value>
+						<VTE_Snob>0</VTE_Snob>
+					</value>
+				</li>
+				<!-- Rogue -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Troubadour"]/forcedTraits</xpath>
+					<value>
+						<VTE_Kleptomaniac>0</VTE_Kleptomaniac>
+					</value>
+				</li>
+				<!-- Captured -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Captured"]/forcedTraits/Tough</xpath>
+					<value>
+						<VTE_ThickSkinned>0</VTE_ThickSkinned>
+					</value>
+				</li>
+				
+								<!-- Chattel -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Chattel"]/forcedTraits/Beauty</xpath>
+					<value>
+						<VTE_Coward>0</VTE_Coward>
+					</value>
+				</li>
+				<!-- Butler -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Butler"]/forcedTraits</xpath>
+					<value>
+						<VTE_Insatiable>0</VTE_Insatiable>
+					</value>
+				</li>
+				<!-- Gemcutter -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Gemcutter"]</xpath>
+					<value>
+						<forcedTraits>
+							<VTE_Tycoon>0</VTE_Tycoon>
+						</forcedTraits>
+					</value>
+				</li>
+				
+				
+								<!-- Fool -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Fool"]/forcedTraits/SlowLearner</xpath>
+					<value>
+						<VTE_Submissive>0</VTE_Submissive>
+					</value>
+				</li>
+				<!-- Rapscallion -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Rapscallion"]/forcedTraits/TooSmart</xpath>
+					<value>
+						<VTE_Kleptomaniac>0</VTE_Kleptomaniac>
+						<VTE_Rebel>0</VTE_Rebel>
+					</value>
+				</li>
+				<!-- Incognito -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Incognito"]</xpath>
+					<value>
+						<forcedTraits>
+							<VTE_Insatiable>0</VTE_Insatiable>
+							<VTE_Submissive>0</VTE_Submissive>
+						</forcedTraits>
+					</value>
+				</li>
+				
+								<!-- Sleaze -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Sleaze"]/forcedTraits</xpath>
+					<value>
+						<VTE_DrunkenMaster>0</VTE_DrunkenMaster>
+						<VTE_Insatiable>0</VTE_Insatiable>
+					</value>
+				</li>
+
+								<!-- Lounge Lizard -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Loungelizard"]/forcedTraits</xpath>
+					<value>
+						<forcedTraits>
+							<VTE_Insatiable>0</VTE_Insatiable>
+							<VTE_MartialArtist>0</VTE_MartialArtist>
+						</forcedTraits>
+					</value>
+				</li>
+				
+				<!-- Philanderer -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Philanderer"]/forcedTraits</xpath>
+					<value>
+						<VTE_Insatiable>0</VTE_Insatiable>
+					</value>
+				</li>
+				<!-- Loafer -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Loafer"]/forcedTraits/Industriousness</xpath>
+					<value>
+						<VTE_HeavySleeper>0</VTE_HeavySleeper>
+					</value>
+				</li>
+
+
+
+				<!-- Stone-Faced Guard -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_Stone-facedGuard"]/forcedTraits</xpath>
+					<value>
+						<VTE_Desensitized>0</VTE_Desensitized>
+					</value>
+				</li>
+
+				<!-- Dark Shaman -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_DarkShaman"]</xpath>
+					<value>
+						<forcedTraits>
+							<VTE_Tycoon>0</VTE_Tycoon>
+							<VTE_Rebel>0</VTE_Rebel>
+						</forcedTraits>
+					</value>
+				</li>
+				<!-- Flaming Bard -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_FlamingBard"]</xpath>
+					<value>
+						<forcedTraits>
+							<VTE_DrunkenMaster>0</VTE_DrunkenMaster>
+						</forcedTraits>
+					</value>
+				</li>
+								<!-- Uncouth Child -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_UncouthChild"]/forcedTraits</xpath>
+					<value>
+						<VTE_Insatiable>0</VTE_Insatiable>
+						<VTE_DrunkenMaster>0</VTE_DrunkenMaster>
+					</value>
+				</li>
+				<!-- Rejected Suitor -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BackstoryDef[defName="RBSF_RejectedSuitor"]/forcedTraits</xpath>
+					<value>
+						<VTE_DrunkenMaster>0</VTE_DrunkenMaster>
+					</value>
+				</li>
+
+
+
+
+
+				
 			</operations>
 		</match>
 	</Operation>
@@ -664,11 +828,6 @@
 					<exclusionTags>
 						<li>SerenSensors</li>
 					</exclusionTags>
-					<!-- 					<biostatCpx>0</biostatCpx>
-					<endogeneCategory>Headbone</endogeneCategory>
-					<displayCategory>Cosmetic</displayCategory>
-					<iconColor>(0.75, 0.75, 0.75)</iconColor>
-					<randomChosen>true</randomChosen> -->
 				</GeneDef>
 			</value>
 		</match>

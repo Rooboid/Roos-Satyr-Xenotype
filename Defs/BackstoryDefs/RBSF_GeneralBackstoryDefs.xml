@@ -76,6 +76,7 @@
 			<li>SatyrandFaun</li>
 			<li>Pirate</li>
 			<li>Tribal</li>
+			<li>MinotaurTribe</li>
 			<li>Hellgoat</li>
 		</spawnCategories>
 		<skillGains>
@@ -136,7 +137,7 @@
 		<title>gambler</title>
 		<titleShort>gambler</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>If [PAWN_nameDef] owned it, [PAWN_nameDef] would wager it; gold coins, animals, alcohol, even [PAWN_possessive] clothes. [PAWN_nameDef] wasn't afraid to risk anything for the chance of a hefty payout. Even today, you'll never find [PAWN_nameDef] without a trusty pack of cards in [PAWN_possessive] pocket.</baseDesc>
+		<baseDesc>If [PAWN_nameDef] owned it, [PAWN_nameDef] would wager it; gold coins, animals, alcohol, even [PAWN_possessive] clothes.\n\n[PAWN_nameDef] wasn't afraid to risk anything for the chance of a hefty payout. Even today, you'll never find [PAWN_nameDef] without a trusty pack of cards in [PAWN_possessive] pocket.</baseDesc>
 		<bodyTypeMale>Fat</bodyTypeMale>
 		<bodyTypeFemale>Fat</bodyTypeFemale>
 		<spawnCategories>
@@ -188,6 +189,7 @@
 		<spawnCategories>
 			<li>Offworld</li>
 			<li>Bard</li>
+			<li>Minotaur</li>
 		</spawnCategories>
 		<skillGains>
 			<Artistic>3</Artistic>
