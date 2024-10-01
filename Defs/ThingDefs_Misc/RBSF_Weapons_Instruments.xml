@@ -86,7 +86,7 @@
 		
 	<ThingDef ParentName="BaseWeaponNeolithic">
 		<defName>RBSF_Lyre</defName>
-		<label>lute</label>
+		<label>lyre</label>
 		<description>A beautiful string instrument usually played to accompany the recital of poetry. It's pretty much useless in battle, but it passively increases the wielder's artistic skill.</description>
 		<graphicData>
 			<texPath>Things/Equipment/WeaponMelee/RBSF_Lyre</texPath>
