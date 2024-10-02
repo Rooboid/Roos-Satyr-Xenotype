@@ -35,6 +35,7 @@
 			<li>Libido_High</li>
 			<li>NakedSpeed</li> 
 			<li>RBSF_Uncouth</li>	
+			<li MayRequire="DanielWedemeyer.GeneticNaturalFocus">NaturalFocus</li>
 		</genes>
 	</XenotypeDef>
 </Defs>
