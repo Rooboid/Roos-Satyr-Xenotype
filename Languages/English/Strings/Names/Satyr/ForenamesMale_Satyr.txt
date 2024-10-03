@@ -99,7 +99,7 @@ caprice
 casanova
 catchyr
 cedar
-chevalier 
+chevalier
 ciaran
 cider
 cognac
@@ -293,7 +293,7 @@ seumas
 sgaire
 shandy
 siebog
-silenus 
+silenus
 sillari
 sils
 simp
