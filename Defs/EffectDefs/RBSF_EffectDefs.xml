@@ -38,9 +38,9 @@
 			</li>
 		</randomGraphics>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
-		<fadeInTime>0.09</fadeInTime>
+		<fadeInTime>0.5</fadeInTime>
 		<solidTime>1</solidTime>
-		<fadeOutTime>0.6</fadeOutTime>
+		<fadeOutTime>0.8</fadeOutTime>
 	</FleckDef>
 	
 	<!-- Music Ring -->
@@ -227,16 +227,16 @@
 				<subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
 				<soundDef>RBSF_LullabySound</soundDef>
 			</li>
-			<li>
+						<li>
 				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
 				<fleckDef>RBSF_MusicNotes</fleckDef>
 				<color>(160, 108, 189)</color>
 				<spawnLocType>OnSource</spawnLocType>
 				<rotationRate>-10~10</rotationRate>
-				<angle>90</angle>
+				<angle>-90~90</angle>
 				<speed>0.6~0.9</speed>
 				<burstCount>1</burstCount>
-				<ticksBetweenMotes>300</ticksBetweenMotes>
+				<chancePerTick>0.02</chancePerTick>
 				<scale>0.5~0.7</scale>
 			</li>
 			<li>
