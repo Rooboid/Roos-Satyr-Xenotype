@@ -70,6 +70,9 @@
 		<forcedTraits>
 			<TooSmart>0</TooSmart>
 		</forcedTraits>
+		<possessions>
+			<RBSFE_XenotypeIndexSatyr MayRequire="Rooboid.SatyrFaun.Expanded">1</RBSFE_XenotypeIndexSatyr>
+		</possessions>
 	</BackstoryDef>
 	
 	<!--============================== Roustabout ============================-->
@@ -112,6 +115,9 @@
 			<li>SatyrOnly</li>
 			<li>Hellgoat</li>
 		</spawnCategories>
+		<possessions>
+			<RBSFE_XenotypeIndexSatyr MayRequire="Rooboid.SatyrFaun.Expanded">1</RBSFE_XenotypeIndexSatyr>
+		</possessions>
 	</BackstoryDef>
 
 	<!--============================== Uncouth ============================-->
@@ -177,6 +183,9 @@
 			<SlowLearner>0</SlowLearner>
 			<Asexual>0</Asexual>
 		</disallowedTraits>
+		<possessions>
+			<RBSFE_XenotypeIndexSatyr MayRequire="Rooboid.SatyrFaun.Expanded">1</RBSFE_XenotypeIndexSatyr>
+		</possessions>
 	</BackstoryDef>
 
 	<!--============================== Sleaze ============================-->
@@ -229,6 +238,10 @@
 			<Shooting>5</Shooting>
 			<Plants>5</Plants>
 		</skillGains>
+		<!-- Items -->
+		<possessions>
+			<RBSFE_XenotypeIndexSatyr MayRequire="Rooboid.SatyrFaun.Expanded">1</RBSFE_XenotypeIndexSatyr>
+		</possessions>
 	</BackstoryDef>
 
 	<!--============================== Life Model ============================-->
@@ -403,7 +416,7 @@
 		<title>loafer</title>
 		<titleShort>loafer</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>No matter the treacherousness of an adventure, no matter the risk, the danger, the distance; you could always count on [PAWN_nameDef]...to not do it. [PAWN_pronoun] was usually far too busy anyway: finding the perfect patch of shade to fall asleep in was really tiring work.</baseDesc>
+		<baseDesc>No matter the treacherousness of an adventure, no matter the risk, the danger, the distance; you could always count on [PAWN_nameDef]...to not do it.\n\n[PAWN_pronoun] was usually far too busy anyway: finding the perfect patch of shade to fall asleep in was really tiring work.</baseDesc>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<spawnCategories>
@@ -478,6 +491,10 @@
 		<disallowedTraits>
 			<Asexual>0</Asexual>
 		</disallowedTraits>
+		<!-- Items -->
+		<possessions>
+			<RBSFE_XenotypeIndexSatyr MayRequire="Rooboid.SatyrFaun.Expanded">1</RBSFE_XenotypeIndexSatyr>
+		</possessions>
 	</BackstoryDef>
 	
 	<!--============================== Croupier ============================-->
@@ -510,6 +527,9 @@
 			<Nerves>-2</Nerves>
 			<Nerves>-1</Nerves>
 		</disallowedTraits>
+		<possessions>
+			<RBSFE_XenotypeIndexSatyr MayRequire="Rooboid.SatyrFaun.Expanded">1</RBSFE_XenotypeIndexSatyr>
+		</possessions>
 	</BackstoryDef>
 	
 	<!--============================== Loungelizard ============================-->

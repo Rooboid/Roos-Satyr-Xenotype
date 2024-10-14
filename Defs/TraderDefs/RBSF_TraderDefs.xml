@@ -70,9 +70,15 @@
 				<countRange>-1~2</countRange>
 			</li>
 			
+			<li Class="StockGenerator_Tag">
+				<tradeTag>XenotypeIndex</tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>-3~2</countRange>
+			</li>
+			
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>RBSF_MelodicElegySheet</thingDef>
-				<countRange>-8~1</countRange>
+				<countRange>-7~1</countRange>
 			</li>
       
 			<!-- Slaves -->
@@ -91,5 +97,7 @@
       
 		</stockGenerators>
 	</TraderKindDef>
+	
+	
 
 </Defs>

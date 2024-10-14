@@ -350,7 +350,7 @@
 		<title>dubious apothecarist</title>
 		<titleShort>apothecarist</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>Accidentally fermenting a rare genus of jungle plant brought [PAWN_nameDef] to a high of unpredictable proportions. [PAWN_pronoun] began to harvest and process this potent drug and sell it to travelling merchants as a novelty. \n\nWeeks passed, and merchants returned to [PAWN_nameDef], battered and bruised, begging [PAWN_objective] for more, lest their customers get angrier and more desperate. In time, [PAWN_nameDef] made a fortune from [PAWN_possessive] underground dealership, before fleeing for concerns of [PAWN_possessive] safety.</baseDesc>
+		<baseDesc>Accidentally fermenting a rare genus of jungle plant brought [PAWN_nameDef] to a high of unpredictable proportions. [PAWN_pronoun] began to harvest and process this potent drug and sell it to travelling merchants as a novelty.\n\nWeeks passed, and merchants returned to [PAWN_nameDef], battered and bruised, begging [PAWN_objective] for more, lest their customers get angrier and more desperate. In time, [PAWN_nameDef] made a fortune from [PAWN_possessive] underground dealership, before fleeing for concerns of [PAWN_possessive] safety.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>

@@ -227,7 +227,7 @@
 				<subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
 				<soundDef>RBSF_LullabySound</soundDef>
 			</li>
-						<li>
+			<li>
 				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
 				<fleckDef>RBSF_MusicNotes</fleckDef>
 				<color>(160, 108, 189)</color>

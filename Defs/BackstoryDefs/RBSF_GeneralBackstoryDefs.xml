@@ -173,6 +173,10 @@
 			<Artistic>6</Artistic>
 			<Social>6</Social>
 		</skillGains>
+		<!-- Items -->
+		<possessions>
+			<RBSFE_XenotypeIndexSatyr MayRequire="Rooboid.SatyrFaun.Expanded">1</RBSFE_XenotypeIndexSatyr>
+		</possessions>
 	</BackstoryDef>
 	
 	<!--============================== Luthier ============================-->
