@@ -460,7 +460,7 @@
 				
 				
 				
-								<!-- Roaming Minstrel -->
+				<!-- Roaming Minstrel -->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/BackstoryDef[defName="RBSF_RoamingMinstrel"]/forcedTraits/DislikesMen</xpath>
 					<value>
@@ -484,7 +484,7 @@
 				</li>
 				
 				
-								<!-- Troubadour -->
+				<!-- Troubadour -->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/BackstoryDef[defName="RBSF_Troubadour"]/forcedTraits</xpath>
 					<value>
@@ -506,7 +506,7 @@
 					</value>
 				</li>
 				
-								<!-- Chattel -->
+				<!-- Chattel -->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/BackstoryDef[defName="RBSF_Chattel"]/forcedTraits/Beauty</xpath>
 					<value>
@@ -531,7 +531,7 @@
 				</li>
 				
 				
-								<!-- Fool -->
+				<!-- Fool -->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/BackstoryDef[defName="RBSF_Fool"]/forcedTraits/SlowLearner</xpath>
 					<value>
@@ -557,7 +557,7 @@
 					</value>
 				</li>
 				
-								<!-- Sleaze -->
+				<!-- Sleaze -->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/BackstoryDef[defName="RBSF_Sleaze"]/forcedTraits</xpath>
 					<value>
@@ -566,7 +566,7 @@
 					</value>
 				</li>
 
-								<!-- Lounge Lizard -->
+				<!-- Lounge Lizard -->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/BackstoryDef[defName="RBSF_Loungelizard"]/forcedTraits</xpath>
 					<value>
@@ -621,7 +621,7 @@
 						</forcedTraits>
 					</value>
 				</li>
-								<!-- Uncouth Child -->
+				<!-- Uncouth Child -->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/BackstoryDef[defName="RBSF_UncouthChild"]/forcedTraits</xpath>
 					<value>
@@ -636,12 +636,6 @@
 						<VTE_DrunkenMaster>0</VTE_DrunkenMaster>
 					</value>
 				</li>
-
-
-
-
-
-				
 			</operations>
 		</match>
 	</Operation>
