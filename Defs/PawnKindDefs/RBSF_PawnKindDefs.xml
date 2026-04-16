@@ -357,7 +357,7 @@
 		<apparelColor>(35,35,35)</apparelColor>
 		<forcedHairColor>(35,35,35)</forcedHairColor>
 		<skinColorOverride>(35,35,35)</skinColorOverride>
-		<favoriteColor>(35,35,35)</favoriteColor>
+		<!-- <favoriteColor>(35,35,35)</favoriteColor> -->
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<apparelRequired>
 			<li MayRequire="Rooboid.Minotaur">RBApparel_Tailcoat</li>
