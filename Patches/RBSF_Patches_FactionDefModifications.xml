@@ -6,9 +6,19 @@
 	<!-- Outlanders -->
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/xenotypeSet/xenotypeChances</xpath>
+		<xpath>Defs/FactionDef[defName="OutlanderCivil"]/xenotypeSet/xenotypeChances</xpath>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/xenotypeSet/xenotypeChances</xpath>
+			<xpath>Defs/FactionDef[defName="OutlanderCivil"]/xenotypeSet/xenotypeChances</xpath>
+			<value>
+				<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.005</RBSF_Satyr>
+			</value>
+		</match>
+	</Operation>
+	
+		<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="OutlanderRough"]/xenotypeSet/xenotypeChances</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="OutlanderRough"]/xenotypeSet/xenotypeChances</xpath>
 			<value>
 				<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.01</RBSF_Satyr>
 			</value>
@@ -123,7 +133,7 @@
 			<match Class="PatchOperationAdd">
 				<xpath>Defs/FactionDef[@Name="VFEM_MedievalFactionBase"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
-					<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.15</RBSF_Satyr>
+					<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.05</RBSF_Satyr>
 				</value>
 			</match>
 		</match>
@@ -168,7 +178,7 @@
 			<match Class="PatchOperationAdd">
 				<xpath>Defs/FactionDef[@Name="VFEC_RepublicBase"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
-					<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.06</RBSF_Satyr>
+					<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.03</RBSF_Satyr>
 				</value>
 			</match>
 			<nomatch Class="PatchOperationAdd">
@@ -176,7 +186,7 @@
 				<value>
 					<xenotypeSet>
 						<xenotypeChances>
-							<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.06</RBSF_Satyr>
+							<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.03</RBSF_Satyr>
 						</xenotypeChances>
 					</xenotypeSet>
 				</value>
@@ -195,7 +205,7 @@
 			<match Class="PatchOperationAdd">
 				<xpath>Defs/FactionDef[@Name="VFEV_VikingBase"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
-					<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.09</RBSF_Satyr>
+					<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.03</RBSF_Satyr>
 				</value>
 			</match>
 		</match>
@@ -212,7 +222,7 @@
 			<match Class="PatchOperationAdd">
 				<xpath>Defs/FactionDef[defName="DankPyon_Forest_Faction"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
-					<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.13</RBSF_Satyr>
+					<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.05</RBSF_Satyr>
 				</value>
 			</match>
 			<nomatch Class="PatchOperationAdd">
@@ -220,7 +230,7 @@
 				<value>
 					<xenotypeSet>
 						<xenotypeChances>
-							<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.13</RBSF_Satyr>
+							<RBSF_Satyr MayRequire="Ludeon.RimWorld.Biotech">0.05</RBSF_Satyr>
 						</xenotypeChances>
 					</xenotypeSet>
 				</value>
@@ -366,33 +376,9 @@
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers</xpath>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[3]/options</xpath>
-			<value>
-				<RBSF_SatyrFeral>1</RBSF_SatyrFeral>
-			</value>
-		</match>
-	</Operation>
-	
-	<!-- Adds feral satyr/fauns to tribal raids -->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers</xpath>
-		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[4]/options</xpath>
 			<value>
-				<RBSF_SatyrFeral>3</RBSF_SatyrFeral>
-			</value>
-		</match>
-	</Operation>
-	
-	<!-- Adds bandits to pirate raids -->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/FactionDef[@Name="PirateBandBase"]/pawnGroupMakers</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[@Name="PirateBandBase"]/pawnGroupMakers/li[1]/options</xpath>
-			<value>
-				<RBSF_SatyrBandit>5</RBSF_SatyrBandit>
+				<RBSF_SatyrFeral>1</RBSF_SatyrFeral>
 			</value>
 		</match>
 	</Operation>
@@ -407,6 +393,7 @@
 					<xpath>Defs/FactionDef[defName="TribeSavageImpid"]/pawnGroupMakers/li[1]/options</xpath>
 					<value>
 						<RBSF_Hellgoat>3</RBSF_Hellgoat>
+						<RBSF_SatyrBandit>0.5</RBSF_SatyrBandit>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -430,6 +417,5 @@
 			</operations>
 		</match>
 	</Operation>
-
 
 </Patch>
